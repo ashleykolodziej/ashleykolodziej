@@ -1,0 +1,171 @@
+html {
+	position: relative;
+}
+
+html, body, #game {
+	width:100% !important;
+	height:100% !important;
+	margin:0;
+	padding:0;
+}
+
+body {
+	text-align:center;
+	background:#000;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom:100px;
+}
+
+#wrap {
+	text-align:left;
+	width:945px;
+	margin:0 auto;
+}
+
+#bar {
+	border-radius:10px;
+	padding:2px 10px 2px 60px;
+	margin-bottom:10px;
+	border:1px solid #EEE2E2;
+	background:#7D6B6B url(../images/lab-glass.png) -10px 5px no-repeat;
+}
+
+a, a:visited {text-decoration: none; color:inherit;}
+a:hover{text-decoration: underline;}
+
+#ggo12 {
+	background:transparent url(../images/github_16x16.png) left 0 no-repeat;
+	padding-left: 20px;
+	font-size:12px;
+	height:18px;
+	display:inline-block;
+	color:white;
+}
+
+#ggo12:hover{
+	background-position: 1px 0;
+}
+
+h1 {margin:3px 0px;}
+
+div.clear {width:1px;height:1px;clear:both;}
+
+#game {
+	margin-bottom: 10px;
+}
+
+div.block_label {
+	background:#EEE2E2;
+	display:inline-block;
+	margin-left:15px;
+	padding:2px 10px;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	font-size:70%;
+	cursor:default;
+}
+
+#badges_wrap {
+	display:none;
+}
+
+#badges {
+	background: #9C9494;
+	border-radius:10px;
+	padding:5px 7px;
+	border:1px solid #EEE2E2;
+	height:74px;
+	overflow:auto;
+	margin-bottom:10px;
+}
+
+#badges div.badge {
+	width:64px;
+	height:64px;
+	float:left;
+	margin:3px 3px 5px 3px;
+	overflow:hidden;
+	word-break: break-all;
+	line-height:10px;
+	ztext-indent:-999px;
+	border-radius:5px;
+	border: 2px solid white;
+	background:#caf;
+	cursor:default;
+}
+
+#inventory {
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#play {
+	background: #333;
+	height:400px;
+	width:400px;
+	border-radius: 400px;
+}
+
+#play h3 {
+	color:#444;
+	font-family: "Benton-Sans-Bold", Helvetica, Arial, sans-serif;
+	font-size: 2em;
+	text-align: center;
+	line-height: 400px;
+}
+
+#controls .control {
+	float:right;
+	background: #9C9494;
+	border-radius:6px;
+	padding:2px 5px;
+	border:1px solid #EEE2E2;
+	cursor:pointer;
+	margin-left:10px;
+	font-size:12px;
+}
+
+#controls .control:hover {
+	border: 1px solid #fff;
+	background:#AEA6A6;
+}
+
+#controls  #reset{
+	margin-left:30px;
+}
+
+#controls  #reset:hover {
+	background:#BB5050;
+	border: 1px solid red;
+}
+
+.elem {
+	width:32px;
+	height:32px;
+	float:left;
+	margin:3px;
+	overflow:hidden;
+	word-break: break-all;
+	cursor:move;
+	line-height:10px;
+	ztext-indent:-999px;
+	border-radius:5px;
+}
+
+.elem {
+	background:#fff;
+	width:100px;
+	height:100px;
+	border-radius: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+
+/*** elements ***/
+#game div.elem_GUI { background: transparent url(../images/elements/gui.png) no-repeat; }
+#game div.elem_IBM { background: transparent url(../images/elements/ibm.gif) no-repeat; }
+

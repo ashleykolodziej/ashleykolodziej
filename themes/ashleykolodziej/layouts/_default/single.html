@@ -1,0 +1,7 @@
+{{ partial "header.html" . }}
+{{ partial "sidebar.html" . }}
+<section id="content-container" class="content-container">
+{{ .Render "content" }}
+{{ partial "footer.html" . }}
+</section>
+{{ partial "end.html" . }}

@@ -1,0 +1,17 @@
+<article id="content">
+	<div class="banner {{ .Params.does }}" style="background-image: url({{ .Params.image }})">
+	  <span class="meta">{{ .Date.Format "Monday, Jan 2, 2006" }}</span>
+	  <h1>{{ .Title }}</h1>
+	</div>
+	<div class="article-wrap content">
+		{{ .Content }}
+
+		{{ partial "projectfiles.html" . }}
+
+		{{ if .Next }}
+			<div class="next-nav">
+				<a class="load-link next-link" href="{{.Next.RelPermalink}}">Next: {{ .Next.Title }}</a>
+			</div>
+		{{ end }}
+	</div>
+</article>

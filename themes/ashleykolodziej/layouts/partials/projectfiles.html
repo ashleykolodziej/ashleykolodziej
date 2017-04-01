@@ -1,0 +1,31 @@
+{{ $.Scratch.Set "dir" "static" }}
+{{ $.Scratch.Add "dir" .RelPermalink }}
+{{ $dir := $.Scratch.Get "dir"}}
+{{ $files := readDir $dir }}
+
+{{ if $files }}
+	</div>
+	<div class="doc-links">
+		{{ range $files }}
+	   	{{ $nicename := substr .Name  0 -4 }}
+	   	{{ $ext := substr .Name  -1 3 }}
+	   	{{ if eq $ext "pdf" }}
+	   		<a class="pdf-item button" href="{{ $.RelPermalink }}{{ .Name }}">{{ humanize $nicename }} ({{ $ext }})</a>
+	   	{{ end }}
+		{{ end }}
+	</div>
+	<div class="gallery-wrap">
+		<div id="gallery" class="gallery gallery-size-{{ $files | len }}">
+	   {{ range $files }}
+	   	{{ $nicename := substr .Name  0 -4 }}
+	   	{{ $ext := substr .Name  -1 3 }}
+	   	{{ if or (eq $ext "jpg") (eq $ext "png") }}
+	   		<a class="gallery-item" href="{{ $.RelPermalink }}{{ .Name }}">
+			   	<img class="gallery-img" src="{{ $.RelPermalink }}{{ .Name }}">
+			   </a>
+	   	{{ end }}
+	   {{ end }}
+	   </div>
+	</div>
+   <div class="article-wrap content">
+{{ end }}

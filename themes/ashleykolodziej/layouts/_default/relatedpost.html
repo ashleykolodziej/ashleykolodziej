@@ -1,0 +1,8 @@
+<section class="callout" style="background-image: url({{ .Params.image }})">
+	<div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }} | {{ .ReadingTime }} minute read</div>
+	<div class="content">
+		<a href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3></a>
+		<p>{{ .Summary }}</p>
+		<a class="button" href="{{ .RelPermalink }}">Read more</a>
+	</div>
+</section>

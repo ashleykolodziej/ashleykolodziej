@@ -1,0 +1,1 @@
+Based on Hugo [0.1.9](https://gohugo.io/).
