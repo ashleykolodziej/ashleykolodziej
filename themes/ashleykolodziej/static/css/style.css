@@ -1,249 +1,36 @@
-@charset "UTF-8";
+@font-face {
+  font-family: 'FFMarkWebProHeavyItalic';
+  src: url("../fonts/30663E_0_0.eot");
+  src: url("../fonts/30663E_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30663E_0_0.woff2") format("woff2"), url("../fonts/30663E_0_0.woff") format("woff"), url("../fonts/30663E_0_0.ttf") format("truetype"); }
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://fonts.gstatic.com/s/materialicons/v21/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format("woff2"); }
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased; }
+
 /* mixins
 ----------------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic);
-@import url(http://weloveiconfonts.com/api/?family=entypo);
-@import url("//hello.myfonts.net/count/30663e");
 .banner h1:after, .content:after {
   /* These classes are using %clearfix. */
   display: table;
   clear: both;
   content: ""; }
 
-/* placeholders for theme use
------------------------------------------------------------------ */
-.banner h1, .content {
-  /* These classes are using %container-styles. */
-  width: 100%;
-  margin: 0 auto; }
-  @media screen and (min-width: 768px) {
-    .banner h1, .content {
-      max-width: 750px; } }
-  @media screen and (min-width: 992px) {
-    .banner h1, .content {
-      max-width: 970px; } }
-  @media screen and (min-width: 1200px) {
-    .banner h1, .content {
-      max-width: 1170px; } }
-
-/* grid
------------------------------------------------------------------ */
-.col-quarter, .col-third, .col-half, .col-two-third, .col-three-quarter, .col-full {
-  /* These classes are using %col-float. */
-  float: left; }
-
-.col-quarter, .col-third, .col-half, .col-two-third, .col-three-quarter, .col-full, .col-xs-quarter, .col-xs-third, .col-xs-half, .col-xs-two-third, .col-xs-three-quarter, .col-xs-full, .col-sm-quarter, .col-sm-third, .col-sm-half, .col-sm-two-third, .col-sm-three-quarter, .col-sm-full, .col-md-quarter, .col-md-third, .col-md-half, .col-md-two-third, .col-md-three-quarter, .col-md-full {
-  /* These classes are using %col-base. */
-  position: relative;
-  min-height: 1px; }
-
-.col-xs-margin-quarter, .col-xs-margin-third, .col-xs-margin-half, .col-xs-margin-two-third, .col-xs-margin-three-quarter, .col-xs-margin-full, .col-sm-margin-quarter, .col-sm-margin-third, .col-sm-margin-half, .col-sm-margin-two-third, .col-sm-margin-three-quarter, .col-sm-margin-full, .col-md-margin-quarter, .col-md-margin-third, .col-md-margin-half, .col-md-margin-two-third, .col-md-margin-three-quarter, .col-md-margin-full {
-  /* These classes are using %col-margin-base. */
-  margin-bottom: 2.6%;
-  margin-top: 0;
-  padding: 20px; }
-
-.col-xs-margin-quarter:first-child, .col-xs-margin-quarter:nth-child(3n), .col-xs-margin-third:first-child, .col-xs-margin-third:nth-child(4n), .col-xs-margin-half:first-child, .col-xs-margin-half:nth-child(6n), .col-xs-margin-two-third:first-child, .col-xs-margin-two-third:nth-child(8n), .col-xs-margin-three-quarter:first-child, .col-xs-margin-three-quarter:nth-child(9n), .col-xs-margin-full:first-child, .col-xs-margin-full:nth-child(12n), .col-sm-margin-quarter:first-child, .col-sm-margin-quarter:nth-child(3n), .col-sm-margin-third:first-child, .col-sm-margin-third:nth-child(4n), .col-sm-margin-half:first-child, .col-sm-margin-half:nth-child(6n), .col-sm-margin-two-third:first-child, .col-sm-margin-two-third:nth-child(8n), .col-sm-margin-three-quarter:first-child, .col-sm-margin-three-quarter:nth-child(9n), .col-sm-margin-full:first-child, .col-sm-margin-full:nth-child(12n), .col-md-margin-quarter:first-child, .col-md-margin-quarter:nth-child(3n), .col-md-margin-third:first-child, .col-md-margin-third:nth-child(4n), .col-md-margin-half:first-child, .col-md-margin-half:nth-child(6n), .col-md-margin-two-third:first-child, .col-md-margin-two-third:nth-child(8n), .col-md-margin-three-quarter:first-child, .col-md-margin-three-quarter:nth-child(9n), .col-md-margin-full:first-child, .col-md-margin-full:nth-child(12n) {
-  margin-left: 0; }
-
-.col-quarter {
-  /* These classes are using %col-3. */
-  width: 25%; }
-
-.col-third {
-  /* These classes are using %col-4. */
-  width: 33.33333%; }
-
-.col-half {
-  /* These classes are using %col-6. */
-  width: 50%; }
-
-.col-two-third {
-  /* These classes are using %col-8. */
-  width: 66.66667%; }
-
-.col-three-quarter {
-  /* These classes are using %col-9. */
-  width: 75%; }
-
-.col-full {
-  /* These classes are using %col-12. */
-  width: 100%; }
-
-@media screen and (min-width: 500px) {
-  .col-xs-margin-quarter, .col-xs-margin-third, .col-xs-margin-half, .col-xs-margin-two-third, .col-xs-margin-three-quarter, .col-xs-margin-full {
-    margin-left: 2.6%; } }
-
-@media screen and (min-width: 500px) {
-  .col-xs-quarter {
-    /* These classes are using %col-xs-3. */
-    width: 25%;
-    float: left; }
-  .col-xs-margin-quarter {
-    /* These classes are using %col-xs-margin-3. */
-    width: 22.4%;
-    float: left; }
-
-  .col-xs-third {
-    /* These classes are using %col-xs-4. */
-    width: 33.33333%;
-    float: left; }
-  .col-xs-margin-third {
-    /* These classes are using %col-xs-margin-4. */
-    width: 30.73333%;
-    float: left; }
-
-  .col-xs-half {
-    /* These classes are using %col-xs-6. */
-    width: 50%;
-    float: left; }
-  .col-xs-margin-half {
-    /* These classes are using %col-xs-margin-6. */
-    width: 47.4%;
-    float: left; }
-
-  .col-xs-two-third {
-    /* These classes are using %col-xs-8. */
-    width: 66.66667%;
-    float: left; }
-  .col-xs-margin-two-third {
-    /* These classes are using %col-xs-margin-8. */
-    width: 64.06667%;
-    float: left; }
-
-  .col-xs-three-quarter {
-    /* These classes are using %col-xs-9. */
-    width: 75%;
-    float: left; }
-  .col-xs-margin-three-quarter {
-    /* These classes are using %col-xs-margin-9. */
-    width: 72.4%;
-    float: left; }
-
-  .col-xs-full {
-    /* These classes are using %col-xs-12. */
-    width: 100%;
-    float: left; }
-  .col-xs-margin-full {
-    /* These classes are using %col-xs-margin-12. */
-    width: 97.4%;
-    float: left; } }
-@media screen and (min-width: 768px) {
-  .col-sm-margin-quarter, .col-sm-margin-third, .col-sm-margin-half, .col-sm-margin-two-third, .col-sm-margin-three-quarter, .col-sm-margin-full {
-    margin-left: 2.6%; } }
-
-@media screen and (min-width: 768px) {
-  .col-sm-quarter {
-    /* These classes are using %col-sm-3. */
-    width: 25%;
-    float: left; }
-  .col-sm-margin-quarter {
-    /* These classes are using %col-sm-margin-3. */
-    width: 22.4%;
-    float: left; }
-
-  .col-sm-third {
-    /* These classes are using %col-sm-4. */
-    width: 33.33333%;
-    float: left; }
-  .col-sm-margin-third {
-    /* These classes are using %col-sm-margin-4. */
-    width: 30.73333%;
-    float: left; }
-
-  .col-sm-half {
-    /* These classes are using %col-sm-6. */
-    width: 50%;
-    float: left; }
-  .col-sm-margin-half {
-    /* These classes are using %col-sm-margin-6. */
-    width: 47.4%;
-    float: left; }
-
-  .col-sm-two-third {
-    /* These classes are using %col-sm-8. */
-    width: 66.66667%;
-    float: left; }
-  .col-sm-margin-two-third {
-    /* These classes are using %col-sm-margin-8. */
-    width: 64.06667%;
-    float: left; }
-
-  .col-sm-three-quarter {
-    /* These classes are using %col-sm-9. */
-    width: 75%;
-    float: left; }
-  .col-sm-margin-three-quarter {
-    /* These classes are using %col-sm-margin-9. */
-    width: 72.4%;
-    float: left; }
-
-  .col-sm-full {
-    /* These classes are using %col-sm-12. */
-    width: 100%;
-    float: left; }
-  .col-sm-margin-full {
-    /* These classes are using %col-sm-margin-12. */
-    width: 97.4%;
-    float: left; } }
-@media screen and (min-width: 992px) {
-  .col-md-margin-quarter, .col-md-margin-third, .col-md-margin-half, .col-md-margin-two-third, .col-md-margin-three-quarter, .col-md-margin-full {
-    margin-left: 2.6%; } }
-
-@media screen and (min-width: 992px) {
-  .col-md-quarter {
-    /* These classes are using %col-md-3. */
-    width: 25%;
-    float: left; }
-  .col-md-margin-quarter {
-    /* These classes are using %col-md-margin-3. */
-    width: 22.4%;
-    float: left; }
-
-  .col-md-third {
-    /* These classes are using %col-md-4. */
-    width: 33.33333%;
-    float: left; }
-  .col-md-margin-third {
-    /* These classes are using %col-md-margin-4. */
-    width: 30.73333%;
-    float: left; }
-
-  .col-md-half {
-    /* These classes are using %col-md-6. */
-    width: 50%;
-    float: left; }
-  .col-md-margin-half {
-    /* These classes are using %col-md-margin-6. */
-    width: 47.4%;
-    float: left; }
-
-  .col-md-two-third {
-    /* These classes are using %col-md-8. */
-    width: 66.66667%;
-    float: left; }
-  .col-md-margin-two-third {
-    /* These classes are using %col-md-margin-8. */
-    width: 64.06667%;
-    float: left; }
-
-  .col-md-three-quarter {
-    /* These classes are using %col-md-9. */
-    width: 75%;
-    float: left; }
-  .col-md-margin-three-quarter {
-    /* These classes are using %col-md-margin-9. */
-    width: 72.4%;
-    float: left; }
-
-  .col-md-full {
-    /* These classes are using %col-md-12. */
-    width: 100%;
-    float: left; }
-  .col-md-margin-full {
-    /* These classes are using %col-md-margin-12. */
-    width: 97.4%;
-    float: left; } }
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -266,31 +53,123 @@
   /* Support for IE. */
   font-feature-settings: 'liga'; }
 
-/**
- * @license
- * MyFonts Webfont Build ID 3171892, 2016-02-15T15:36:49-0500
- *
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are
- * explicitly restricted from using the Licensed Webfonts(s).
- *
- * You may obtain a valid license at the URLs below.
- *
- * Webfont: HalisR-Bold by Ahmet Altun
- * URL: http://www.myfonts.com/fonts/ahmet-altun/halis-rounded/bold/
- * Copyright: Copyright (c) 2013 by Ahmet Altun. All rights reserved.
- * Licensed pageviews: 500,000
- *
- *
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=3171892
- *
- * © 2016 MyFonts Inc
-*/
-/* @import must be at top of file, otherwise CSS will not work */
+.banner h1, .content {
+  /* These classes are using %container-styles. */
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .banner h1, .content {
+      max-width: 750px; } }
+  @media screen and (min-width: 992px) {
+    .banner h1, .content {
+      max-width: 970px; } }
+  @media screen and (min-width: 1200px) {
+    .banner h1, .content {
+      max-width: 1170px; } }
+
+/* latin */
 @font-face {
-  font-family: 'FFMarkWebProHeavyItalic';
-  src: url("../fonts/30663E_0_0.eot");
-  src: url("../fonts/30663E_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30663E_0_0.woff2") format("woff2"), url("../fonts/30663E_0_0.woff") format("woff"), url("../fonts/30663E_0_0.ttf") format("truetype"); }
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Merriweather"), local("Merriweather-Regular"), url(https://fonts.gstatic.com/s/merriweather/v15/RFda8w1V0eDZheqfcyQ4EBampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Merriweather Black"), local("Merriweather-Black"), url(https://fonts.gstatic.com/s/merriweather/v15/ZvcMqxEwPfh2qDWBPxn6noQ7a4ChFTJXKOvSywU5K9Q.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Merriweather Italic"), local("Merriweather-Italic"), url(https://fonts.gstatic.com/s/merriweather/v15/So5lHxHT37p2SS4-t60SlGfrnYWAzH6tTbHZfcsRIsM.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+/* latin */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 900;
+  src: local("Merriweather Black Italic"), local("Merriweather-BlackItalic"), url(https://fonts.gstatic.com/s/merriweather/v15/EYh7Vl4ywhowqULgRdYwILZYYHiK7MQWKA3oxaVNfbE.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
+@font-face {
+  font-family: 'entypo';
+  font-style: normal;
+  font-weight: normal;
+  src: url("http://weloveiconfonts.com/api/fonts/entypo/entypo.eot");
+  src: url("http://weloveiconfonts.com/api/fonts/entypo/entypo.eot?#iefix") format("eot"), url("http://weloveiconfonts.com/api/fonts/entypo/entypo.woff") format("woff"), url("http://weloveiconfonts.com/api/fonts/entypo/entypo.ttf") format("truetype"), url("http://weloveiconfonts.com/api/fonts/entypo/entypo.svg#entypo") format("svg"); }
+.entypo-heart:before {
+  content: "\2665"; }
+
+.entypo-heart-empty:before {
+  content: "\2661"; }
+
+.entypo-star:before {
+  content: "\2605"; }
+
+.entypo-star-empty:before {
+  content: "\2606"; }
+
+.entypo-menu:before {
+  content: "\2630"; }
+
+.entypo-code:before {
+  content: "\e714"; }
+
+.entypo-rss:before {
+  content: "\e73a"; }
+
+.entypo-share:before {
+  content: "\e73c"; }
+
+.entypo-shareable:before {
+  content: "\e73e"; }
+
+.entypo-database:before {
+  content: "\e754"; }
+
+.entypo-bucket:before {
+  content: "\e756"; }
+
+.entypo-flow-cascade:before {
+  content: "\e790"; }
+
+.entypo-flow-branch:before {
+  content: "\e791"; }
+
+.entypo-flow-tree:before {
+  content: "\e792"; }
+
+.entypo-flow-line:before {
+  content: "\e793"; }
+
+.entypo-flow-parallel:before {
+  content: "\e794"; }
+
+.entypo-github:before {
+  content: "\f300"; }
+
+.entypo-flickr:before {
+  content: "\f303"; }
+
+.entypo-vimeo:before {
+  content: "\f306"; }
+
+.entypo-twitter:before {
+  content: "\f309"; }
+
+.entypo-facebook:before {
+  content: "\f30c"; }
+
+.entypo-linkedin:before {
+  content: "\f318"; }
+
+.entypo-dribbble:before {
+  content: "\f31b"; }
+
 html,
 body {
   width: 100%; }
@@ -743,7 +622,7 @@ body.open {
   margin-left: 1%;
   margin-bottom: 1%;
   float: left;
-  background: #000;
+  background: transparent;
   overflow: hidden; }
   .gallery-item img {
     display: block;

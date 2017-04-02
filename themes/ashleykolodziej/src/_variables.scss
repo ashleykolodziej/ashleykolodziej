@@ -17,7 +17,7 @@ $grid-margin-width:                        2.6;
 // Small (sm) and medium (md) are required, everything else is optional.
 
 $grid-breakpoints:                         "xs", "sm", "md";
-$grid-margins:                             true;
+$grid-margins:                             false;
 $grid-push:                                false;
 $grid-pull:                                false;
 $grid-offset:                              false;

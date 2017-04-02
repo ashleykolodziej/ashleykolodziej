@@ -6,16 +6,12 @@ pluralizeListTitles = "false"
 disableSitemap = "true"
 googleAnalytics = "UA-6956431-2"
 
-...
 [params]
   author = "Ashley Kolodziej"
   description = "I shape the direction of theme and product frameworks, prototype, design, and test user interfaces, and teach other people how to do things I'm passionate about."
   site_description = "I shape the direction of theme and product frameworks, prototype, design, and test user interfaces, and teach other people how to do things I'm passionate about."
-  images = ["http://brendan-quinn.xyz/css/images/Brendan-Quinn-seo.jpg"]
-...
+  images = ["http://ashleykolodziej.com/img/fb-default.jpg"]
 [social]
-...
   facebook        = "ashleykolodziej"
   facebook_admin  = ""
   facebook_app_id = "261546164307190"
-...
