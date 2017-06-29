@@ -1,0 +1,417 @@
+$bun-red: 		#ff2d2d;
+$hop-orange: 	#ff722d;
+$niff-yellow: 	#FFF550;
+$light-gray:	#d6d6d6;
+
+html,
+body {
+	width: 100%;
+}
+
+body {
+	font-family: "Merriweather";
+	font-size: 18px;
+	line-height: 1.6;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "FFMarkWebProHeavyItalic";
+	line-height: 1.2;
+
+	p + & {
+		margin-top: 1.5em;
+	}
+}
+
+a {
+	color: $bun-red;
+
+	&:hover {
+		color: $hop-orange;
+	}
+}
+
+%container-styles {
+	@extend %clearfix;
+	/* These classes are using %container-styles. */
+	width: 100%;
+	margin: 0 auto;
+
+	@include breakpoint(lg) {
+		max-width: $container-LG;
+	}
+}
+
+.content {
+	@extend %container-styles;
+	box-sizing: border-box;
+	padding: 20px;
+	max-width: 720px;
+	margin-bottom: 3vw;
+}
+
+nav {
+	font-family: "FFMarkWebProHeavyItalic";
+	text-align: right;
+	padding: 20px;
+
+	a {
+		text-decoration: none;
+	}
+}
+
+#menu {
+	@include breakpoint(sm) {
+		display: none;
+	}
+}
+
+.main-navigation {
+	position: fixed;
+	left: 0;
+	top: 0;
+	transform: translateX(-100%);
+	color: #fff;
+	z-index: 2;
+	overflow: hidden;
+	padding: 0;
+	max-width: 360px;
+	transition: transform 250ms ease-in-out;
+	height: 100%;
+
+	&.open {
+		transform: translateX(0);
+		transition: transform 250ms ease-in-out;
+	}
+
+	@include breakpoint(sm) {
+		width: 33%;
+		transform: translateX(0);
+	}
+
+	@include breakpoint(md) {
+		width: 25%;
+		transform: translateX(0);
+	}
+
+	h3,
+	li {
+		position: relative;
+
+		@include breakpoint(lg) {
+			&:after {
+				content: "";
+				display: block;
+				border-radius: 50%;
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				right: -41px;
+				z-index: 2;
+				top: 23px;
+				background: $light-gray;
+			}
+		}
+	}
+	h3 {
+		margin: 20px 0;
+		padding: 10px 30px 15px 10px;
+		margin-right: -35px;
+		background: darken($bun-red, 20%);
+
+		@include breakpoint(lg) {
+			&:before {
+				content: "";
+				display: block;
+				width: 44px;
+				height: 44px;
+				border-left: 1px solid #d6d6d6;
+				border-bottom: 1px solid #d6d6d6;
+				transform: rotate(45deg) skew(24deg, 24deg);
+				position: absolute;
+				right: -41px;
+				z-index: 2;
+				top: 2px;
+			}
+			&:first-child:before {
+				border-left: none;
+			}
+			&:after {
+				background: #fff;
+				border: 5px solid $bun-red;
+				right: -10px;
+				top: 10px;
+			}
+		}
+	}
+	h4 {
+		margin-bottom: 0;
+	}
+	a {
+		color: currentColor;
+		padding-right: 75px;
+		display: block;
+		margin-right: -75px;
+		z-index: 100;
+		position: relative;
+	}
+	span {
+		font-size: 14px;
+	}
+
+	&::-webkit-scrollbar {
+		width: 16px;
+		background-color: darken($bun-red, 15);
+	}
+	&::-webkit-scrollbar-thumb {
+		width: 12px;
+		background-image: -webkit-linear-gradient(#fff, #fff);
+		border-radius: 16px;
+		border: 5px solid darken($bun-red, 15);
+	}
+}
+
+
+.main-navigation-wrap {
+	background: $bun-red;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: 100%;
+	padding: 50px 65px 10% 0;
+	box-sizing: border-box;
+	margin-top: -70px;
+
+	&:after {
+		content: "";
+		display: block;
+		width: 47px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		background: #fff;
+	}
+
+	&.filter-on {
+		h3,
+		ul {
+			display: none;
+
+			&.has-filtered {
+				display: block;
+			}
+		}
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		list-style-type: none;
+		padding-right: 20px;
+		left: 20px;
+		padding-bottom: 1em;
+
+		@include breakpoint(lg) {
+			&:before {
+				content: "";
+				display: block;
+				width: 1px;
+				height: 100%;
+				position: absolute;
+				right: -34px;
+				top: 0;
+				background: $light-gray;
+				z-index: 2;
+			}
+		}
+
+		&.active:after,
+		&:hover:after {
+			background: $bun-red;
+		}
+		.has-js & {
+			//display: none;
+			max-height: 0;
+			overflow: hidden;
+			opacity: 0;
+			padding: 0;
+			transition:
+				max-height 500ms ease-in-out,
+				opacity 500ms ease-in-out
+			;
+		}
+		.has-js &.nav-show {
+			//display: block;
+			max-height: 200px;
+			overflow: visible;
+			opacity: 1;
+			padding-bottom: 1em;
+			transition:
+				max-height 500ms ease-in-out,
+				opacity 500ms ease-in-out
+			;
+			border-top: 1px dotted rgba(255,255,255,.35);
+			padding-top: 20px;
+
+			&:first-child {
+				border-top: none;
+			}
+		}
+	}
+
+	span {
+		color: darken($bun-red, 25%);
+
+		em {
+			opacity: .5;
+		}
+	}
+}
+
+.filter-header {
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-bottom: 20px;
+	display: block !important;
+}
+.filter-icon {
+	position: absolute;
+	right: 75px;
+	top: auto;
+	margin-top: -3px;
+}
+.filter {
+	text-align: left;
+	background: darken($bun-red, 100);
+	z-index: 200;
+	position: relative;
+	margin-right: 47px;
+	padding-bottom: 0;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 500ms ease-in-out;
+
+		&.open {
+			max-height: 50vh;
+			transition: max-height 500ms ease-in-out;
+		}
+	}
+	li {
+		list-style-type: none;
+
+		&:last-child {
+			margin-bottom: 20px;
+		}
+	}
+	a {
+		display: inline-block;
+		padding: .25em 1em;
+		border-radius: 20px;
+	}
+}
+
+.content-container {
+	padding: 5vw;
+	padding-top: 0;
+	clear: both;
+	transition:
+			opacity 250ms ease-in-out,
+			transform 250ms ease-in-out;
+
+	&.open {
+		transform: translateX(400px);
+		opacity: .1;
+		transition:
+			opacity 250ms ease-in-out,
+			transform 250ms ease-in-out;
+
+		@include breakpoint(sm) {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+
+	@include breakpoint(sm) {
+		margin-left: 33%;
+	}
+	@include breakpoint(md) {
+		margin-left: 23%;
+	}
+}
+
+.logo-container {
+	text-align: center;
+	padding-bottom: 0;
+}
+
+.logo {
+	font-family: "FFMarkWebProHeavyItalic";
+	float: left;
+	line-height: 50px;
+	background: none;
+	padding: 20px;
+	padding-left: 0;
+	margin: 0 auto;
+	display: inline-block;
+	text-decoration: none;
+	color: darken($bun-red, 100);
+
+	&:hover {
+		color: darken($bun-red, 100);
+	}
+
+	@include breakpoint(xs) {
+		float: none;
+		padding-left: .25em;
+	}
+
+	span {
+		//content: "";
+		float: left;
+		background: url(../img/profile.jpg);
+		background-size: cover;
+		border-radius: 50%;
+		overflow: hidden;
+		display: inline-block;
+		height: 50px;
+		width: 50px;
+		vertical-align: middle;
+		margin-right: 15px;
+
+		@include breakpoint(xs) {
+			float: none;
+			margin-left: 15px;
+		}
+	}
+}
+
+.home-title {
+	font-size: 8vw;
+	line-height: .95;
+	text-align: center;
+	margin-bottom: .35em;
+	margin-top: 1em;
+}
