@@ -3,8 +3,9 @@
 <head>
 	<title>{{ .Title }} | Ashley Kolodziej - Boston Freelance Web Designer</title>
 	{{ template "_internal/google_analytics_async.html" . }}
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<style type="text/css">
+		{{ partial "critical.css" . | safeCSS }}
+	</style>
 	{{ template "_internal/opengraph.html" . }}
 	{{ template "_internal/google_news.html" . }}
 	{{ template "_internal/schema.html" . }}
