@@ -101,7 +101,7 @@ $document.ready(function () {
 	}
 
 	function animate_in(elements) {
-		if ( $(window).width() < 768 ) {
+		if ( $(window).width() < 768 && $('body').hasClass('open') ) {
 			$('#menu').click();
 		}
 		$(window).scrollTop(0);

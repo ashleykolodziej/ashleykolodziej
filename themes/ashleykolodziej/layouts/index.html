@@ -8,6 +8,7 @@
     <div class="content">
       <p>I shape the direction of theme and product frameworks, prototype, design, and test user interfaces, and teach other people how to do things I'm passionate about. Give me the right story and you'll see a designer as likely to obsess over words, animations, and audio as a font size or color scheme. Give me the right problem and you'll see a front-end developer as likely to devle into Sass, PHP, and JavaScript as HTML and CSS. Ask the right questions and you'll see a person as likely to take the stage as to quietly focus for hours on end.</p>
       <p>Give me a message, a story, a problem or a challenge I care about. I will give you back something made with everything I have in me.</p>
+      <p class="center"><a href="/Resume - Ashley Kolodziej.pdf" class="live-link">Download Résumé</a></p>
       <hr/>
 <div class="center">
 <h2>I work with</h2>
@@ -46,14 +47,15 @@
 </div>
     </div>
   </article>
-  <!-- Include the library. -->
+  {{ partial "footer.html" . }}
+</section>
+<!-- Include the library. -->
   <script
   src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js" async>
   </script>
   <script>
-  GitHubCalendar(".calendar", "ashleykolodziej");
+  document.addEventListener("DOMContentLoaded", function(event) {
+    GitHubCalendar(".calendar", "ashleykolodziej");
+  });
   </script>
-  {{ partial "footer.html" . }}
-</section>
-
 {{ partial "end.html" . }}
