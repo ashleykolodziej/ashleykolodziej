@@ -325,4 +325,9 @@ nav {
   margin-bottom: .35em;
   margin-top: 1em; }
 
+.resume {
+  position: absolute;
+  right: 0;
+  top: auto; }
+
 /*# sourceMappingURL=critical.css.map */

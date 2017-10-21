@@ -1,7 +1,7 @@
 +++
 date = "2017-01-23"
 title = "Let's Just Build It: Seven Years of Framework Development at Boston University"
-categories = "presentations & blog posts"
+categories = "professional speaking & writing"
 shortdesc = "I realize this sounds like a terrible idea."
 
 +++

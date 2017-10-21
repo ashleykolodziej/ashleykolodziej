@@ -1,7 +1,7 @@
 +++
 date = "2016-07-23"
 title = "WordPress in Higher Education Panel"
-categories = "presentations & blog posts"
+categories = "professional speaking & writing"
 shortdesc = "What is WordPress's place in education, anyway?"
 
 +++

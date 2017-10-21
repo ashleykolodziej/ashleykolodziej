@@ -7,6 +7,8 @@
 		{{ partial "critical.css" . | safeCSS }}
 	</style>
 	{{ template "_internal/opengraph.html" . }}
+	<meta property="og:image" content="http://lastletterdesign.com/css/opengraph.jpg" />
+	<meta property="og:image:url" content="http://lastletterdesign.com/css/opengraph.jpg" />
 	{{ template "_internal/google_news.html" . }}
 	{{ template "_internal/schema.html" . }}
 	{{ template "_internal/twitter_cards.html" . }}

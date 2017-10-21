@@ -1,7 +1,7 @@
 +++
 date = "2017-03-20"
 title = "Creating meaningful editorial experiences with the WordPress REST API"
-categories = "presentations & blog posts"
+categories = "professional speaking & writing"
 shortdesc = "How we mitigated risk and let users shape the experience on a sensitive topic."
 
 +++
