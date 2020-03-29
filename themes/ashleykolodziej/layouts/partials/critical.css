@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: 'FFMarkWebProHeavyItalic';
-  src: url("../fonts/30663E_0_0.eot");
-  src: url("../fonts/30663E_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30663E_0_0.woff2") format("woff2"), url("../fonts/30663E_0_0.woff") format("woff"), url("../fonts/30663E_0_0.ttf") format("truetype"); }
+  src: url("/fonts/30663E_0_0.eot");
+  src: url("/fonts/30663E_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/30663E_0_0.woff2") format("woff2"), url("/fonts/30663E_0_0.woff") format("woff"), url("/fonts/30663E_0_0.ttf") format("truetype"); }
 html,
 body {
   width: 100%; }
@@ -304,7 +304,7 @@ nav {
       padding-left: .25em; } }
   .logo span {
     float: left;
-    background: url(../img/profile.jpg);
+    background: url(/img/profile.jpg);
     background-size: cover;
     border-radius: 50%;
     overflow: hidden;
