@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+	<title>Website Mockup</title>
+	<style type="text/css">
+		body { 
+			margin: 0; 
+			padding: 0; 
+			background:#0b191e url(com-homepage-bg.jpg) top center no-repeat fixed;
+			background-size: cover;
+			text-align:center;
+		}
+		a.placeholder {
+			display:block;
+			width:100%;
+			height: 3750px;
+			margin:0 auto;
+			background:transparent url(com-homepage-open-2.png) top center no-repeat;
+		}
+
+		#stories-start {
+			position: absolute;
+			top:990px;
+			left: 50%;
+			margin-left: -597px;
+			width:490px;
+			height:334px;
+		}
+
+		#stories-start.fixed {
+			position: fixed;
+			top:100px;
+		}
+
+		#stories-start.done {
+			top:2895px;
+		}
+
+		#stories-start img {
+			position: absolute;
+			top:0;
+			left:0;
+			opacity: 0;
+			z-index: 2;
+		}
+
+		#stories-start #mask {
+			left: 0;
+		    opacity: 1;
+		    position: absolute;
+		    top: -100px;
+		    width: 447px;
+		    z-index: 1;
+		}
+
+		#stories-start img.active {
+			opacity:1;
+		}
+
+		.waypoint[data-section="stories-start-1"] {
+			margin-top: 1073px;
+			width:100%;
+			height:400px;
+		}
+		.waypoint[data-section="stories-start-2"] {
+			width:100%;
+			height:1000px;
+		}
+		.waypoint[data-section="stories-start-3"] {
+			width:100%;
+			height:1120px;
+		}
+	</style>
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<a class="placeholder" href="lf-homepage-1.html">
+		<div id="stories-start">
+			<!--<img id="stories-start-1" class="active" src="start-1.png" alt="">
+			<img id="stories-start-2" src="start-2.png" alt="">
+			<img id="stories-start-3" src="start-3.png" alt="">
+			img id="mask" src="mask.png" alt=""-->
+		</div>
+		<div style="overflow:hidden;">
+			<div class="waypoint" data-section="stories-start-1"></div>
+			<div class="waypoint" data-section="stories-start-2"></div>
+			<div class="waypoint" id="end" data-section="stories-start-3"></div>
+		</div>
+	</a>
+
+	<!--href="../../../index.html" -->
+
+</body>
+<script src="waypoints.min.js"></script>
+<script src="scripts.js"></script>
+</html>
