@@ -1,0 +1,1209 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Almaden Valley Athletic Club | Ashley Kolodziej - Boston Freelance Web Designer</title>
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-6956431-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+	<style type="text/css">
+		/* mixins
+----------------------------------------------------------------- */
+.content:after {
+  /* These classes are using %clearfix. */
+  display: table;
+  clear: both;
+  content: ""; }
+
+@font-face {
+  font-family: 'FFMarkWebProHeavyItalic';
+  src: url("../fonts/30663E_0_0.eot");
+  src: url("../fonts/30663E_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/30663E_0_0.woff2") format("woff2"), url("../fonts/30663E_0_0.woff") format("woff"), url("../fonts/30663E_0_0.ttf") format("truetype"); }
+html,
+body {
+  width: 100%; }
+
+body {
+  font-family: "Merriweather";
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "FFMarkWebProHeavyItalic";
+  line-height: 1.2; }
+  p + h1, p +
+  h2, p +
+  h3, p +
+  h4, p +
+  h5, p +
+  h6 {
+    margin-top: 1.5em; }
+
+a {
+  color: #ff2d2d; }
+  a:hover {
+    color: #ff722d; }
+
+.content {
+  /* These classes are using %container-styles. */
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (min-width: 1200px) {
+    .content {
+      max-width: 1170px; } }
+
+.content {
+  box-sizing: border-box;
+  padding: 20px;
+  max-width: 720px;
+  margin-bottom: 3vw; }
+
+nav {
+  font-family: "FFMarkWebProHeavyItalic";
+  text-align: right;
+  padding: 20px; }
+  nav a {
+    text-decoration: none; }
+
+@media screen and (min-width: 768px) {
+  #menu {
+    display: none; } }
+
+.main-navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  color: #fff;
+  z-index: 2;
+  overflow: hidden;
+  padding: 0;
+  max-width: 360px;
+  transition: transform 250ms ease-in-out;
+  height: 100%; }
+  .main-navigation.open {
+    transform: translateX(0);
+    transition: transform 250ms ease-in-out; }
+  @media screen and (min-width: 768px) {
+    .main-navigation {
+      width: 33%;
+      transform: translateX(0); } }
+  @media screen and (min-width: 992px) {
+    .main-navigation {
+      width: 25%;
+      transform: translateX(0); } }
+  .main-navigation h3,
+  .main-navigation li {
+    position: relative; }
+    @media screen and (min-width: 1200px) {
+      .main-navigation h3:after,
+      .main-navigation li:after {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: -41px;
+        z-index: 2;
+        top: 23px;
+        background: #d6d6d6; } }
+  .main-navigation h3 {
+    margin: 20px 0;
+    padding: 10px 30px 15px 10px;
+    margin-right: -35px;
+    background: #c60000; }
+    @media screen and (min-width: 1200px) {
+      .main-navigation h3:before {
+        content: "";
+        display: block;
+        width: 44px;
+        height: 44px;
+        border-left: 1px solid #d6d6d6;
+        border-bottom: 1px solid #d6d6d6;
+        transform: rotate(45deg) skew(24deg, 24deg);
+        position: absolute;
+        right: -41px;
+        z-index: 2;
+        top: 2px; }
+      .main-navigation h3:first-child:before {
+        border-left: none; }
+      .main-navigation h3:after {
+        background: #fff;
+        border: 5px solid #ff2d2d;
+        right: -10px;
+        top: 10px; } }
+  .main-navigation h4 {
+    margin-bottom: 0; }
+  .main-navigation a {
+    color: currentColor;
+    padding-right: 75px;
+    display: block;
+    margin-right: -75px;
+    z-index: 100;
+    position: relative; }
+  .main-navigation span {
+    font-size: 14px; }
+  .main-navigation::-webkit-scrollbar {
+    width: 16px;
+    background-color: #e00000; }
+  .main-navigation::-webkit-scrollbar-thumb {
+    width: 12px;
+    background-image: -webkit-linear-gradient(#fff, #fff);
+    border-radius: 16px;
+    border: 5px solid #e00000; }
+
+.main-navigation-wrap {
+  background: #ff2d2d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 50px 82px 10% 0;
+  box-sizing: border-box;
+  margin-top: -70px; }
+  .main-navigation-wrap:after {
+    content: "";
+    display: block;
+    width: 47px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #fff; }
+  .main-navigation-wrap.filter-on h3,
+  .main-navigation-wrap.filter-on ul {
+    display: none; }
+    .main-navigation-wrap.filter-on h3.has-filtered,
+    .main-navigation-wrap.filter-on ul.has-filtered {
+      display: block; }
+  .main-navigation-wrap ul {
+    padding-left: 0; }
+  .main-navigation-wrap li {
+    list-style-type: none;
+    padding-right: 20px;
+    left: 20px;
+    padding-bottom: 1em; }
+    @media screen and (min-width: 1200px) {
+      .main-navigation-wrap li:before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100%;
+        position: absolute;
+        right: -34px;
+        top: 0;
+        background: #d6d6d6;
+        z-index: 2; } }
+    .main-navigation-wrap li.active:after, .main-navigation-wrap li:hover:after {
+      background: #ff2d2d; }
+    .has-js .main-navigation-wrap li {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      padding: 0;
+      transition: max-height 500ms ease-in-out, opacity 500ms ease-in-out; }
+    .has-js .main-navigation-wrap li.nav-show {
+      max-height: 200px;
+      overflow: visible;
+      opacity: 1;
+      padding-bottom: 1em;
+      transition: max-height 500ms ease-in-out, opacity 500ms ease-in-out;
+      border-top: 1px dotted rgba(255, 255, 255, 0.35);
+      padding-top: 20px; }
+      .has-js .main-navigation-wrap li.nav-show:first-child {
+        border-top: none; }
+  .main-navigation-wrap span {
+    color: #ad0000; }
+    .main-navigation-wrap span em {
+      opacity: .5; }
+
+.filter-header {
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: block !important; }
+
+.filter-icon {
+  position: absolute;
+  right: 75px;
+  top: auto;
+  margin-top: -3px; }
+
+.filter {
+  text-align: left;
+  background: black;
+  z-index: 200;
+  position: relative;
+  margin-right: 47px;
+  padding-bottom: 0; }
+  .filter ul {
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms ease-in-out; }
+    .filter ul.open {
+      max-height: 50vh;
+      transition: max-height 500ms ease-in-out; }
+  .filter li {
+    list-style-type: none; }
+    .filter li:last-child {
+      margin-bottom: 20px; }
+  .filter a {
+    display: inline-block;
+    padding: .25em 1em;
+    border-radius: 20px; }
+
+.content-container {
+  padding: 5vw;
+  padding-top: 0;
+  clear: both;
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out; }
+  .content-container.open {
+    transform: translateX(400px);
+    opacity: .1;
+    transition: opacity 250ms ease-in-out, transform 250ms ease-in-out; }
+    @media screen and (min-width: 768px) {
+      .content-container.open {
+        opacity: 1;
+        transform: translateX(0); } }
+  @media screen and (min-width: 768px) {
+    .content-container {
+      margin-left: 33%; } }
+  @media screen and (min-width: 992px) {
+    .content-container {
+      margin-left: 23%; } }
+
+.logo-container {
+  text-align: center;
+  padding-bottom: 0; }
+
+.logo {
+  font-family: "FFMarkWebProHeavyItalic";
+  float: left;
+  line-height: 50px;
+  background: none;
+  padding: 20px;
+  padding-left: 0;
+  margin: 0 auto;
+  display: inline-block;
+  text-decoration: none;
+  color: black; }
+  .logo:hover {
+    color: black; }
+  @media screen and (min-width: 500px) {
+    .logo {
+      float: none;
+      padding-left: .25em; } }
+  .logo span {
+    float: left;
+    background: url(../img/profile.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 15px; }
+    @media screen and (min-width: 500px) {
+      .logo span {
+        float: none;
+        margin-left: 15px; } }
+
+.home-title {
+  font-size: 8vw;
+  line-height: .95;
+  text-align: center;
+  margin-bottom: .35em;
+  margin-top: 1em; }
+
+/*# sourceMappingURL=critical.css.map */
+
+	</style>
+	<meta property="og:title" content="Almaden Valley Athletic Club" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.lastletterdesign.com/avac/" />
+<meta property="article:published_time" content="2011-12-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2011-12-01T00:00:00+00:00" />
+
+	<meta property="og:image" content="http://lastletterdesign.com/css/opengraph.jpg" />
+	<meta property="og:image:url" content="http://lastletterdesign.com/css/opengraph.jpg" />
+	
+	<meta itemprop="name" content="Almaden Valley Athletic Club">
+<meta itemprop="description" content="">
+<meta itemprop="datePublished" content="2011-12-01T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2011-12-01T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="0">
+
+
+
+<meta itemprop="keywords" content="" />
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Almaden Valley Athletic Club"/>
+<meta name="twitter:description" content=""/>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-control" content="public">
+</head>
+<body>
+<button id="menu" class="material-icons">menu</button>
+<div class="content-container logo-container">
+	<a href="/" class="logo load-link">Ashley <span></span> Kolodziej</a>
+</div>
+<nav class="main-navigation">
+<nav class="filter">
+	<a href="#" id="filter" class="filter-header">Filter Work <i class="material-icons filter-icon">sort</i></a>
+	<ul id="all-tags">
+		<li><a href="#" data-cat-filter="all" class="filter-active">Show all</a></li>
+		
+		<li><a href="/categories/branding" data-cat-filter="branding" class="cat-branding">branding</a></li>
+		
+		<li><a href="/categories/design" data-cat-filter="design" class="cat-design">design</a></li>
+		
+		<li><a href="/categories/development" data-cat-filter="development" class="cat-development">development</a></li>
+		
+		<li><a href="/categories/editorial" data-cat-filter="editorial" class="cat-editorial">editorial</a></li>
+		
+		<li><a href="/categories/motion" data-cat-filter="motion" class="cat-motion">motion</a></li>
+		
+		<li><a href="/categories/print" data-cat-filter="print" class="cat-print">print</a></li>
+		
+		<li><a href="/categories/professional-speaking-writing" data-cat-filter="professional-speaking-writing" class="cat-professional-speaking-writing">professional-speaking-writing</a></li>
+		
+	</ul>
+</nav>
+<div class="main-navigation-wrap">
+	
+	
+
+	<h3>2018</h3>
+	<ul>
+	    
+	    	
+	      	<li data-category="professional speaking &amp; writing">
+	<a href="/prototyping-reflection-identity-unusual-applications-wordpress-rest-api/" class="load-link">
+		<h4>Prototyping, reflection, and identity: Unusual applications of the WordPress REST API</h4>
+		<p class="shortdesc">The WordPress REST API opened up a world of possibilities for me as a designer and developer.</p>
+		<span><em>in</em> professional speaking &amp; writing</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	    
+	    	
+	    
+	    	
+	    
+	</ul>
+	
+	
+	
+
+	<h3>2017</h3>
+	<ul>
+	    
+	    	
+	      	<li data-category="professional speaking &amp; writing">
+	<a href="/imposter-syndrome/" class="load-link">
+		<h4>I do(n&#39;t) belong here</h4>
+		<p class="shortdesc">A heart to heart about imposter syndrome</p>
+		<span><em>in</em> professional speaking &amp; writing</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="professional speaking &amp; writing">
+	<a href="/wp-rest-api-in-editorial/" class="load-link">
+		<h4>Creating meaningful editorial experiences with the WordPress REST API</h4>
+		<p class="shortdesc">How we mitigated risk and let users shape the experience on a sensitive topic.</p>
+		<span><em>in</em> professional speaking &amp; writing</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/street-basketball/" class="load-link">
+		<h4>Of Hoops &amp; Healing</h4>
+		<p class="shortdesc">Using basketball as a vehicle for some of life&#39;s biggest questions.</p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	    
+	    	
+	      	<li data-category="professional speaking &amp; writing">
+	<a href="/lets-just-build-it-seven-years-framework-development-boston-university/" class="load-link">
+		<h4>Let&#39;s Just Build It: Seven Years of Framework Development at Boston University</h4>
+		<p class="shortdesc">I realize this sounds like a terrible idea.</p>
+		<span><em>in</em> professional speaking &amp; writing</span>
+	</a>
+</li>
+	      
+	    
+	</ul>
+	
+	
+	
+
+	<h3>2016</h3>
+	<ul>
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/boston-university-school-of-education/" class="load-link">
+		<h4>School of Education</h4>
+		<p class="shortdesc">Boston University&#39;s School of Education gets a new focus on research and community involvement.</p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="professional speaking &amp; writing">
+	<a href="/wordpress-in-higher-education/" class="load-link">
+		<h4>WordPress in Higher Education Panel</h4>
+		<p class="shortdesc">What is WordPress&#39;s place in education, anyway?</p>
+		<span><em>in</em> professional speaking &amp; writing</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="professional speaking &amp; writing">
+	<a href="/learn-to-love-documentation/" class="load-link">
+		<h4>Learn to Love Documentation</h4>
+		<p class="shortdesc">Documentation is your playground—to try new things, to teach, and to learn.</p>
+		<span><em>in</em> professional speaking &amp; writing</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="editorial">
+	<a href="/designing-marcia-deihl/" class="load-link">
+		<h4>The Good Life of Marcia Deihl</h4>
+		<p class="shortdesc">Or: finding out what&#39;s really important in life.</p>
+		<span><em>in</em> editorial</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	    
+	    	
+	      	<li data-category="development">
+	<a href="/learning-to-love-hugo/" class="load-link">
+		<h4>First Impressions: Hugo</h4>
+		<p class="shortdesc">Jumping on that static CMS train like CHOO CHOO</p>
+		<span><em>in</em> development</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	    
+	    	
+	      	<li data-category="development">
+	<a href="/faking-watercolor-bleed/" class="load-link">
+		<h4>Faking Watercolor Bleed Using a Simple PNG</h4>
+		<p class="shortdesc">Canvas? Who has time for that?</p>
+		<span><em>in</em> development</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="development">
+	<a href="/realistic-svg-handwriting/" class="load-link">
+		<h4>Realistic SVG Handwriting</h4>
+		<p class="shortdesc">That SVG stroke isn&#39;t fooling anyone.</p>
+		<span><em>in</em> development</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="editorial">
+	<a href="/neil-ganem/" class="load-link">
+		<h4>Every Cell Has a Story</h4>
+		<p class="shortdesc">Over, and over, and over again.</p>
+		<span><em>in</em> editorial</span>
+	</a>
+</li>
+	      
+	    
+	</ul>
+	
+	
+	
+
+	<h3>2015</h3>
+	<ul>
+	    
+	    	
+	      	<li data-category="editorial">
+	<a href="/africa-research-series/" class="load-link">
+		<h4>Africa Research Series</h4>
+		<p class="shortdesc">Sometimes you just need to draw.</p>
+		<span><em>in</em> editorial</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/college-of-communication/" class="load-link">
+		<h4>College of Communication</h4>
+		<p class="shortdesc">&#39;Not a reliable career path&#39;? I don&#39;t think so.</p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="editorial">
+	<a href="/dubious-dna/" class="load-link">
+		<h4>Dubious DNA</h4>
+		<p class="shortdesc">What does lingering doubt look like?</p>
+		<span><em>in</em> editorial</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/archaeology-department/" class="load-link">
+		<h4>Archaeology Department</h4>
+		<p class="shortdesc">Highlighting projects across the globe.</p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	</ul>
+	
+	
+	
+
+	<h3>2014</h3>
+	<ul>
+	    
+	    	
+	      	<li data-category="development">
+	<a href="/onebu/" class="load-link">
+		<h4>#OneBU</h4>
+		<p class="shortdesc">Tumblr is not exactly my favorite CMS to skin.</p>
+		<span><em>in</em> development</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/rolling-hills/" class="load-link">
+		<h4>The Club at Rolling Hills</h4>
+		<p class="shortdesc">I&#39;ve never been here, but it reminds me of home.</p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/fitness-and-recreation-center/" class="load-link">
+		<h4>Fitness and Recreation Center</h4>
+		<p class="shortdesc">The site where I tried to sell excercising to myself and it sort of worked.</p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/impactx2/" class="load-link">
+		<h4>Impactx2</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/golden-goose-jewelers/" class="load-link">
+		<h4>Golden Goose Jewelers</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	</ul>
+	
+	
+	
+
+	<h3>2013</h3>
+	<ul>
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/cat-cay/" class="load-link">
+		<h4>Cat Cay Yacht Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="editorial">
+	<a href="/high-notes/" class="load-link">
+		<h4>High Notes</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> editorial</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/citrus-club/" class="load-link">
+		<h4>The Citrus Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/serenity-spa/" class="load-link">
+		<h4>Serenity Spa</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="branding">
+	<a href="/kleen-and-green/" class="load-link">
+		<h4>Kleen and Green</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> branding</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	    
+	    	
+	      	<li data-category="editorial">
+	<a href="/its-a-date/" class="load-link">
+		<h4>It&#39;s a Date, I Think</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> editorial</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/cedarland/" class="load-link">
+		<h4>Cedarland</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/bent-tree/" class="load-link">
+		<h4>Bent Tree Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/california-athletic-clubs/" class="load-link">
+		<h4>California Athletic Clubs</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/ballantyne/" class="load-link">
+		<h4>Ballantyne Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	</ul>
+	
+	
+	
+
+	<h3>2012</h3>
+	<ul>
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/mira-vista/" class="load-link">
+		<h4>Mira Vista Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/pga-west/" class="load-link">
+		<h4>PGA West</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/navesink/" class="load-link">
+		<h4>Navesink Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/imperial/" class="load-link">
+		<h4>Imperial Golf &amp; Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/fall-river/" class="load-link">
+		<h4>Fall River Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/turner-hill/" class="load-link">
+		<h4>Turner Hill Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/los-altos/" class="load-link">
+		<h4>Los Altos Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/fisher-island-community-association/" class="load-link">
+		<h4>Fisher Island Community Association</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/manursing/" class="load-link">
+		<h4>Manursing Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/commons-club/" class="load-link">
+		<h4>The Commons Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/glenmoor/" class="load-link">
+		<h4>Glenmoor Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/plantation/" class="load-link">
+		<h4>Weddings at Plantation</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/addison-reserve/" class="load-link">
+		<h4>Addison Reserve Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/ledgemont/" class="load-link">
+		<h4>Ledgemont Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/ferncroft/" class="load-link">
+		<h4>Ferncroft Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/challenge-at-musket-ridge/" class="load-link">
+		<h4>The Challenge at Musket Ridge</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/walpole-country-club/" class="load-link">
+		<h4>Walpole Country Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/neptune-cove/" class="load-link">
+		<h4>Neptune Cove</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/yolo-fliers/" class="load-link">
+		<h4>Yolo Fliers Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	</ul>
+	
+	
+	
+
+	<h3>2011</h3>
+	<ul>
+	    
+	    	
+	      	<li data-category="design">
+	<a href="/avac/" class="load-link">
+		<h4>Almaden Valley Athletic Club</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> design</span>
+	</a>
+</li>
+	      
+	    
+	</ul>
+	
+	
+	
+
+	<h3>2010</h3>
+	<ul>
+	    
+	    	
+	    
+	    	
+	      	<li data-category="print">
+	<a href="/fireside-follies/" class="load-link">
+		<h4>Fireside Follies</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> print</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="print">
+	<a href="/intern-magazine/" class="load-link">
+		<h4>in: The Conde Nast Intern Magazine</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> print</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	      	<li data-category="print">
+	<a href="/roberto-cavalli-milestone/" class="load-link">
+		<h4>Roberto Cavalli Milestone Promotion</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> print</span>
+	</a>
+</li>
+	      
+	    
+	    	
+	    
+	    	
+	      	<li data-category="motion">
+	<a href="/depression-motion-graphic/" class="load-link">
+		<h4>Depression Motion Graphic</h4>
+		<p class="shortdesc"></p>
+		<span><em>in</em> motion</span>
+	</a>
+</li>
+	      
+	    
+	</ul>
+	
+	
+	
+	
+</div>
+</nav>
+<section id="content-container" class="content-container">
+<article id="content">
+	<div class="banner " style="background-image: url()">
+	  <span class="meta">Thursday, Dec 1, 2011</span>
+	  <h1>Almaden Valley Athletic Club</h1>
+	</div>
+	<div class="article-wrap content">
+		<!-- raw HTML omitted -->
+
+
+		
+
+
+
+
+
+	</div>
+	<div class="doc-links">
+		
+	   	
+	   	
+	   	
+		
+	   	
+	   	
+	   	
+		
+	   	
+	   	
+	   	
+		
+	   	
+	   	
+	   	
+		
+	   	
+	   	
+	   	
+		
+	   	
+	   	
+	   	
+		
+	   	
+	   	
+	   	
+		
+	</div>
+	<div class="gallery-wrap">
+		<div id="gallery" class="gallery gallery-size-7">
+	   
+	   	
+	   	
+	   	
+	   		<a class="gallery-item" href="/avac/avac1.jpg">
+			   	<img class="gallery-img" src="/avac/avac1.jpg">
+			   </a>
+	   	
+	   
+	   	
+	   	
+	   	
+	   		<a class="gallery-item" href="/avac/avac2.jpg">
+			   	<img class="gallery-img" src="/avac/avac2.jpg">
+			   </a>
+	   	
+	   
+	   	
+	   	
+	   	
+	   		<a class="gallery-item" href="/avac/avac3.jpg">
+			   	<img class="gallery-img" src="/avac/avac3.jpg">
+			   </a>
+	   	
+	   
+	   	
+	   	
+	   	
+	   		<a class="gallery-item" href="/avac/avac4.jpg">
+			   	<img class="gallery-img" src="/avac/avac4.jpg">
+			   </a>
+	   	
+	   
+	   	
+	   	
+	   	
+	   		<a class="gallery-item" href="/avac/avaclp.jpg">
+			   	<img class="gallery-img" src="/avac/avaclp.jpg">
+			   </a>
+	   	
+	   
+	   	
+	   	
+	   	
+	   		<a class="gallery-item" href="/avac/avaclpmem.jpg">
+			   	<img class="gallery-img" src="/avac/avaclpmem.jpg">
+			   </a>
+	   	
+	   
+	   	
+	   	
+	   	
+	   		<a class="gallery-item" href="/avac/avaclpten.jpg">
+			   	<img class="gallery-img" src="/avac/avaclpten.jpg">
+			   </a>
+	   	
+	   
+	   </div>
+	</div>
+   <div class="article-wrap content">
+
+
+		
+			<div class="next-nav">
+				<a class="load-link next-link" href="/yolo-fliers/">Next: Yolo Fliers Club</a>
+			</div>
+		
+	</div>
+</article>
+<aside id="footer" class="footer">
+	<h3>Let's talk.</h3>
+	<form id="contactform" action="//formspree.io/ashley@lastletterdesign.com" method="POST">
+		<input type="text" placeholder="Name">
+		<input type="email" placeholder="Email">
+		<textarea placeholder="What's up?"></textarea>
+		<input type="submit" class="button" value="Send">
+	</form>
+</aside>
+</section>
+<noscript id="deferred-styles">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</noscript>
+<script>
+	var loadDeferredStyles = function() {
+		var addStylesNode = document.getElementById("deferred-styles");
+		var replacement = document.createElement("div");
+		replacement.innerHTML = addStylesNode.textContent;
+		document.body.appendChild(replacement)
+		addStylesNode.parentElement.removeChild(addStylesNode);
+	};
+	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+	 	webkitRequestAnimationFrame || msRequestAnimationFrame;
+	if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+	else window.addEventListener('load', loadDeferredStyles);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+<script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js" defer></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js" defer></script>
+<script src="/js/scripts.js" defer></script>
+</body>
+</html>
