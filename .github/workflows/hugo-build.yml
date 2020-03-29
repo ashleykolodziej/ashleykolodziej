@@ -15,5 +15,5 @@ jobs:
       env:
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
         HUGO_VERSION: "0.68.3"
-        WEBSITE_GIT: "git@github.com:ashleykolodziej/ashleykolodziej.git"
+        WEBSITE_GIT: "git@github.com:ashleykolodziej/ashleykolodziej.github.io.git"
         WEBSITE_DIR: "ashleykolodziej.github.io"
