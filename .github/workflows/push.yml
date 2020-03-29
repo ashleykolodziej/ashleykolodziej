@@ -1,3 +1,5 @@
+# See: https://github.com/marketplace/actions/hugo-to-gh-pages
+
 name: Publish Site
 
 on:
@@ -19,3 +21,4 @@ jobs:
         with:
           githubToken: ${{ secrets.PERSONAL_TOKEN }}
           args: --theme=ashleykolodziej
+          cname: ashleykolodziej.com
