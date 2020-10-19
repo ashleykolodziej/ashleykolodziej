@@ -21,4 +21,4 @@ jobs:
         with:
           githubToken: ${{ secrets.PERSONAL_TOKEN }}
           args: --theme=ashleykolodziej
-          cname: ashleykolodziej.com
+          cname: www.ashleykolodziej.com
