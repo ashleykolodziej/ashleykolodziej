@@ -368,6 +368,7 @@ I just didn&rsquo;t have the time to learn &lt;canvas&gt; this time around.">
 
 
 <meta itemprop="keywords" content="" />
+
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Faking Watercolor Bleed Using a Simple PNG"/>
 <meta name="twitter:description" content="
@@ -1074,7 +1075,7 @@ I just didn&rsquo;t have the time to learn &lt;canvas&gt; this time around."/>
 <p>I saw a few ideas out there using <code>&lt;canvas&gt;</code>, but I needed something quick and reliable. I took a close look at what the real effects did, thought about it, and realized what makes a watercolor bleed look like a watercolor bleed is two things: a fade in, and the bleed stopping at irregular points with a brushlike texture.</p>
 <p>Enter the PNG: master of brushy textures.</p>
 <p>I ended up going with animating in a PNG mask using the same watercolor brush as the edges of each watercolor photo, but in slightly different places. I gave it the same background color as my main article, but with an alpha value of something like .75 so you could see a bit of the image behind it. When you scroll any image into view, the mask scales  and out until it no longer covers the image, and animates that alpha value down to 0. That combination of fading in and the mask &ldquo;stopping&rdquo; uncovering the watercolor paper beneath it at different times did the trick for giving the impression of watercolor bleeding in.</p>
-<p>Voila! Watercolor bleed. You could theoretically even acheive this with plain ol&rsquo; CSS and HTML, if you didn&rsquo;t mind the effect happening on load.</p>
+<p>Voila! Watercolor bleed. You could theoretically even acheive this with plain ol' CSS and HTML, if you didn&rsquo;t mind the effect happening on load.</p>
 
 		
 
