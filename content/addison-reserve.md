@@ -2,6 +2,7 @@
 date = "2012-06-01"
 title = "Addison Reserve Country Club"
 categories = "design"
+hasPath = "true"
 
 +++
 

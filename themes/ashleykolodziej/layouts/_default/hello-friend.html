@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>{{ .Title }} | Ashley Kolodziej - Boston Freelance Web Designer</title>
+	{{ template "_internal/google_analytics_async.html" . }}
+	<style type="text/css">
+		{{ partial "critical.css" . | safeCSS }}
+	</style>
+	{{ template "_internal/opengraph.html" . }}
+	<meta property="og:image" content="http://lastletterdesign.com/css/opengraph.jpg" />
+	<meta property="og:image:url" content="http://lastletterdesign.com/css/opengraph.jpg" />
+	{{ template "_internal/google_news.html" . }}
+	{{ template "_internal/schema.html" . }}
+	{{ template "_internal/twitter_cards.html" . }}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-control" content="public">
+	<meta name="robots" content="noindex">
+</head>
+<body>
+<div class="hello-friend">
+<button id="menu" class="material-icons">menu</button>
+<div class="content-container logo-container">
+	<div class="logo">Ashley <span></span> Kolodziej</div>
+</div>
+<section id="content-container" class="content-container">
+<article id="content">
+	<div class="banner {{ .Params.does }}" style="background-image: url({{ .Params.image }})">
+	  <h1>{{ .Title }}</h1>
+	</div>
+	<div class="article-wrap content">
+		{{ .Content }}
+
+		{{ if  .Params.hasPath }}
+		{{ partial "projectfiles.html" . }}
+		{{ end }}
+	</div>
+</article>
+</section>
+</div>
+<noscript id="deferred-styles">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</noscript>
+<script>
+	var loadDeferredStyles = function() {
+		var addStylesNode = document.getElementById("deferred-styles");
+		var replacement = document.createElement("div");
+		replacement.innerHTML = addStylesNode.textContent;
+		document.body.appendChild(replacement)
+		addStylesNode.parentElement.removeChild(addStylesNode);
+	};
+	var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+	 	webkitRequestAnimationFrame || msRequestAnimationFrame;
+	if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+	else window.addEventListener('load', loadDeferredStyles);
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+<script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js" defer></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js" defer></script>
+<script src="/js/scripts.js" defer></script>
+</body>
+</html>

@@ -422,3 +422,27 @@ nav {
 	margin-bottom: .35em;
 	margin-top: 1em;
 }
+
+.hello-friend {
+	.content-container {
+		margin-left: 0;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	.grid {
+		display: grid;
+		gap: 20px;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 3em auto;
+	}
+
+	a {
+		display: flex;
+		min-height: 250px;
+		border: 5px solid currentColor;
+		padding: 2em;
+	}
+}
