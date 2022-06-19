@@ -137,8 +137,8 @@ The action itself is very simple&mdahs;just run the same commands you'd run loca
 
 To test if the Webmention actually shows on test content, I used https://webmention.rocks. Each of the links on their homepage tests a different type of HTML that could be used to create a Webmention. I'm going to use Test 6, the [a tag discovery test](https://webmention.rocks/test/6), to find out if this post correctly sends a Webmention through Webmention.io. If I did it correctly, now that I've linked to it here, I should see a new comment on the test post referencing this page. This will happen immediately, so if you don't see it right away, check out your action logs or try a dry run locally.
 
-Realistically, this took me several tries to figure out. Take a close look at your microformats, and use the [microformats parser](http://pin13.net/mf2/) to debug.
+Realistically, this took me several tries to figure out. Take a close look at your microformats, and use the [microformats parser](http://pin13.net/mf2/) to help with debugging. One thing I found out as a result of this is that it looks like Webmentions don't duplicate if you push them out multiple times using webmention.app&mdash;they just update.
 
-## Bonus time: Add support to Hugo for inline markup
+## Bonus time: Add support to Hugo for inline attributes
 
-If you want to add classes to your Markdown, you can update [Hugo's Markdown renderer, Goldmark](https://gohugo.io/getting-started/configuration-markup#goldmark), to do that. Set `block` to `true`, and then add your attributes or classes to any block you like in your Markdown.
+If you want to add classes to your Markdown, you can update [Hugo's Markdown renderer, Goldmark](https://gohugo.io/getting-started/configuration-markup#goldmark), to do that. Set `block` to `true`, and then add your attributes or classes to any block you like in your Markdown. I'm using this to add `h-cite` and `u-in-reply-to` classes to [add context around my mentions](https://indieweb.org/in-reply-to) where it makes sense, such as where I'm extending an idea.
