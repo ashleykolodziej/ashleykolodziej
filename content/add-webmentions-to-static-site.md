@@ -48,11 +48,11 @@ I was curious if the parser would pick up any data that is generally structured 
 
 ```html
 <aside class="h-card">
-	<h2>About the author</h2>
-	<img class="u-photo" src="https://ashleykolodziej.com/img/profile.jpg" alt="A white woman with with glasses and long, curled blonde hair at a park, wearing a colorful dress and smiling." />
-	<p class="p-note">
-		<a rel="author" class="p-name u-url" href="https://ashleykolodziej.com">Ashley Kolodziej</a> (<span class="p-pronouns">she/her/hers</span>) is an <span class="p-job-title">Associate Creative Director</span> in <a href="https://www.bu.edu/interactive-design/" class="p-org">Boston University's Interactive Design department</a>. She is currently working on her Master's degree in User-Centered Design at Brandeis University and teaches classes in design and web development. You can reach her at <a class="u-email" href="mailto:ashley@lastletterdesign.com">ashley@lastletterdesign.com</a>.
-	</p>
+    <h2>About the author</h2>
+    <img class="u-photo" src="https://ashleykolodziej.com/img/profile.jpg" alt="A white woman with with glasses and long, curled blonde hair at a park, wearing a colorful dress and smiling." />
+    <p class="p-note">
+        <a rel="author" class="p-name u-url" href="https://ashleykolodziej.com">Ashley Kolodziej</a> (<span class="p-pronouns">she/her/hers</span>) is an <span class="p-job-title">Associate Creative Director</span> in <a href="https://www.bu.edu/interactive-design/" class="p-org">Boston University's Interactive Design department</a>. She is currently working on her Master's degree in User-Centered Design at Brandeis University and teaches classes in design and web development. You can reach her at <a class="u-email" href="mailto:ashley@lastletterdesign.com">ashley@lastletterdesign.com</a>.
+    </p>
 </aside>
 
 ```
@@ -112,20 +112,21 @@ You'll need an RSS feed for the next step. Since I'm using Hugo, I followed [Jus
 
 ## Step eight: Set up automatic Webmentions notifications
 
-<!--The next easiest thing you can do is test that your new webmentions functionality shows up for someone else. I used [James Mead's awesome instructions](https://jamesmead.org/blog/2020-10-13-sending-webmentions-from-a-static-website) to do this with https://webmention.app/. -->
+The next easiest thing you can do is test that your new webmentions functionality shows up for someone else. I took a bit of inspiration from [James Mead's awesome instructions](https://jamesmead.org/blog/2020-10-13-sending-webmentions-from-a-static-website) to do this with https://webmention.app/.
 
-In his instructions, James has this abstracted to [its own GitHub repo](https://github.com/floehopper/send-webmentions) that watches for changes to the RSS feed. However, if you're already [building Hugo with a GitHub Action to host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action), you know exactly when your RSS feed has been rebuilt, and it's at the end of that action. That's the approach I'm going to take here.
+In his instructions, James abstracted this to [its own GitHub repo](https://github.com/floehopper/send-webmentions) and watched for changes to the RSS feed. But since I'm already [building Hugo with a GitHub Action to host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action), I know exactly when my RSS feed has been rebuilt, and it's at the end of my action. That's the approach I'm going to take here.
 
 First, install the webmention.app CLI by running `npm install @remy/webmention --save-dev` in your project's folder. I used this to test webmentions locally before adding them to the GitHub action.
 
-Then, I ran `npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug` to see if my latest post had a valid webmention without actually sending it.
+Then, run `npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug` using your RSS feed URL to see if your latest post has a valid webmention without actually sending it. Once you've verified you have valid webmentions to send out, you can add the CLI command to your GitHub Actions script.
 
-To the end of that script, I added:
+The action itself is very simple&mdahs;just run the same commands you'd run locally.
 
 ```yml
+- name: Install Dependencies
+  run: npm install
 - name: Test Webmentions
-  uses: mikeal/npx@1.0.0
-  run: npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug
+  run: npx webmention https://ashleykolodziej.com/index.xml --limit 1 --send
 ```
 
 ## Step nine: Test that your Webmention shows elsewhere
