@@ -7,15 +7,15 @@
 		{{ partial "critical.css" . | safeCSS }}
 	</style>
 	{{ template "_internal/opengraph.html" . }}
-	<meta property="og:image" content="https://lastletterdesign.com/css/opengraph.jpg" />
-	<meta property="og:image:url" content="https://lastletterdesign.com/css/opengraph.jpg" />
-	{{ template "_internal/google_news.html" . }}
+	<meta property="og:image" content="{{ .Site.Params.og_image }}" />
+	<meta property="og:image:url" content="{{ .Site.Params.og_image }}" />
 	{{ template "_internal/schema.html" . }}
 	{{ template "_internal/twitter_cards.html" . }}
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Cache-control" content="public">
 	<link rel="webmention" href="https://webmention.io/ashleykolodziej.com/webmention" />
 	<link rel="pingback" href="https://webmention.io/ashleykolodziej.com/xmlrpc" />
+	<link rel="alternate" type="application/rss+xml" href="{{.Site.BaseURL }}index.xml" title="{{ .Site.Title }}">
 </head>
 <body>
 <button id="menu" class="material-icons">menu</button>

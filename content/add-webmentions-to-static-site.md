@@ -44,7 +44,7 @@ An h-card lets the web know (programmatically) who you are as a person. This sta
 
 I chose to leave out the physical address and keep my email discoverable, and add a `rel="author"` attribute since I use this website to write articles. I also followed [Aaron Parecki's lead regarding bios](https://aaronparecki.com/2012/08/17/2/) by using the `p-note` class to wrap around my entire bio.
 
-I was also curious if the parser would pick up any data that is generally structured with these types of classes, so I added a `p-pronouns` class to see if it would.
+I was curious if the parser would pick up any data that is generally structured with these types of classes, so I added a `p-pronouns` class, which isn't officially supported, to see if it would.
 
 ```html
 <aside class="h-card">
@@ -57,13 +57,78 @@ I was also curious if the parser would pick up any data that is generally struct
 
 ```
 
-## Step six: Add RSS support
+## Step six: Test your h-card
 
-You'll need an RSS feed for the next step. Since I'm using Hugo, I followed 
+The [pin13 microformats parser](http://pin13.net/mf2/) lets you test either a live URL or the HTML. When I tested this blog post, I was excited to see that I was right&mdash;my pronouns were listed among the properties!
 
-## Step seven: Test that your Webmention shows elsewhere
+It's up to the folks who implement webmentions on their websites what they want to do with the data from here, and as always, you should check if something existing can be used in the spec to mark up your data. But I didn't see anything at a glance that seemed appropriate for pronouns, so I'm happy to leave it. It's also neat to see that the parser automatically grabbed the `src` and `alt` attributes from my photo and structured them nicely in the JSON.
+
+```json
+{
+
+    "items": [
+        {
+            "type": [
+                "h-card"
+            ],
+            "properties": {
+                "note": [
+                    "Ashley Kolodziej (she/her/hers) is an Associate Creative Director in Boston University's Interactive Design department. She is currently working on her Master's degree in User-Centered Design at Brandeis University and teaches classes in design and web development. You can reach her at ashley@lastletterdesign.com."
+                ],
+                "name": [
+                    "Ashley Kolodziej"
+                ],
+                "pronouns": [
+                    "she/her/hers"
+                ],
+                "job-title": [
+                    "Associate Creative Director"
+                ],
+                "org": [
+                    "Boston University's Interactive Design department"
+                ],
+                "photo": [
+                    {
+                        "value": "https://ashleykolodziej.com/img/profile.jpg",
+                        "alt": "A white woman with with glasses and long, curled blonde hair at a park, wearing a colorful dress and smiling."
+                    }
+                ],
+                "url": [
+                    "https://ashleykolodziej.com"
+                ],
+                "email": [
+                    "mailto:ashley@lastletterdesign.com"
+                ]
+            }
+        }
+    ],
+
+}
+```
+
+## Step seven: Add RSS support, if you don't have it
+
+You'll need an RSS feed for the next step. Since I'm using Hugo, I followed [Justin James's excellent instructions](https://digitaldrummerj.me/hugo-create-rss-feed/) to add an RSS feed template to my Hugo theme. Adding the default template will enable a feed for every content type, [like so](/index.xml), and it will also automatically enable feeds based on a category, such as [this site's design RSS feed](/categories/design/index.xml). Right now, I don't have images in the feed. My goal will be to add images to my RSS feed later, since I don't need that to test Webmentions.
+
+## Step eight: Set up automatic Webmentions notifications
 
 <!--The next easiest thing you can do is test that your new webmentions functionality shows up for someone else. I used [James Mead's awesome instructions](https://jamesmead.org/blog/2020-10-13-sending-webmentions-from-a-static-website) to do this with https://webmention.app/. -->
+
+In his instructions, James has this abstracted to [its own GitHub repo](https://github.com/floehopper/send-webmentions) that watches for changes to the RSS feed. However, if you're already [building Hugo with a GitHub Action to host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action), you know exactly when your RSS feed has been rebuilt, and it's at the end of that action. That's the approach I'm going to take here.
+
+First, install the webmention.app CLI by running `npm install @remy/webmention --save-dev` in your project's folder. I used this to test webmentions locally before adding them to the GitHub action.
+
+Then, I ran `npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug` to see if my latest post had a valid webmention without actually sending it.
+
+To the end of that script, I added:
+
+```yml
+- name: Test Webmentions
+  uses: mikeal/npx@1.0.0
+  run: npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug
+```
+
+## Step nine: Test that your Webmention shows elsewhere
 
 To test if the Webmention actually shows on test content, I used https://webmention.rocks. Each of the links on their homepage tests a different type of HTML that could be used to create a Webmention. I'm going to use Test 6, the [a tag discovery test](https://webmention.rocks/test/6), to find out if this post correctly sends a Webmention through Webmention.io. If I did it correctly, now that I've linked to it here, I should see a new comment on the test post referencing this page.
 

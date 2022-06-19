@@ -1,4 +1,4 @@
-<aside id="footer" class="footer">
+<footer id="footer" class="footer">
 	<h3>Let's talk.</h3>
 	<form id="contactform" action="https://formspree.io/f/ashley@lastletterdesign.com" method="POST">
 		<input type="text" placeholder="Name">
@@ -6,4 +6,9 @@
 		<textarea placeholder="What's up?"></textarea>
 		<input type="submit" class="button" value="Send">
 	</form>
-</aside>
+	<p class="copyright">
+		<small>
+			{{ replace .Site.Copyright "2022" now.Year }}
+		</small>
+	</p>
+</footer>

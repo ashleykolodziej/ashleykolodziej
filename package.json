@@ -1,0 +1,21 @@
+{
+  "name": "ashleykolodziej",
+  "version": "1.0.0",
+  "description": "A personal website for Ashley Kolodziej and her work.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@remy/webmention": "^1.4.5"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://ashleykolodziej@github.com/ashleykolodziej/ashleykolodziej.git"
+  },
+  "author": "Ashley Kolodziej",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleykolodziej/ashleykolodziej/issues"
+  },
+  "homepage": "https://github.com/ashleykolodziej/ashleykolodziej#readme"
+}

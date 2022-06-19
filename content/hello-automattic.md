@@ -2,6 +2,7 @@
 title = "Hello, Automattic!"
 type = "page"
 layout = "hello-friend"
+draft = true
 
 +++
 

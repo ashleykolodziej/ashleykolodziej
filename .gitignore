@@ -1,2 +1,3 @@
 public/
 *.scssc
+/node_modules
