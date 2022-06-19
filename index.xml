@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ashley Kolodziej - Boston Freelance Web Designer</title><link>https://www.ashleykolodziej.com/</link><description>Recent content on Ashley Kolodziej - Boston Freelance Web Designer</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>ashley@lastletterdesign.com (Ashley Kolodziej)</managingEditor><webMaster>ashley@lastletterdesign.com (Ashley Kolodziej)</webMaster><copyright>© 2009-2022 Ashley Kolodziej. All rights reserved.</copyright><lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ashleykolodziej.com/index.xml" rel="self" type="application/rss+xml"/><item><title>How I added webmentions support to my static website</title><link>https://www.ashleykolodziej.com/add-webmentions-to-static-site/</link><pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://www.ashleykolodziej.com/add-webmentions-to-static-site/</guid><description>&lt;h2 id="step-one-choose-a-tech-stack">Step one: Choose a tech stack&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ashley Kolodziej - Boston Freelance Web Designer</title><link>https://www.ashleykolodziej.com/</link><description>Recent content on Ashley Kolodziej - Boston Freelance Web Designer</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>ashley@lastletterdesign.com (Ashley Kolodziej)</managingEditor><webMaster>ashley@lastletterdesign.com (Ashley Kolodziej)</webMaster><copyright>© 2009-2022 Ashley Kolodziej. All rights reserved.</copyright><lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://www.ashleykolodziej.com/index.xml" rel="self" type="application/rss+xml"/><item><title>A Test of Webmentions</title><link>https://www.ashleykolodziej.com/test-webmentions/</link><pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://www.ashleykolodziej.com/test-webmentions/</guid><description>&lt;p>&lt;!-- raw HTML omitted -->Test 1&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 2&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 3&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 4&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 5&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 6&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 7&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 8&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 9&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 10&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 11&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 12&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 13&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 14&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 15&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 16&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 17&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 18&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 19&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 20&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 21&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 22&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 23&lt;!-- raw HTML omitted -->&lt;/p></description></item><item><title>How I added webmentions support to my static website</title><link>https://www.ashleykolodziej.com/add-webmentions-to-static-site/</link><pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://www.ashleykolodziej.com/add-webmentions-to-static-site/</guid><description>&lt;h2 id="step-one-choose-a-tech-stack">Step one: Choose a tech stack&lt;/h2>
 &lt;p>Things get easier if you use WordPress or a CMS. I use Hugo to generate a static site, and didn&amp;rsquo;t want to redesign my entire website to try out Webmentions, so I decided to go with &lt;a href="https://webmention.io/">https://webmention.io/&lt;/a> for handling the mentions.&lt;/p>
 &lt;p>Here&amp;rsquo;s my personal stack for this website:&lt;/p>
 &lt;ul>
@@ -87,29 +109,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="step-nine-test-that-your-webmention-shows-elsewhere">Step nine: Test that your Webmention shows elsewhere&lt;/h2>
 &lt;p>To test if the Webmention actually shows on test content, I used &lt;a href="https://webmention.rocks">https://webmention.rocks&lt;/a>. Each of the links on their homepage tests a different type of HTML that could be used to create a Webmention. I&amp;rsquo;m going to use Test 6, the &lt;a href="https://webmention.rocks/test/6">a tag discovery test&lt;/a>, to find out if this post correctly sends a Webmention through Webmention.io. If I did it correctly, now that I&amp;rsquo;ve linked to it here, I should see a new comment on the test post referencing this page.&lt;/p>
 &lt;h3 id="how-long-will-it-take-to-show">How long will it take to show?&lt;/h3>
-&lt;p>I&amp;rsquo;m unsure. Let&amp;rsquo;s see - it&amp;rsquo;ll be about 10:45am when I publish.&lt;/p></description></item><item><title>Test Webmentions</title><link>https://www.ashleykolodziej.com/test-webmentions/</link><pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://www.ashleykolodziej.com/test-webmentions/</guid><description>&lt;p>&lt;!-- raw HTML omitted -->Test 1&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 2&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 3&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 4&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 5&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 6&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 7&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 8&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 9&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 10&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 11&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 12&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 13&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 14&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 15&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 16&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 17&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 18&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 19&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 20&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 21&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 22&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->Test 23&lt;!-- raw HTML omitted -->&lt;/p></description></item><item><title>Prototyping, reflection, and identity: Unusual applications of the WordPress REST API</title><link>https://www.ashleykolodziej.com/prototyping-reflection-identity-unusual-applications-wordpress-rest-api/</link><pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://www.ashleykolodziej.com/prototyping-reflection-identity-unusual-applications-wordpress-rest-api/</guid><description>&lt;p>Speaking at LoopConf was an incredible (and terrifying) opportunity. Going up to that podium as someone who knows just enough PHP to get by - and speaking about my experiences to a room full of the smartest WordPress developers out there - is something I&amp;rsquo;ll always be grateful for. But I&amp;rsquo;ll never forget the feeling of having K. Adam White introduce himself to me and say how much my talk meant to him. It didn&amp;rsquo;t fully hit me until later that he &lt;em>wrote&lt;/em> the REST API.&lt;/p>
+&lt;p>I&amp;rsquo;m unsure. Let&amp;rsquo;s see - it&amp;rsquo;ll be about 10:45am when I publish.&lt;/p></description></item><item><title>Prototyping, reflection, and identity: Unusual applications of the WordPress REST API</title><link>https://www.ashleykolodziej.com/prototyping-reflection-identity-unusual-applications-wordpress-rest-api/</link><pubDate>Fri, 23 Feb 2018 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://www.ashleykolodziej.com/prototyping-reflection-identity-unusual-applications-wordpress-rest-api/</guid><description>&lt;p>Speaking at LoopConf was an incredible (and terrifying) opportunity. Going up to that podium as someone who knows just enough PHP to get by - and speaking about my experiences to a room full of the smartest WordPress developers out there - is something I&amp;rsquo;ll always be grateful for. But I&amp;rsquo;ll never forget the feeling of having K. Adam White introduce himself to me and say how much my talk meant to him. It didn&amp;rsquo;t fully hit me until later that he &lt;em>wrote&lt;/em> the REST API.&lt;/p>
 &lt;p>His words go on record as &lt;a href="https://www.kadamwhite.com/archives/2018/the-best-talk-from-loopconf-2018">some of the kindest things anyone&amp;rsquo;s ever said about anything I&amp;rsquo;ve ever done&lt;/a>.&lt;/p>
 &lt;p>&lt;strong>From the teaser:&lt;/strong>&lt;/p>
 &lt;p>In this talk we present case studies of two unusual real-world uses of the WordPress REST API: a rapid prototype which leverages existing course feed data to test the interface of a course scheduling tool, and a compelling editorial story on identity, trauma, oppression, and hope whose design updates with readers&amp;rsquo; answers in real time. We&amp;rsquo;ll explore the unique benefits and challenges of each situation and how the REST API empowered us to face each challenge, from improving usability testing and feedback on a short schedule to appropriately curating and protecting the experience of contributing to and interacting with personal, intimate, and sensitive subjects. You&amp;rsquo;ll get to see the full thinking and process behind each project so when you go home, you have what you need to inspire your team to create those new and exciting possibilities you&amp;rsquo;re always hearing about at the end of REST API talks.&lt;/p>
