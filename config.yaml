@@ -1,0 +1,28 @@
+baseurl: 'https://ashleykolodziej.com/'
+languageCode: en-us
+title: Ashley Kolodziej - Boston Freelance Web Designer
+preserveTaxonomyNames: 'true'
+pluralizeListTitles: 'false'
+googleAnalytics: UA-6956431-2
+copyright: © 2009-2022 Ashley Kolodziej. All rights reserved.
+Author:
+  name: Ashley Kolodziej
+  email: ashley@lastletterdesign.com
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    highlight:
+      guessSyntax: true
+params:
+  author: Ashley Kolodziej
+  description: >-
+    I shape the direction of theme and product frameworks, prototype, design,
+    and test user interfaces, and teach other people how to do things I'm
+    passionate about.
+  site_description: >-
+    I shape the direction of theme and product frameworks, prototype, design,
+    and test user interfaces, and teach other people how to do things I'm
+    passionate about.
+  og_image: 'https://lastletterdesign.com/img/fb-default.jpg'

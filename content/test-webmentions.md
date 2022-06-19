@@ -6,7 +6,7 @@ shortdesc = "This post is in progress as I test webmentions!"
 
 +++
 
-I'm citing [Test 1](https://webmention.rocks/test/1)
+I'm citing [Test 1](https://webmention.rocks/test/1).
 {.h-cite}
 
 [Test 2](https://webmention.rocks/test/2) 
