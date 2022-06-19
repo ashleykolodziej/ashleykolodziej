@@ -32,3 +32,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           cname: ashleykolodziej.com
+          
+      - name: Install Dependencies
+        run: npm install
+        
+      - name: Test Webmentions
+        run: npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug
