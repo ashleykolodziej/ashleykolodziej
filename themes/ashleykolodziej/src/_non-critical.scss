@@ -211,9 +211,12 @@ code {
 	vertical-align: text-bottom;
 }
 
-
-
-
+pre {
+	background: #282828;
+	padding: 0 2em;
+	overflow-x: scroll;
+	margin: 3em auto;
+}
 
 // New
 
@@ -721,4 +724,35 @@ h2.f4.text-normal.mb-3 {
 
 .main-navigation .cat-professional-speaking--writing {
 	margin-right: 0;
+}
+
+// h-card styles
+
+.h-card {
+	display: grid;
+	margin: 0 auto 3em;
+	max-width: 720px;
+	text-align: center;
+	
+	@include breakpoint(md) {
+		grid-template-columns: repeat(3, 1fr);
+		text-align: left;
+
+		h2 {
+			grid-column: 1 / 4;
+		}
+
+		.p-note {
+			grid-column: 2 / 4
+		}
+	}
+
+	.u-photo {
+		max-width: 200px;
+		margin: 0 auto 1em;
+	}
+}
+
+.u-photo {
+	border-radius: 50%;
 }

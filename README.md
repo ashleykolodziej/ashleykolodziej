@@ -1,4 +1,4 @@
-Based on Hugo [0.1.9](https://gohugo.io/).
+Using Hugo [0.89.4](https://gohugo.io/news/0.89.4-relnotes/).
 
 ## To preview:
 
