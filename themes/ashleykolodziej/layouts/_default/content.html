@@ -6,7 +6,9 @@
 	<div class="article-wrap content">
 		{{ .Content }}
 
+		{{ if  .Params.hasPath }}
 		{{ partial "projectfiles.html" . }}
+		{{ end }}
 
 		{{ if .Next }}
 			<div class="next-nav">
