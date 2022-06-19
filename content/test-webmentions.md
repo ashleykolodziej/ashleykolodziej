@@ -1,6 +1,6 @@
 +++
 date = "2022-06-19"
-title = "Test Webmentions"
+title = "A Test of Webmentions"
 categories = "development"
 shortdesc = "This post is in progress as I test webmentions!"
 
