@@ -136,3 +136,5 @@ The action itself is very simple&mdahs;just run the same commands you'd run loca
 ## Step ten: Test that your Webmention shows elsewhere
 
 To test if the Webmention actually shows on test content, I used https://webmention.rocks. Each of the links on their homepage tests a different type of HTML that could be used to create a Webmention. I'm going to use Test 6, the [a tag discovery test](https://webmention.rocks/test/6), to find out if this post correctly sends a Webmention through Webmention.io. If I did it correctly, now that I've linked to it here, I should see a new comment on the test post referencing this page. This will happen immediately, so if you don't see it right away, check out your action logs or try a dry run locally.
+
+Realistically, this took me several tries to figure out. Take a close look at your microformats, and use the [microformats parser](http://pin13.net/mf2/) to debug.
