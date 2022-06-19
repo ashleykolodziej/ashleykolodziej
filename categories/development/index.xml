@@ -75,18 +75,41 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="step-seven-add-rss-support-if-you-dont-have-it">Step seven: Add RSS support, if you don&amp;rsquo;t have it&lt;/h2>
 &lt;p>You&amp;rsquo;ll need an RSS feed for the next step. Since I&amp;rsquo;m using Hugo, I followed &lt;a href="https://digitaldrummerj.me/hugo-create-rss-feed/">Justin James&amp;rsquo;s excellent instructions&lt;/a> to add an RSS feed template to my Hugo theme. Adding the default template will enable a feed for every content type, &lt;a href="https://www.ashleykolodziej.com/index.xml">like so&lt;/a>, and it will also automatically enable feeds based on a category, such as &lt;a href="https://www.ashleykolodziej.com/categories/design/index.xml">this site&amp;rsquo;s design RSS feed&lt;/a>. Right now, I don&amp;rsquo;t have images in the feed. My goal will be to add images to my RSS feed later, since I don&amp;rsquo;t need that to test Webmentions.&lt;/p>
 &lt;h2 id="step-eight-set-up-automatic-webmentions-notifications">Step eight: Set up automatic Webmentions notifications&lt;/h2>
-&lt;!-- raw HTML omitted -->
-&lt;p>In his instructions, James has this abstracted to &lt;a href="https://github.com/floehopper/send-webmentions">its own GitHub repo&lt;/a> that watches for changes to the RSS feed. However, if you&amp;rsquo;re already &lt;a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action">building Hugo with a GitHub Action to host on GitHub Pages&lt;/a>, you know exactly when your RSS feed has been rebuilt, and it&amp;rsquo;s at the end of that action. That&amp;rsquo;s the approach I&amp;rsquo;m going to take here.&lt;/p>
+&lt;p>The next easiest thing you can do is test that your new webmentions functionality shows up for someone else. I took a bit of inspiration from &lt;a href="https://jamesmead.org/blog/2020-10-13-sending-webmentions-from-a-static-website">James Mead&amp;rsquo;s awesome instructions&lt;/a> to do this with &lt;a href="https://webmention.app/">https://webmention.app/&lt;/a>.&lt;/p>
+&lt;p>In his instructions, James abstracted this to &lt;a href="https://github.com/floehopper/send-webmentions">its own GitHub repo&lt;/a> and watched for changes to the RSS feed. But since I&amp;rsquo;m already &lt;a href="https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action">building Hugo with a GitHub Action to host on GitHub Pages&lt;/a>, I know exactly when my RSS feed has been rebuilt, and it&amp;rsquo;s at the end of my action. That&amp;rsquo;s the approach I&amp;rsquo;m going to take here.&lt;/p>
 &lt;p>First, install the webmention.app CLI by running &lt;code>npm install @remy/webmention --save-dev&lt;/code> in your project&amp;rsquo;s folder. I used this to test webmentions locally before adding them to the GitHub action.&lt;/p>
-&lt;p>Then, I ran &lt;code>npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug&lt;/code> to see if my latest post had a valid webmention without actually sending it.&lt;/p>
-&lt;p>To the end of that script, I added:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>- &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Test Webmentions&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">uses&lt;/span>: &lt;span style="color:#ae81ff">mikeal/npx@1.0.0&lt;/span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>: &lt;span style="color:#ae81ff">npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug&lt;/span>
+&lt;p>Then, run &lt;code>npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug&lt;/code> using your RSS feed URL to see if your latest post has a valid webmention without actually sending it. Once you&amp;rsquo;ve verified you have valid webmentions to send out, you can add the CLI command to your GitHub Actions script.&lt;/p>
+&lt;p>The action itself is very simple&amp;amp;mdahs;just run the same commands you&amp;rsquo;d run locally.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yml" data-lang="yml">&lt;span style="display:flex;">&lt;span>- &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Install Dependencies&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>: &lt;span style="color:#ae81ff">npm install&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>- &lt;span style="color:#f92672">name&lt;/span>: &lt;span style="color:#ae81ff">Test Webmentions&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">run&lt;/span>: &lt;span style="color:#ae81ff">npx webmention https://ashleykolodziej.com/index.xml --limit 1 --send&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="step-nine-test-that-your-webmention-shows-elsewhere">Step nine: Test that your Webmention shows elsewhere&lt;/h2>
 &lt;p>To test if the Webmention actually shows on test content, I used &lt;a href="https://webmention.rocks">https://webmention.rocks&lt;/a>. Each of the links on their homepage tests a different type of HTML that could be used to create a Webmention. I&amp;rsquo;m going to use Test 6, the &lt;a href="https://webmention.rocks/test/6">a tag discovery test&lt;/a>, to find out if this post correctly sends a Webmention through Webmention.io. If I did it correctly, now that I&amp;rsquo;ve linked to it here, I should see a new comment on the test post referencing this page.&lt;/p>
 &lt;h3 id="how-long-will-it-take-to-show">How long will it take to show?&lt;/h3>
-&lt;p>I&amp;rsquo;m unsure. Let&amp;rsquo;s see - it&amp;rsquo;ll be about 10:45am when I publish.&lt;/p></description></item><item><title>First Impressions: Hugo</title><link>https://www.ashleykolodziej.com/learning-to-love-hugo/</link><pubDate>Mon, 15 Feb 2016 11:21:48 -0500</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://www.ashleykolodziej.com/learning-to-love-hugo/</guid><description>&lt;p>I&amp;rsquo;ve been writing in Markdown for a few months now, and it&amp;rsquo;s been amazing. I mean, anything that enables my Sublime Text habit is going to make me pretty happy, but I know me, and at heart I&amp;rsquo;m a designer. If you give me the ability to design, I will design. Markdown prevents me from doing that so I actually write.&lt;/p>
+&lt;p>I&amp;rsquo;m unsure. Let&amp;rsquo;s see - it&amp;rsquo;ll be about 10:45am when I publish.&lt;/p></description></item><item><title>Test Webmentions</title><link>https://www.ashleykolodziej.com/test-webmentions/</link><pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://www.ashleykolodziej.com/test-webmentions/</guid><description>&lt;p>&lt;!-- raw HTML omitted -->Test 1&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 2&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 3&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 4&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 5&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 6&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 7&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 8&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 9&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 10&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 11&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 12&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 13&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 14&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 15&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 16&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 17&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 18&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 19&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 20&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 21&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 22&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->Test 23&lt;!-- raw HTML omitted -->&lt;/p></description></item><item><title>First Impressions: Hugo</title><link>https://www.ashleykolodziej.com/learning-to-love-hugo/</link><pubDate>Mon, 15 Feb 2016 11:21:48 -0500</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://www.ashleykolodziej.com/learning-to-love-hugo/</guid><description>&lt;p>I&amp;rsquo;ve been writing in Markdown for a few months now, and it&amp;rsquo;s been amazing. I mean, anything that enables my Sublime Text habit is going to make me pretty happy, but I know me, and at heart I&amp;rsquo;m a designer. If you give me the ability to design, I will design. Markdown prevents me from doing that so I actually write.&lt;/p>
 &lt;p>So when I finally decided to tackle the long overdue task of redoing my portfolio, a static site generator seemed like the natural choice. Because let&amp;rsquo;s be honest - I haven&amp;rsquo;t logged into my Wordpress backend in months.&lt;/p>
 &lt;h2 id="why-static">Why static?&lt;/h2>
 &lt;p>I&amp;rsquo;ll be the first to admit that static site generators sounded like some flaky fad when I heard about them a year or two ago. Why do I need that? I have Wordpress! This sounds like a lot of work. The list of complaints goes on.&lt;/p>
