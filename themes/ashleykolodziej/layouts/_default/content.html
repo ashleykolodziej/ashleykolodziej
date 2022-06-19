@@ -1,7 +1,7 @@
 <article id="content" class="h-entry">
 	<div class="banner {{ .Params.does }}" style="background-image: url({{ .Params.image }})">
 	  <time class="meta dt-published" datetime="{{ .Date }}">{{ .Date.Format "Monday, Jan 2, 2006" }}</time>
-	  <h1 class="p-name">{{ .Title }}</h1>
+	  <h1 class="p-name"><a href="{{ .Permalink }}" class="u-url">{{ .Title }}</a></h1>
 	</div>
 	<div class="article-wrap content">
 		<div class="e-content">

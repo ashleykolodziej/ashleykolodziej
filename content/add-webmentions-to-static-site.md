@@ -40,7 +40,7 @@ I added my personalized version of that code into the head tag of my website.
 
 ## Step five: Add microformat classes to your content
 
-First, identify the type of content, and then take a look at the [Microformats specification](https://microformats.org/wiki/Main_Page#Specifications). In my case, it's a blog post, so I chose to use the [h-entry microformat](https://microformats.org/wiki/h-entry). After taking a look at my markup, I needed to add an `h-entry` class around my entire blog post, a `p-name` class to my title, a `p-author` to show that I am (indeed) the author of the post, an `h-card` which talks a bit more about me (I'll expand on that in a moment), and a `dt-published` class.
+First, identify the type of content, and then take a look at the [Microformats specification](https://microformats.org/wiki/Main_Page#Specifications). In my case, it's a blog post, so I chose to use the [h-entry microformat](https://microformats.org/wiki/h-entry). After taking a look at my markup, I needed to add an `h-entry` class around my entire blog post, a `p-name` class to my title, a `p-author` to show that I am (indeed) the author of the post, an `h-card` which talks a bit more about me (I'll expand on that in a moment), a `u-url` class as well as my permalink, and a `dt-published` class.
 
 ## Step six: Add an h-card
 
