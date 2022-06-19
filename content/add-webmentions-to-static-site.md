@@ -38,7 +38,11 @@ I added my personalized version of that code into the head tag of my website.
 
 (tbd)
 
-## Step five: Add an h-card
+## Step five: Add microformat classes to your content
+
+First, identify the type of content, and then take a look at the [Microformats specification](https://microformats.org/wiki/Main_Page#Specifications). In my case, it's a blog post, so I chose to use the [h-entry microformat](https://microformats.org/wiki/h-entry). After taking a look at my markup, I needed to add an `h-entry` class around my entire blog post, a `p-name` class to my title, a `p-author` to show that I am (indeed) the author of the post, an `h-card` which talks a bit more about me (I'll expand on that in a moment), and a `dt-published` class.
+
+## Step six: Add an h-card
 
 An h-card lets the web know (programmatically) who you are as a person. This standardized markup is what allows other websites using Webmentions to show your name and avatar next to mentions or comments. I used [MDN's excellent h-card example](https://developer.mozilla.org/en-US/docs/Web/HTML/microformats#h-card) as a starting point for a card to add my own to the bottom of all my posts. It's pretty simple to build and modify&mdash;just add any [h-card supported property](https://microformats.org/wiki/h-card) as a class to your HTML, and other IndieWeb users will get a nicely structured JSON object about you and who you are when you send a Webmention.
 
@@ -47,7 +51,7 @@ I chose to leave out the physical address and keep my email discoverable, and ad
 I was curious if the parser would pick up any data that is generally structured with these types of classes, so I added a `p-pronouns` class, which isn't officially supported, to see if it would.
 
 ```html
-<aside class="h-card">
+<aside class="p-author h-card">
     <h2>About the author</h2>
     <img class="u-photo" src="https://ashleykolodziej.com/img/profile.jpg" alt="A white woman with with glasses and long, curled blonde hair at a park, wearing a colorful dress and smiling." />
     <p class="p-note">
@@ -57,7 +61,7 @@ I was curious if the parser would pick up any data that is generally structured 
 
 ```
 
-## Step six: Test your h-card
+## Step seven: Test your h-card
 
 The [pin13 microformats parser](http://pin13.net/mf2/) lets you test either a live URL or the HTML. When I tested this blog post, I was excited to see that I was right&mdash;my pronouns were listed among the properties!
 
@@ -106,11 +110,11 @@ It's up to the folks who implement webmentions on their websites what they want 
 }
 ```
 
-## Step seven: Add RSS support, if you don't have it
+## Step eight: Add RSS support, if you don't have it
 
 You'll need an RSS feed for the next step. Since I'm using Hugo, I followed [Justin James's excellent instructions](https://digitaldrummerj.me/hugo-create-rss-feed/) to add an RSS feed template to my Hugo theme. Adding the default template will enable a feed for every content type, [like so](/index.xml), and it will also automatically enable feeds based on a category, such as [this site's design RSS feed](/categories/design/index.xml). Right now, I don't have images in the feed. My goal will be to add images to my RSS feed later, since I don't need that to test Webmentions.
 
-## Step eight: Set up automatic Webmentions notifications
+## Step nine: Set up automatic Webmentions notifications
 
 The next easiest thing you can do is test that your new webmentions functionality shows up for someone else. I took a bit of inspiration from [James Mead's awesome instructions](https://jamesmead.org/blog/2020-10-13-sending-webmentions-from-a-static-website) to do this with https://webmention.app/.
 
@@ -129,10 +133,6 @@ The action itself is very simple&mdahs;just run the same commands you'd run loca
   run: npx webmention https://ashleykolodziej.com/index.xml --limit 1 --send
 ```
 
-## Step nine: Test that your Webmention shows elsewhere
+## Step ten: Test that your Webmention shows elsewhere
 
-To test if the Webmention actually shows on test content, I used https://webmention.rocks. Each of the links on their homepage tests a different type of HTML that could be used to create a Webmention. I'm going to use Test 6, the [a tag discovery test](https://webmention.rocks/test/6), to find out if this post correctly sends a Webmention through Webmention.io. If I did it correctly, now that I've linked to it here, I should see a new comment on the test post referencing this page.
-
-### How long will it take to show?
-
-I'm unsure. Let's see - it'll be about 10:45am when I publish.
+To test if the Webmention actually shows on test content, I used https://webmention.rocks. Each of the links on their homepage tests a different type of HTML that could be used to create a Webmention. I'm going to use Test 6, the [a tag discovery test](https://webmention.rocks/test/6), to find out if this post correctly sends a Webmention through Webmention.io. If I did it correctly, now that I've linked to it here, I should see a new comment on the test post referencing this page. This will happen immediately, so if you don't see it right away, check out your action logs or try a dry run locally.
