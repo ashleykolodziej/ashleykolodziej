@@ -699,4 +699,9 @@ h2.f4.text-normal.mb-3 {
 .u-photo {
   border-radius: 50%; }
 
+.copyright {
+  color: #555;
+  font-size: 0.85em;
+  margin: 3em auto; }
+
 /*# sourceMappingURL=style.css.map */
