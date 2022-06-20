@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  repo: ashleykolodziej/ashleykolodziej
+  branch: main # Branch to update (optional; defaults to master)
+  site_domain: lambent-sundae-fd47b7.netlify.app
+local_backend: true
+media_folder: static/img
+public_folder: /img
+collections:
+  - name: 'posts'
+    label: 'Posts'
+    folder: 'content'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Short Description', name: 'shortdesc', widget: 'string' }
+      - { label: 'Categories', name: 'categories', widget: 'list' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
