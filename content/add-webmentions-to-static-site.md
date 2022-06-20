@@ -8,16 +8,19 @@ shortdesc = "This post is in progress as I test webmentions!"
 
 ## Step one: Choose a tech stack
 
-Things get easier if you use WordPress or a CMS. I use Hugo to generate a static site, and didn't want to redesign my entire website to try out Webmentions, so I decided to go with https://webmention.io/ for handling the mentions.
+I'm told this is a lot easier if you use WordPress or a CMS. I use Hugo to generate a static site, and didn't want to redesign my entire website to try out Webmentions, so I chose a few online services that paired nicely with my setup. Tech stacks are always a negotiation between personal preference, your current knowledge, how much rework you want to do, and in my case, the path of least pain. I feel very at home with HTML, CSS, npm, and GitHub Actions, so my tech stack is based around those: 
 
-Here's my personal stack for this website:
+- Hugo (for content management)
+- IndieLogin (for login)
+- RSS (for syndication)
+- GitHub Pages (for hosting)
+- GitHub Actions (for deployment)
+- Webmention.io (for receiving)
+- Node Webmention Test Pinger (for testing receipt)
+- Webmention.app (for sending)
+- Webmention.rocks (for testing sending)
 
-- Hugo
-- Webmention.io
-- IndieLogin
-- RSS
-- GitHub Pages
-- GitHub Actions
+If you're on a static site generator, great! Keep reading, and swap out your CMS, hosting, and deploy technologies as needed. The bones of this setup will still be helpful to you.
 
 ## Step two: Add IndieLogin
 
@@ -118,13 +121,13 @@ You'll need an RSS feed for the next step. Since I'm using Hugo, I followed [Jus
 
 The next easiest thing you can do is test that your new webmentions functionality shows up for someone else. I took a bit of inspiration from [James Mead's awesome instructions](https://jamesmead.org/blog/2020-10-13-sending-webmentions-from-a-static-website) to do this with https://webmention.app/.
 
-In his instructions, James abstracted this to [its own GitHub repo](https://github.com/floehopper/send-webmentions) and watched for changes to the RSS feed. But since I'm already [building Hugo with a GitHub Action to host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action), I know exactly when my RSS feed has been rebuilt, and it's at the end of my action. That's the approach I'm going to take here.
+In his instructions, James abstracted the sending script to [its own GitHub repo](https://github.com/floehopper/send-webmentions) and watched for changes to the RSS feed. But since I'm already [building Hugo with a GitHub Action to host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action), I know exactly when my RSS feed has been rebuilt, and it's at the end of my action. That's the approach I'm going to take here.
 
 First, install the webmention.app CLI by running `npm install @remy/webmention --save-dev` in your project's folder. I used this to test webmentions locally before adding them to the GitHub action.
 
 Then, run `npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug` using your RSS feed URL to see if your latest post has a valid webmention without actually sending it. Once you've verified you have valid webmentions to send out, you can add the CLI command to your GitHub Actions script.
 
-The action itself is very simple&mdahs;just run the same commands you'd run locally.
+The action itself is very simple&mdahs;just add the same commands you'd run locally.
 
 ```yml
 - name: Install Dependencies
@@ -141,4 +144,4 @@ Realistically, this took me several tries to figure out. Take a close look at yo
 
 ## Bonus time: Add support to Hugo for inline attributes
 
-If you want to add classes to your Markdown, you can update [Hugo's Markdown renderer, Goldmark](https://gohugo.io/getting-started/configuration-markup#goldmark), to do that. Set `block` to `true`, and then add your attributes or classes to any block you like in your Markdown. I'm using this to add `h-cite` and `u-in-reply-to` classes to [add context around my mentions](https://indieweb.org/in-reply-to) where it makes sense, such as where I'm extending an idea.
+If you want to add classes to your Markdown, you can update [Hugo's Markdown renderer, Goldmark](https://gohugo.io/getting-started/configuration-markup#goldmark), to do that. Set `block` to `true`, and then add your attributes or classes to any block you like in your Markdown. I'm considering using this to add `h-cite` and `u-in-reply-to` classes to [add context around my mentions](https://indieweb.org/in-reply-to) where it makes sense, such as where I'm extending an idea. My thinking is this is generally similar to displaying a tweet. I don't know if this is actually a good idea since this is my first time trying this out, though. If you've got any thoughts on that, let me know.
