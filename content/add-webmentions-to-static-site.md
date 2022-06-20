@@ -39,7 +39,15 @@ I added my personalized version of that code into the head tag of my website.
 
 ## Step four: Test that a Webmention elsewhere shows for you
 
-(tbd)
+Luckily, webmention.io comes with a handy dandy form at the endpoint for you to test this with. Head on over to your personalized Webmention link from above, and you'll see a simple form to send a happy little mention on over to yourself, Bob Ross-style.
+
+The source URL will be a page that mentions something about you, and the target URL will be the page that the webmention should be associated with. Perhaps you already have a mention out there you're aware of. If you are me, you don't because you mostly deleted all your social media and most people didn't know you existed in the first place, making this without question the most difficult part of the entire IndieWeb implementation process.
+
+I digress.
+
+In these cases, perhaps it's clearest to [just Webmention yourself](https://ashleykolodziej.com/learning-to-love-hugo/). I wanted [node-webmention-testpinger](https://github.com/voxpelli/node-webmention-testpinger) to work so badly, but I'm going to be honest, I just couldn't get that to work.
+
+In my case, the source will be this post, and the target will be `https://ashleykolodziej.com/learning-to-love-hugo/`.
 
 ## Step five: Add microformat classes to your content
 
@@ -115,25 +123,25 @@ It's up to the folks who implement webmentions on their websites what they want 
 
 ## Step eight: Add RSS support, if you don't have it
 
-You'll need an RSS feed for the next step. Since I'm using Hugo, I followed [Justin James's excellent instructions](https://digitaldrummerj.me/hugo-create-rss-feed/) to add an RSS feed template to my Hugo theme. Adding the default template will enable a feed for every content type, [like so](/index.xml), and it will also automatically enable feeds based on a category, such as [this site's design RSS feed](/categories/design/index.xml). Right now, I don't have images in the feed. My goal will be to add images to my RSS feed later, since I don't need that to test Webmentions.
+You'll need an RSS feed for the next step. Since I'm using Hugo, I followed [Justin James's excellent instructions](https://digitaldrummerj.me/hugo-create-rss-feed/) to add an RSS feed template to my Hugo theme. Adding the default template will enable a feed for every content type, [like so](/index.xml), and it will also automatically enable feeds based on a category, such as [this site's design RSS feed](/categories/design/index.xml). Right now, I don't have images in the feed. I'll add images to my RSS feed later, since I don't need that to test Webmentions.
 
 ## Step nine: Set up automatic Webmentions notifications
 
-The next easiest thing you can do is test that your new webmentions functionality shows up for someone else. I took a bit of inspiration from [James Mead's awesome instructions](https://jamesmead.org/blog/2020-10-13-sending-webmentions-from-a-static-website) to do this with https://webmention.app/.
+A good next step is to test that your new Webmentions functionality shows up properly for someone else. I took inspiration from [James Mead's awesome instructions](https://jamesmead.org/blog/2020-10-13-sending-webmentions-from-a-static-website) to do this with https://webmention.app/.
 
 In his instructions, James abstracted the sending script to [its own GitHub repo](https://github.com/floehopper/send-webmentions) and watched for changes to the RSS feed. But since I'm already [building Hugo with a GitHub Action to host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action), I know exactly when my RSS feed has been rebuilt, and it's at the end of my action. That's the approach I'm going to take here.
 
-First, install the webmention.app CLI by running `npm install @remy/webmention --save-dev` in your project's folder. I used this to test webmentions locally before adding them to the GitHub action.
+First, install the webmention.app CLI by running `npm install @remy/webmention --save-dev` in your project's folder. I used this to test Webmentions locally before adding them to the GitHub action.
 
-Then, run `npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug` using your RSS feed URL to see if your latest post has a valid webmention without actually sending it. Once you've verified you have valid webmentions to send out, you can add the CLI command to your GitHub Actions script.
+Then, run `npx webmention https://your-rss-link-here.xml --limit 1 --debug` using your RSS feed URL to see if your latest post has a valid webmention without actually sending it. Once you've verified you have valid Webmentions to send out, you can add the CLI command to your GitHub Actions script.
 
-The action itself is very simple&mdahs;just add the same commands you'd run locally.
+The action itself is very simple&mdash;just add the same commands you'd run locally. Don't forget to switch out the URL if you're an avid copy/paster like I am.
 
 ```yml
 - name: Install Dependencies
   run: npm install
 - name: Test Webmentions
-  run: npx webmention https://ashleykolodziej.com/index.xml --limit 1 --send
+  run: npx webmention https://your-rss-link-here.xml --limit 1 --send
 ```
 
 ## Step ten: Test that your Webmention shows elsewhere
@@ -145,3 +153,7 @@ Realistically, this took me several tries to figure out. Take a close look at yo
 ## Bonus time: Add support to Hugo for inline attributes
 
 If you want to add classes to your Markdown, you can update [Hugo's Markdown renderer, Goldmark](https://gohugo.io/getting-started/configuration-markup#goldmark), to do that. Set `block` to `true`, and then add your attributes or classes to any block you like in your Markdown. I'm considering using this to add `h-cite` and `u-in-reply-to` classes to [add context around my mentions](https://indieweb.org/in-reply-to) where it makes sense, such as where I'm extending an idea. My thinking is this is generally similar to displaying a tweet. I don't know if this is actually a good idea since this is my first time trying this out, though. If you've got any thoughts on that, let me know.
+
+## But wait, your Webmentions aren't showing on your site!
+
+That's absolutely right! I'm not at the point where I am actually showing the data for Webmentions on my site yet. That's because Webmentions can cover _anything_ you might do on a social media site. Liking, retweeting, bookmarking, citing, referencing, replying, commenting... the list goes on, and the data can too. Some of these deserve a slightly different user interface treatment, and I don't know what that is for me yet. I do know it deserves its own post, and from here, you can choose how your mentions show on your website. Happy mentioning!
