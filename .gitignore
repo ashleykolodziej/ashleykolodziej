@@ -1,3 +1,4 @@
 public/
 *.scssc
 /node_modules
+.DS_Store
