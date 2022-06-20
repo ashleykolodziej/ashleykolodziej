@@ -1,10 +1,10 @@
-+++
-date = "2022-06-19"
-title = "How I added Webmentions support to my static website"
-categories = "development"
-shortdesc = "And a related question: how do you even test this if no one knows you exist?"
-
-+++
+---
+title: How I added Webmentions support to my static website
+date: 2022-06-19T22:00:00.000Z
+shortdesc: "And a related question: how do you even test this if no one knows you exist?"
+categories:
+  - development
+---
 
 ## Step one: Choose a tech stack
 

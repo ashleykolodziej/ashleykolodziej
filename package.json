@@ -7,7 +7,9 @@
   "devDependencies": {
     "@remy/webmention": "^1.4.5"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "npx netlify-cms-proxy-server & hugo serve --theme=ashleykolodziej"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://ashleykolodziej@github.com/ashleykolodziej/ashleykolodziej.git"
