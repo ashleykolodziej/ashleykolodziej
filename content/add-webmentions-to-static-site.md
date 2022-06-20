@@ -1,14 +1,16 @@
 +++
 date = "2022-06-19"
-title = "How I added webmentions support to my static website"
+title = "How I added Webmentions support to my static website"
 categories = "development"
-shortdesc = "How do you even test this if no one knows you exist?"
+shortdesc = "And a related question: how do you even test this if no one knows you exist?"
 
 +++
 
 ## Step one: Choose a tech stack
 
-I'm told this is a lot easier if you use WordPress or a CMS. I use Hugo to generate a static site, and didn't want to redesign my entire website to try out Webmentions, so I chose a few online services that paired nicely with my setup. Tech stacks are always a negotiation between personal preference, your current knowledge, how much rework you want to do, and in my case, the path of least pain. I feel very at home with HTML, CSS, npm, and GitHub Actions, so my tech stack is based around those: 
+[I'm told this is a lot easier if you use WordPress or a CMS](https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/). That said, despite WordPress being my day-job-specialty, these days, the last evidence of WordPress on my personal site is [over here on archive.org](https://web.archive.org/web/20161010003336/http://lastletterdesign.com/). So here we are: the tough road. I promise it's not as tough as it looks, though,
+
+These days (and by these days, I really mean "a decision I made five years ago that I haven't had time to change yet"), I use Hugo to generate a static site. I didn't want to redesign my entire website to try out Webmentions, so I chose a few online services that paired nicely with my setup. Tech stacks are always a negotiation between personal preference, your current knowledge, how much rework you want to do, and in my case, the path of least pain. I feel very at home with HTML, CSS, npm, and GitHub Actions, so my tech stack is based around those: 
 
 - Hugo (for content management)
 - IndieLogin (for login)
@@ -44,15 +46,17 @@ The source URL will be a page that mentions something about you, and the target 
 
 I digress.
 
-In these cases, perhaps it's clearest to [just Webmention yourself](https://ashleykolodziej.com/learning-to-love-hugo/). I wanted [node-webmention-testpinger](https://github.com/voxpelli/node-webmention-testpinger) to work so badly, but I'm going to be honest, I just couldn't get that to work.
+In these cases, perhaps it's clearest to [just Webmention yourself](https://ashleykolodziej.com/learning-to-love-hugo/). I wanted [node-webmention-testpinger](https://github.com/voxpelli/node-webmention-testpinger) to work so badly, but I couldn't get it to work like I expected. Let me know if you can get it to work and how, because I love the variety of formats it tests.
 
-In my case, the source will be this post's URL, and the target will be `https://ashleykolodziej.com/learning-to-love-hugo/`. After you submit the form and see a "pending" message, give it a refresh. With luck, you'll see it change to "Success"!
+In my case, the source was this post's URL, and the target was `https://ashleykolodziej.com/learning-to-love-hugo/`. After you submit the form and see a "pending" message, give it a refresh. With luck, you'll see it change to "Success"!
 
-Head back on over to your dashboard at https://webmention.io/, and you'll see a brandy-new Webmention!
+Head back on over to your dashboard at https://webmention.io/, and you'll see a brandy-new Webmention.
 
 ## Step five: Add microformat classes to your content
 
-First, identify the type of content, and then take a look at the [Microformats specification](https://microformats.org/wiki/Main_Page#Specifications). In my case, it's a blog post, so I chose to use the [h-entry microformat](https://microformats.org/wiki/h-entry). After taking a look at my markup, I needed to add an `h-entry` class around my entire blog post, a `p-name` class to my title, a `p-author` to show that I am (indeed) the author of the post, an `h-card` which talks a bit more about me (I'll expand on that in a moment), a `u-url` class as well as my permalink, and a `dt-published` class.
+I noticed many posts stop right around getting Webmentions to you, which sure seems like the type of thing you could get away with doing if people know about you. If, like me, your problems are more centered around people _not_ knowing about you, adding the ability to send Webmentions is one way to fix that. And to do that, we need to do some markup work so the right data is going out with these mentions.
+
+First, identify the type of content you're likely to create a Webmention with, and then take a look at the [Microformats specification](https://microformats.org/wiki/Main_Page#Specifications) to see which microformat matches best. In my case, it's a blog post, so I chose to use the [h-entry microformat](https://microformats.org/wiki/h-entry). After taking a look at my markup, I needed to add an `h-entry` class around my entire blog post, a `p-name` class to my title, a `p-author` to show that I am (indeed) the author of the post, an `h-card` which talks a bit more about me (I'll expand on that in a moment), a `u-url` class as well as my permalink, and a `dt-published` class.
 
 ## Step six: Add an h-card
 
@@ -75,7 +79,7 @@ I was curious if the parser would pick up any data that is generally structured 
 
 ## Step seven: Test your h-card
 
-The [pin13 microformats parser](http://pin13.net/mf2/) lets you test either a live URL or the HTML. When I tested this blog post, I was excited to see that I was right&mdash;my pronouns were listed among the properties!
+The [pin13 microformats parser](https://pin13.net/mf2/) lets you test either a live URL or the HTML. When I tested this blog post, I was excited to see that I was right&mdash;my pronouns were listed among the properties!
 
 It's up to the folks who implement webmentions on their websites what they want to do with the data from here, and as always, you should check if something existing can be used in the spec to mark up your data. But I didn't see anything at a glance that seemed appropriate for pronouns, so I'm happy to leave it. It's also neat to see that the parser automatically grabbed the `src` and `alt` attributes from my photo and structured them nicely in the JSON.
 
@@ -147,9 +151,11 @@ The action itself is very simple&mdash;just add the same commands you'd run loca
 
 ## Step ten: Test that your Webmention shows elsewhere
 
-To test if the Webmention actually shows on test content, I used https://webmention.rocks. Each of the links on their homepage tests a different type of HTML that could be used to create a Webmention. I'm going to use Test 6, the [a tag discovery test](https://webmention.rocks/test/6), to find out if this post correctly sends a Webmention through Webmention.io. If I did it correctly, now that I've linked to it here, I should see a new comment on the test post referencing this page. This will happen immediately, so if you don't see it right away, check out your action logs or try a dry run locally.
+To test if the Webmention actually shows on test content, I used https://webmention.rocks. Each of the links on their homepage tests a different type of HTML that could be used to create a Webmention. I used Test 1 to find out if my test post correctly sent a Webmention through Webmention.io. It went through completely smoothly and without a hitch right away.
 
-Realistically, this took me several tries to figure out. Take a close look at your microformats, and use the [microformats parser](http://pin13.net/mf2/) to help with debugging. One thing I found out as a result of this is that it looks like Webmentions don't duplicate if you push them out multiple times using webmention.app&mdash;they just update.
+Kidding. 
+
+Realistically, this took me several tries to figure out. My advice is to take a close look at your microformats, and use the [pin13 microformats parser](https://pin13.net/mf2/) to help with debugging. One thing I found out as a result of this is that it looks like Webmentions don't duplicate if you push them out multiple times using webmention.app&mdash;they just update.
 
 ## Bonus time: Add support to Hugo for inline attributes
 
