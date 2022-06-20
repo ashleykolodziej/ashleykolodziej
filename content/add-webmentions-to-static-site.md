@@ -2,7 +2,7 @@
 date = "2022-06-19"
 title = "How I added webmentions support to my static website"
 categories = "development"
-shortdesc = "This post is in progress as I test webmentions!"
+shortdesc = "How do you even test this if no one knows you exist?"
 
 +++
 
@@ -41,13 +41,15 @@ I added my personalized version of that code into the head tag of my website.
 
 Luckily, webmention.io comes with a handy dandy form at the endpoint for you to test this with. Head on over to your personalized Webmention link from above, and you'll see a simple form to send a happy little mention on over to yourself, Bob Ross-style.
 
-The source URL will be a page that mentions something about you, and the target URL will be the page that the webmention should be associated with. Perhaps you already have a mention out there you're aware of. If you are me, you don't because you mostly deleted all your social media and most people didn't know you existed in the first place, making this without question the most difficult part of the entire IndieWeb implementation process.
+The source URL will be a page that mentions something about you, and the target URL will be the page that the webmention should be associated with. Perhaps you already have a mention out there you're aware of. If you are me, you don't because you deleted all your social media and most people didn't know you existed in the first place, making this without question the most difficult part of the entire IndieWeb implementation process.
 
 I digress.
 
 In these cases, perhaps it's clearest to [just Webmention yourself](https://ashleykolodziej.com/learning-to-love-hugo/). I wanted [node-webmention-testpinger](https://github.com/voxpelli/node-webmention-testpinger) to work so badly, but I'm going to be honest, I just couldn't get that to work.
 
-In my case, the source will be this post, and the target will be `https://ashleykolodziej.com/learning-to-love-hugo/`.
+In my case, the source will be this post's URL, and the target will be `https://ashleykolodziej.com/learning-to-love-hugo/`. After you submit the form and see a "pending" message, give it a refresh. With luck, you'll see it change to "Success"!
+
+Head back on over to your dashboard at https://webmention.io/, and you'll see a brandy-new Webmention!
 
 ## Step five: Add microformat classes to your content
 
