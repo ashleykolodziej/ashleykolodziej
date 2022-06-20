@@ -6,8 +6,7 @@
 &lt;li>RSS (for syndication)&lt;/li>
 &lt;li>GitHub Pages (for hosting)&lt;/li>
 &lt;li>GitHub Actions (for deployment)&lt;/li>
-&lt;li>Webmention.io (for receiving)&lt;/li>
-&lt;li>Node Webmention Test Pinger (for testing receipt)&lt;/li>
+&lt;li>Webmention.io (for receiving and testing receiving)&lt;/li>
 &lt;li>Webmention.app (for sending)&lt;/li>
 &lt;li>Webmention.rocks (for testing sending)&lt;/li>
 &lt;/ul>
@@ -99,7 +98,7 @@
 &lt;p>Realistically, this took me several tries to figure out. Take a close look at your microformats, and use the &lt;a href="http://pin13.net/mf2/">microformats parser&lt;/a> to help with debugging. One thing I found out as a result of this is that it looks like Webmentions don&amp;rsquo;t duplicate if you push them out multiple times using webmention.app—they just update.&lt;/p>
 &lt;h2 id="bonus-time-add-support-to-hugo-for-inline-attributes">Bonus time: Add support to Hugo for inline attributes&lt;/h2>
 &lt;p>If you want to add classes to your Markdown, you can update &lt;a href="https://gohugo.io/getting-started/configuration-markup#goldmark">Hugo&amp;rsquo;s Markdown renderer, Goldmark&lt;/a>, to do that. Set &lt;code>block&lt;/code> to &lt;code>true&lt;/code>, and then add your attributes or classes to any block you like in your Markdown. I&amp;rsquo;m considering using this to add &lt;code>h-cite&lt;/code> and &lt;code>u-in-reply-to&lt;/code> classes to &lt;a href="https://indieweb.org/in-reply-to">add context around my mentions&lt;/a> where it makes sense, such as where I&amp;rsquo;m extending an idea. My thinking is this is generally similar to displaying a tweet. I don&amp;rsquo;t know if this is actually a good idea since this is my first time trying this out, though. If you&amp;rsquo;ve got any thoughts on that, let me know.&lt;/p>
-&lt;h2 id="but-wait-your-webmentions-arent-showing-on-your-site">But wait, your Webmentions aren&amp;rsquo;t showing on your site!&lt;/h2>
+&lt;h2 id="but-wait-webmentions-arent-showing-on-this-site-yet">But wait, Webmentions aren&amp;rsquo;t showing on this site yet!&lt;/h2>
 &lt;p>That&amp;rsquo;s absolutely right! I&amp;rsquo;m not at the point where I am actually showing the data for Webmentions on my site yet. That&amp;rsquo;s because Webmentions can cover &lt;em>anything&lt;/em> you might do on a social media site. Liking, retweeting, bookmarking, citing, referencing, replying, commenting&amp;hellip; the list goes on, and the data can too. Some of these deserve a slightly different user interface treatment, and I don&amp;rsquo;t know what that is for me yet. I do know it deserves its own post, and from here, you can choose how your mentions show on your website. Happy mentioning!&lt;/p></description></item><item><title>First Impressions: Hugo</title><link>https://ashleykolodziej.com/learning-to-love-hugo/</link><pubDate>Mon, 15 Feb 2016 11:21:48 -0500</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/learning-to-love-hugo/</guid><description>&lt;p>I&amp;rsquo;ve been writing in Markdown for a few months now, and it&amp;rsquo;s been amazing. I mean, anything that enables my Sublime Text habit is going to make me pretty happy, but I know me, and at heart I&amp;rsquo;m a designer. If you give me the ability to design, I will design. Markdown prevents me from doing that so I actually write.&lt;/p>
 &lt;p>So when I finally decided to tackle the long overdue task of redoing my portfolio, a static site generator seemed like the natural choice. Because let&amp;rsquo;s be honest - I haven&amp;rsquo;t logged into my Wordpress backend in months.&lt;/p>
 &lt;h2 id="why-static">Why static?&lt;/h2>
