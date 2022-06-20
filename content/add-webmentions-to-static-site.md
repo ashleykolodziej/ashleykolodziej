@@ -15,8 +15,7 @@ I'm told this is a lot easier if you use WordPress or a CMS. I use Hugo to gener
 - RSS (for syndication)
 - GitHub Pages (for hosting)
 - GitHub Actions (for deployment)
-- Webmention.io (for receiving)
-- Node Webmention Test Pinger (for testing receipt)
+- Webmention.io (for receiving and testing receiving)
 - Webmention.app (for sending)
 - Webmention.rocks (for testing sending)
 
@@ -156,6 +155,6 @@ Realistically, this took me several tries to figure out. Take a close look at yo
 
 If you want to add classes to your Markdown, you can update [Hugo's Markdown renderer, Goldmark](https://gohugo.io/getting-started/configuration-markup#goldmark), to do that. Set `block` to `true`, and then add your attributes or classes to any block you like in your Markdown. I'm considering using this to add `h-cite` and `u-in-reply-to` classes to [add context around my mentions](https://indieweb.org/in-reply-to) where it makes sense, such as where I'm extending an idea. My thinking is this is generally similar to displaying a tweet. I don't know if this is actually a good idea since this is my first time trying this out, though. If you've got any thoughts on that, let me know.
 
-## But wait, your Webmentions aren't showing on your site!
+## But wait, Webmentions aren't showing on this site yet!
 
 That's absolutely right! I'm not at the point where I am actually showing the data for Webmentions on my site yet. That's because Webmentions can cover _anything_ you might do on a social media site. Liking, retweeting, bookmarking, citing, referencing, replying, commenting... the list goes on, and the data can too. Some of these deserve a slightly different user interface treatment, and I don't know what that is for me yet. I do know it deserves its own post, and from here, you can choose how your mentions show on your website. Happy mentioning!
