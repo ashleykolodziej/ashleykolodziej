@@ -41,7 +41,7 @@ I added my personalized version of that code into the head tag of my website.
 
 Luckily, webmention.io comes with a handy dandy form at the endpoint for you to test this with. Head on over to your personalized Webmention link from above, and you'll see a simple form to send a happy little mention on over to yourself, Bob Ross-style.
 
-The source URL will be a page that mentions something about you, and the target URL will be the page that the webmention should be associated with. Perhaps you already have a mention out there you're aware of. If you are me, you don't because you deleted all your social media and most people didn't know you existed in the first place, making this without question the most difficult part of the entire IndieWeb implementation process.
+The source URL will be a page that mentions something about you, and the target URL will be the page that the Webmention should be associated with. Perhaps you already have a mention out there you're aware of. If you are me, you don't because you deleted all your social media and most people didn't know you existed in the first place, making this without question the most difficult part of the entire IndieWeb implementation process.
 
 I digress.
 
