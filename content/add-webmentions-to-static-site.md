@@ -8,9 +8,9 @@ shortdesc = "And a related question: how do you even test this if no one knows y
 
 ## Step one: Choose a tech stack
 
-[I'm told this is a lot easier if you use WordPress or a CMS](https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/). That said, despite WordPress being my day-job-specialty, these days, the last evidence of WordPress on my personal site is [over here on archive.org](https://web.archive.org/web/20161010003336/http://lastletterdesign.com/). So here we are: the tough road. I promise it's not as tough as it looks, though,
+[I'm told this is a lot easier if you use WordPress or a CMS](https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/). That said, despite WordPress being my day-job-specialty, these days, the last evidence of WordPress on my personal site is [over here on archive.org](https://web.archive.org/web/20161010003336/http://lastletterdesign.com/). So here we are: the tough road. I promise it's not as tough as it looks.
 
-These days (and by these days, I really mean "a decision I made five years ago that I haven't had time to change yet"), I use Hugo to generate a static site. I didn't want to redesign my entire website to try out Webmentions, so I chose a few online services that paired nicely with my setup. Tech stacks are always a negotiation between personal preference, your current knowledge, how much rework you want to do, and in my case, the path of least pain. I feel very at home with HTML, CSS, npm, and GitHub Actions, so my tech stack is based around those: 
+These days (and by these days, I really mean "a decision I made six years ago that I haven't had time to change yet"), I use Hugo to generate a static site. I didn't want to redesign my entire website to try out Webmentions, so I chose a few online services that paired nicely with my setup. Tech stacks are always a negotiation between personal preference, your current knowledge, how much rework you want to do, and in my case, the path of least pain. I feel very at home with HTML, CSS, npm, and GitHub Actions, so my tech stack is based around those: 
 
 - Hugo (for content management)
 - IndieLogin (for login)
@@ -54,7 +54,7 @@ Head back on over to your dashboard at https://webmention.io/, and you'll see a 
 
 ## Step five: Add microformat classes to your content
 
-I noticed many posts stop right around getting Webmentions to you, which sure seems like the type of thing you could get away with doing if people know about you. If, like me, your problems are more centered around people _not_ knowing about you, adding the ability to send Webmentions is one way to fix that. And to do that, we need to do some markup work so the right data is going out with these mentions.
+I noticed many posts stop right around getting other people's Webmentions to your website, which sure seems like the type of thing you could get away with doing if people knew about you. If, like me, your problems are more centered around people _not_ knowing about you, adding the ability to send Webmentions is one way to fix that. And to do that, we need to do some markup work so the right data is going out with these mentions.
 
 First, identify the type of content you're likely to create a Webmention with, and then take a look at the [Microformats specification](https://microformats.org/wiki/Main_Page#Specifications) to see which microformat matches best. In my case, it's a blog post, so I chose to use the [h-entry microformat](https://microformats.org/wiki/h-entry). After taking a look at my markup, I needed to add an `h-entry` class around my entire blog post, a `p-name` class to my title, a `p-author` to show that I am (indeed) the author of the post, an `h-card` which talks a bit more about me (I'll expand on that in a moment), a `u-url` class as well as my permalink, and a `dt-published` class.
 
