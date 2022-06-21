@@ -1,3 +1,3 @@
-# Never index the Netlify previews.
-https://lambent-sundae-fd47b7.netlify.app/*
+# Never index this entire site.
+/*
    X-Robots-Tag: noindex
