@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
-  repo: ashleykolodziej/ashleykolodziej
+  repo: ashleykolodziej/ashleykolodziej.github.io
   branch: main # Branch to update (optional; defaults to master)
-  site_domain: ashleykolodziej.github.io/ashleykolodziej
+  site_domain: ashleykolodziej.com
 local_backend: true
 media_folder: static/img
 public_folder: /img
