@@ -2,29 +2,29 @@
 title: How I added Webmentions support to my static website
 date: 2022-06-19T22:00:00.000Z
 shortdesc: "And a related question: how do you even test this if no one knows you exist?"
-categories: "development"
+categories: development
 ---
-
 ## Step one: Choose a tech stack
 
-[I'm told this is a lot easier if you use WordPress or a CMS](https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/). That said, despite WordPress being my day-job-specialty, these days, the last evidence of WordPress on my personal site is [over here on archive.org](https://web.archive.org/web/20161010003336/http://lastletterdesign.com/). So here we are: the tough road. I promise it's not as tough as it looks.
+[I'm told this is a lot easier if you use WordPress or a CMS](https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/). That said, despite WordPress being my day-job-specialty, the last evidence of WordPress on my personal site is [over here on archive.org](https://web.archive.org/web/20161010003336/http://lastletterdesign.com/). So here we are: the tough road. I promise it's not as tough as it looks.
 
-These days (and by these days, I really mean "a decision I made six years ago that I haven't had time to change yet"), I use Hugo to generate a static site. I didn't want to redesign my entire website to try out Webmentions, so I chose a few online services that paired nicely with my setup. Tech stacks are always a negotiation between personal preference, your current knowledge, how much rework you want to do, and in my case, the path of least pain. I feel very at home with HTML, CSS, npm, and GitHub Actions, so my tech stack is based around those: 
+These days (and by these days, I really mean "a decision I made six years ago that I haven't had time to change yet"), I use [Hugo](https://gohugo.io) to generate a static site. I didn't want to redesign my entire website to try out Webmentions, so I chose a few online services that paired nicely with my setup. Tech stacks are always a negotiation between personal preference, your current knowledge, how much rework you want to do, and in my case, the path of least pain. I feel very at home with HTML, CSS, npm, and GitHub Actions, so my tech stack is based around those: 
 
-- Hugo (for content management)
-- IndieLogin (for login)
-- RSS (for syndication)
-- GitHub Pages (for hosting)
-- GitHub Actions (for deployment)
-- Webmention.io (for receiving and testing receiving)
-- Webmention.app (for sending)
-- Webmention.rocks (for testing sending)
+* Hugo (for site generation)
+* Netlify CMS (for content management)
+* IndieLogin (for login)
+* RSS (for syndication)
+* GitHub Pages (for hosting)
+* GitHub Actions (for deployment)
+* Webmention.io (for receiving and testing receiving)
+* Webmention.app (for sending)
+* Webmention.rocks (for testing sending)
 
 If you're on a static site generator, great! Keep reading, and swap out your CMS, hosting, and deploy technologies as needed. The bones of this setup will still be helpful to you.
 
 ## Step two: Add IndieLogin
 
-Logging into Webmention.io is super easy - just use your URL! - _if_ you have IndieLogin set up. Fortunately, it's super easy to [set up your site to work with IndieLogin](https://indielogin.com/setup). Just add `rel="me"` to your social media links, and you'll be able to authenticate with your existing social media services.
+Logging into Webmention.io is super easy - just use your URL! - *if* you have IndieLogin set up. Fortunately, it's super easy to [set up your site to work with IndieLogin](https://indielogin.com/setup). Just add `rel="me"` to your social media links, and you'll be able to authenticate with your existing social media services.
 
 ## Step three: Connect Webmention.io to your site
 
@@ -53,7 +53,7 @@ Head back on over to your dashboard at https://webmention.io/, and you'll see a 
 
 ## Step five: Add microformat classes to your content
 
-I noticed many posts stop right around getting other people's Webmentions to your website, which sure seems like the type of thing you could get away with doing if people knew about you. If, like me, your problems are more centered around people _not_ knowing about you, adding the ability to send Webmentions is one way to fix that. And to do that, we need to do some markup work so the right data is going out with these mentions.
+I noticed many posts stop right around getting other people's Webmentions to your website, which sure seems like the type of thing you could get away with doing if people knew about you. If, like me, your problems are more centered around people *not* knowing about you, adding the ability to send Webmentions is one way to fix that. And to do that, we need to do some markup work so the right data is going out with these mentions.
 
 First, identify the type of content you're likely to create a Webmention with, and then take a look at the [Microformats specification](https://microformats.org/wiki/Main_Page#Specifications) to see which microformat matches best. In my case, it's a blog post, so I chose to use the [h-entry microformat](https://microformats.org/wiki/h-entry). After taking a look at my markup, I needed to add an `h-entry` class around my entire blog post, a `p-name` class to my title, a `p-author` to show that I am (indeed) the author of the post, an `h-card` which talks a bit more about me (I'll expand on that in a moment), a `u-url` class as well as my permalink, and a `dt-published` class.
 
@@ -73,7 +73,6 @@ I was curious if the parser would pick up any data that is generally structured 
         <a rel="author" class="p-name u-url" href="https://ashleykolodziej.com">Ashley Kolodziej</a> (<span class="p-pronouns">she/her/hers</span>) is an <span class="p-job-title">Associate Creative Director</span> in <a href="https://www.bu.edu/interactive-design/" class="p-org">Boston University's Interactive Design department</a>. She is currently working on her Master's degree in User-Centered Design at Brandeis University and teaches classes in design and web development. You can reach her at <a class="u-email" href="mailto:ashley@lastletterdesign.com">ashley@lastletterdesign.com</a>.
     </p>
 </aside>
-
 ```
 
 ## Step seven: Test your h-card
@@ -131,7 +130,7 @@ You'll need an RSS feed for the next step. Since I'm using Hugo, I followed [Jus
 
 ## Step nine: Set up automatic Webmentions notifications
 
-A good next step is to test that your new Webmentions functionality shows up properly for someone else. I took inspiration from [James Mead's awesome instructions](https://jamesmead.org/blog/2020-10-13-sending-webmentions-from-a-static-website) to do this with https://webmention.app/.
+A good next step is to test that your new Webmentions functionality shows up properly for someone else. I took inspiration from [James Mead's awesome instructions](https://jamesmead.org/blog/2020-10-13-sending-webmentions-from-a-static-website) to do this with <https://webmention.app/>.
 
 In his instructions, James abstracted the sending script to [its own GitHub repo](https://github.com/floehopper/send-webmentions) and watched for changes to the RSS feed. But since I'm already [building Hugo with a GitHub Action to host on GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/#build-hugo-with-github-action), I know exactly when my RSS feed has been rebuilt, and it's at the end of my action. That's the approach I'm going to take here.
 
@@ -162,4 +161,4 @@ If you want to add classes to your Markdown, you can update [Hugo's Markdown ren
 
 ## But wait, Webmentions aren't showing on this site yet!
 
-That's absolutely right! I'm not at the point where I am actually showing the data for Webmentions on my site yet. That's because Webmentions can cover _anything_ you might do on a social media site. Liking, retweeting, bookmarking, citing, referencing, replying, commenting... the list goes on, and the data can too. Some of these deserve a slightly different user interface treatment, and I don't know what that is for me yet. I do know it deserves its own post, and from here, you can choose how your mentions show on your website. Happy mentioning!
+That's absolutely right! I'm not at the point where I am actually showing the data for Webmentions on my site yet. That's because Webmentions can cover *anything* you might do on a social media site. Liking, retweeting, bookmarking, citing, referencing, replying, commenting... the list goes on, and the data can too. Some of these deserve a slightly different user interface treatment, and I don't know what that is for me yet. I do know it deserves its own post, and from here, you can choose how your mentions show on your website. Happy mentioning!
