@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   repo: ashleykolodziej/ashleykolodziej.github.io
   branch: main # Branch to update (optional; defaults to master)
-  site_domain: ashleykolodziej.com
+  site_domain: lambent-sundae-fd47b7.netlify.app
 local_backend: true
 media_folder: static/img
 public_folder: /img
