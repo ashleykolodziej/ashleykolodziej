@@ -13,8 +13,6 @@ markup:
     parser:
       attribute:
         block: true
-    highlight:
-      guessSyntax: true
 params:
   author: Ashley Kolodziej
   description: >-

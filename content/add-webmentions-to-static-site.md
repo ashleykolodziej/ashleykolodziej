@@ -4,6 +4,7 @@ date: 2022-06-19T22:00:00.000Z
 shortdesc: "And a related question: how do you even test this if no one knows you exist?"
 categories: development
 ---
+
 ## Step one: Choose a tech stack
 
 [I'm told this is a lot easier if you use WordPress or a CMS](https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/). That said, despite WordPress being my day-job-specialty, the last evidence of WordPress on my personal site is [over here on archive.org](https://web.archive.org/web/20161010003336/http://lastletterdesign.com/). So here we are: the tough road. I promise it's not as tough as it looks.
@@ -68,9 +69,20 @@ I was curious if the parser would pick up any data that is generally structured 
 ```html
 <aside class="p-author h-card">
     <h2>About the author</h2>
-    <img class="u-photo" src="https://ashleykolodziej.com/img/profile.jpg" alt="A white woman with with glasses and long, curled blonde hair at a park, wearing a colorful dress and smiling." />
+    <img class="u-photo" src="https://ashleykolodziej.com/img/profile.jpg" 
+    alt="A white woman with with glasses and long, curled blonde hair at a 
+    park, wearing a colorful dress and smiling." />
     <p class="p-note">
-        <a rel="author" class="p-name u-url" href="https://ashleykolodziej.com">Ashley Kolodziej</a> (<span class="p-pronouns">she/her/hers</span>) is an <span class="p-job-title">Associate Creative Director</span> in <a href="https://www.bu.edu/interactive-design/" class="p-org">Boston University's Interactive Design department</a>. She is currently working on her Master's degree in User-Centered Design at Brandeis University and teaches classes in design and web development. You can reach her at <a class="u-email" href="mailto:ashley@lastletterdesign.com">ashley@lastletterdesign.com</a>.
+        <a rel="author" class="p-name u-url" 
+        href="https://ashleykolodziej.com">Ashley Kolodziej</a> 
+        (<span class="p-pronouns">she/her/hers</span>) is an 
+        <span class="p-job-title">Associate Creative Director</span> in 
+        <a href="https://www.bu.edu/interactive-design/" class="p-org">
+        Boston University's Interactive Design department</a>. She is 
+        currently working on her Master's degree in User-Centered Design 
+        at Brandeis University and teaches classes in design and web 
+        development. You can reach her at <a class="u-email" href="
+        mailto:ashley@lastletterdesign.com">ashley@lastletterdesign.com</a>.
     </p>
 </aside>
 ```
@@ -83,7 +95,6 @@ It's up to the folks who implement webmentions on their websites what they want 
 
 ```json
 {
-
     "items": [
         {
             "type": [
@@ -91,7 +102,13 @@ It's up to the folks who implement webmentions on their websites what they want 
             ],
             "properties": {
                 "note": [
-                    "Ashley Kolodziej (she/her/hers) is an Associate Creative Director in Boston University's Interactive Design department. She is currently working on her Master's degree in User-Centered Design at Brandeis University and teaches classes in design and web development. You can reach her at ashley@lastletterdesign.com."
+                    "Ashley Kolodziej (she/her/hers) is an Associate
+                     Creative Director in Boston University's Interactive 
+                     Design department. She is currently working on her 
+                     Master's degree in User-Centered Design at Brandeis 
+                     University and teaches classes in design and web 
+                     development. You can reach her at 
+                     ashley@lastletterdesign.com."
                 ],
                 "name": [
                     "Ashley Kolodziej"
@@ -107,8 +124,11 @@ It's up to the folks who implement webmentions on their websites what they want 
                 ],
                 "photo": [
                     {
-                        "value": "https://ashleykolodziej.com/img/profile.jpg",
-                        "alt": "A white woman with with glasses and long, curled blonde hair at a park, wearing a colorful dress and smiling."
+                        "value": "https://ashleykolodziej.com/img/
+                            profile.jpg",
+                        "alt": "A white woman with with glasses and long,
+                            curled blonde hair at a park, wearing a 
+                            colorful dress and smiling."
                     }
                 ],
                 "url": [
@@ -120,7 +140,6 @@ It's up to the folks who implement webmentions on their websites what they want 
             }
         }
     ],
-
 }
 ```
 

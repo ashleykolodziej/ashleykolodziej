@@ -9,7 +9,8 @@
 @font-face {
   font-family: 'FFMarkWebProHeavyItalic';
   src: url("/fonts/30663E_0_0.eot");
-  src: url("/fonts/30663E_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/30663E_0_0.woff2") format("woff2"), url("/fonts/30663E_0_0.woff") format("woff"), url("/fonts/30663E_0_0.ttf") format("truetype"); }
+  src: url("/fonts/30663E_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/30663E_0_0.woff2") format("woff2"), url("/fonts/30663E_0_0.woff") format("woff"), url("/fonts/30663E_0_0.ttf") format("truetype");
+  font-weight: 700; }
 html,
 body {
   width: 100%; }
@@ -118,7 +119,7 @@ nav {
     margin: 20px 0;
     padding: 10px 30px 15px 10px;
     margin-right: -35px;
-    background: #c60000; }
+    background: #c6000066; }
     @media screen and (min-width: 1200px) {
       .main-navigation h3:before {
         content: "";
@@ -160,7 +161,7 @@ nav {
     border: 5px solid #e00000; }
 
 .main-navigation-wrap {
-  background: #ff2d2d;
+  background: linear-gradient(180deg, #ff6565, #e30e72) repeat scroll 0% 0%;
   overflow-y: scroll;
   overflow-x: hidden;
   width: 100%;
@@ -220,7 +221,7 @@ nav {
       .has-js .main-navigation-wrap li.nav-show:first-child {
         border-top: none; }
   .main-navigation-wrap span {
-    color: #ad0000; }
+    color: #7a0000; }
     .main-navigation-wrap span em {
       opacity: .5; }
 

@@ -8,6 +8,7 @@
 		url('/fonts/30663E_0_0.woff2') format('woff2'),
 		url('/fonts/30663E_0_0.woff') format('woff'),
 		url('/fonts/30663E_0_0.ttf') format('truetype');
+	font-weight: 700;
 }
 
 html,
@@ -140,7 +141,7 @@ nav {
 		margin: 20px 0;
 		padding: 10px 30px 15px 10px;
 		margin-right: -35px;
-		background: darken($bun-red, 20%);
+		background: #c6000066;
 
 		@include breakpoint(lg) {
 			&:before {
@@ -196,7 +197,7 @@ nav {
 
 
 .main-navigation-wrap {
-	background: $bun-red;
+	background: linear-gradient(180deg, #ff6565, #e30e72) repeat scroll 0% 0%;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	width: 100%;
@@ -286,7 +287,7 @@ nav {
 	}
 
 	span {
-		color: darken($bun-red, 25%);
+		color: darken($bun-red, 35%);
 
 		em {
 			opacity: .5;
