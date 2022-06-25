@@ -5,7 +5,7 @@ shortdesc: "And a related question: how do you even test this if no one knows yo
 categories: development
 ---
 
-Reading Miriam Suzanne's [excellent article on the complexity of implementing Webmentions](https://www.miriamsuzanne.com/2022/06/04/indiweb/) got me thinking about the IndieWeb again. I stepped away from social media a while back, but the one thing I've consistently missed is having a way to record all the little moments that make up who I am. Since I'm on break from classes and teaching, I decided to challenge myself by adding Webmentions to my own site and documenting the process. Hopefully it'll help someone else out!
+Reading Miriam Suzanne's [excellent article](https://www.miriamsuzanne.com/2022/06/04/indiweb/) on the complexity of implementing Webmentions got me thinking about the IndieWeb again. I stepped away from social media a while back, but the one thing I've consistently missed is having a way to record all the little moments that make up who I am. Since I'm on break from classes and teaching, I decided to challenge myself by adding Webmentions to my own site and documenting the process. Hopefully it'll help someone else out!
 
 ---
 
@@ -184,4 +184,4 @@ If you want to add classes to your Markdown, you can update [Hugo's Markdown ren
 
 ## But wait, Webmentions aren't showing on this site yet!
 
-That's absolutely right! I'm not at the point where I am actually showing the data for Webmentions on my site yet. That's because Webmentions can cover *anything* you might do on a social media site. Liking, retweeting, bookmarking, citing, referencing, replying, commenting... the list goes on, and the data can too. Some of these deserve a slightly different user interface treatment, and I don't know what that is for me yet. I do know it deserves its own post, and from here, you can choose how your mentions show on your website. Happy mentioning!
+That's absolutely right! I'm not at the point where I am actually showing the data for Webmentions on my site yet. That's because Webmentions can cover a myrid of types of interactions you might take on a social media site. Liking, retweeting, bookmarking, citing, referencing, replying, commenting... the list goes on, and the data can too. Some of these deserve a slightly different user interface treatment, and I don't know what that is for me yet. I do know it deserves its own post, and from here, you can choose how your mentions show on your website. Happy mentioning!
