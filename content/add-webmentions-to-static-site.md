@@ -5,27 +5,31 @@ shortdesc: "And a related question: how do you even test this if no one knows yo
 categories: development
 ---
 
+Reading Miriam Suzanne's [excellent article on the complexity of implementing Webmentions](https://www.miriamsuzanne.com/2022/06/04/indiweb/) got me thinking about the IndieWeb again. I stepped away from social media a while back, but the one thing I've consistently missed is having a way to record all the little moments that make up who I am. Since I'm on break from classes and teaching, I decided to challenge myself by adding Webmentions to my own site and documenting the process. Hopefully it'll help someone else out!
+
+---
+
 ## Step one: Choose a tech stack
 
 [I'm told this is a lot easier if you use WordPress or a CMS](https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/). That said, despite WordPress being my day-job-specialty, the last evidence of WordPress on my personal site is [over here on archive.org](https://web.archive.org/web/20161010003336/http://lastletterdesign.com/). So here we are: the tough road. I promise it's not as tough as it looks.
 
-These days (and by these days, I really mean "a decision I made six years ago that I haven't had time to change yet"), I use [Hugo](https://gohugo.io) to generate a static site. I didn't want to redesign my entire website to try out Webmentions, so I chose a few online services that paired nicely with my setup. Tech stacks are always a negotiation between personal preference, your current knowledge, how much rework you want to do, and in my case, the path of least pain. I feel very at home with HTML, CSS, npm, and GitHub Actions, so my tech stack is based around those: 
+These days (and by these days, I really mean "a decision I made six years ago that I haven't had time to change yet"), I use [Hugo](https://gohugo.io) to generate a static site. I didn't want to redesign my entire website to try out Webmentions, so I chose a few online services that paired nicely with my setup. Tech stacks are always a negotiation between personal preference, your current knowledge, how much rework you want to do, and in my case, the path of least pain. I feel very at home with HTML, CSS, [npm](https://www.npmjs.com/), and GitHub Actions, so my tech stack is based around those: 
 
-* Hugo (for site generation)
-* Netlify CMS (for content management)
-* IndieLogin (for login)
-* RSS (for syndication)
-* GitHub Pages (for hosting)
-* GitHub Actions (for deployment)
-* Webmention.io (for receiving and testing receiving)
-* Webmention.app (for sending)
-* Webmention.rocks (for testing sending)
+* [Hugo](https://gohugo.io/) (for site generation)
+* [Netlify CMS](https://www.netlifycms.org/) (for content management)
+* [IndieLogin](https://indielogin.com/) (for login)
+* [RSS](https://en.wikipedia.org/wiki/RSS) (for syndication)
+* [GitHub Pages](https://pages.github.com/) (for hosting - [this](https://cnly.github.io/2018/04/14/just-3-steps-adding-netlify-cms-to-existing-github-pages-site-within-10-minutes.html) is how I added Netlify CMS)
+* [GitHub Actions](https://github.com/features/actions) (for deployment)
+* [Webmention.io](webmention.io/) (for receiving and testing receiving)
+* [Webmention.app](https://webmention.app/) (for sending)
+* [Webmention.rocks](https://webmention.rocks/) (for testing sending)
 
-If you're on a static site generator, great! Keep reading, and swap out your CMS, hosting, and deploy technologies as needed. The bones of this setup will still be helpful to you.
+If you're on a static site generator, great! Keep reading, and swap out your generator, hosting, and deploy technologies as needed. The bones of this setup will still be helpful to you.
 
 ## Step two: Add IndieLogin
 
-Logging into Webmention.io is super easy - just use your URL! - *if* you have IndieLogin set up. Fortunately, it's super easy to [set up your site to work with IndieLogin](https://indielogin.com/setup). Just add `rel="me"` to your social media links, and you'll be able to authenticate with your existing social media services.
+Logging into [Webmention.io](webmention.io/) is super easy - just use your URL! - *if* you have IndieLogin set up. Fortunately, it's super easy to [set up your site to work with IndieLogin](https://indielogin.com/setup). Just add `rel="me"` to your social media links, and you'll be able to authenticate with your existing social media services.
 
 ## Step three: Connect Webmention.io to your site
 
@@ -40,7 +44,7 @@ I added my personalized version of that code into the head tag of my website.
 
 ## Step four: Test that a Webmention elsewhere shows for you
 
-Luckily, webmention.io comes with a handy dandy form at the endpoint for you to test this with. Head on over to your personalized Webmention link from above, and you'll see a simple form to send a happy little mention on over to yourself, Bob Ross-style.
+Luckily, [Webmention.io](webmention.io/) comes with a handy dandy form at the endpoint for you to test this with. Head on over to your personalized Webmention link from above, and you'll see a simple form to send a happy little mention on over to yourself, Bob Ross-style.
 
 The source URL will be a page that mentions something about you, and the target URL will be the page that the Webmention should be associated with. Perhaps you already have a mention out there you're aware of. If you are me, you don't because you deleted all your social media and most people didn't know you existed in the first place, making this without question the most difficult part of the entire IndieWeb implementation process.
 
@@ -50,7 +54,7 @@ In these cases, perhaps it's clearest to [just Webmention yourself](https://ashl
 
 In my case, the source was this post's URL, and the target was `https://ashleykolodziej.com/learning-to-love-hugo/`. After you submit the form and see a "pending" message, give it a refresh. With luck, you'll see it change to "Success"!
 
-Head back on over to your dashboard at https://webmention.io/, and you'll see a brandy-new Webmention.
+Head back on over to your dashboard at [Webmention.io](webmention.io/), and you'll see a brandy-new Webmention.
 
 ## Step five: Add microformat classes to your content
 
