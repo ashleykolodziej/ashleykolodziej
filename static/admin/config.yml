@@ -17,6 +17,7 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: "Draft", name: "draft", widget: "boolean", required: false, default: true }
       - { label: 'Short Description', name: 'shortdesc', widget: 'string' }
       - { label: 'Category', name: 'categories', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
