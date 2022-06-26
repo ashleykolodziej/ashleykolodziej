@@ -226,6 +226,12 @@ pre {
 	padding: 0 1em;
 	position: relative;
 	z-index: 1;
+	width: calc(100vw - 60px);
+	box-sizing: border-box;
+
+	@include breakpoint(sm) {
+		width: 100%;
+	}
 
 	code {
 		border-radius: 12px;
@@ -834,4 +840,43 @@ h2.f4.text-normal.mb-3 {
 .google-slides-container,
 .twitter-tweet {
 	margin: 3em auto !important;
+	width: 100% !important;
+}
+
+.twitter-tweet {
+	iframe {
+		width: 100%;
+	}
+}
+
+.portfolio-scroll {
+	position: relative;
+	margin: 3em -3vw;
+
+	@media screen and (min-width: 1200px) {
+		margin: 3em -10vw;
+	}
+
+	@media screen and (min-width: 1750px) {
+		margin: 3em -18vw;
+	}
+	
+	img {
+		position: relative;
+		z-index: 2;
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 24px;
+		width: 100%;
+		height: 100%;
+		border-radius: 12px;
+		background-color: #0002;
+		transform: translateZ(-1px);
+		filter: blur(30px);
+		z-index: 1;
+	}
 }

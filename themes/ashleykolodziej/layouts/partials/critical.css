@@ -47,7 +47,7 @@ h6 {
     margin-top: 1.5em; }
 
 a {
-  color: #ff2d2d; }
+  color: #e81111; }
   a:hover {
     color: #ff722d; }
 
@@ -72,7 +72,7 @@ nav {
   nav a {
     text-decoration: none; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #menu {
     display: none; } }
 
@@ -85,24 +85,19 @@ nav {
   z-index: 2;
   overflow: hidden;
   padding: 0;
-  max-width: 360px;
+  width: 360px;
   transition: transform 250ms ease-in-out;
   height: 100%; }
   .main-navigation.open {
     transform: translateX(0);
     transition: transform 250ms ease-in-out; }
-  @media screen and (min-width: 768px) {
-    .main-navigation {
-      width: 33%;
-      transform: translateX(0); } }
   @media screen and (min-width: 992px) {
     .main-navigation {
-      width: 25%;
       transform: translateX(0); } }
   .main-navigation h3,
   .main-navigation li {
     position: relative; }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 992px) {
       .main-navigation h3:after,
       .main-navigation li:after {
         content: "";
@@ -120,7 +115,7 @@ nav {
     padding: 10px 30px 15px 10px;
     margin-right: -35px;
     background: #c6000066; }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 992px) {
       .main-navigation h3:before {
         content: "";
         display: block;
@@ -137,7 +132,7 @@ nav {
         border-left: none; }
       .main-navigation h3:after {
         background: #fff;
-        border: 5px solid #ff2d2d;
+        border: 5px solid #e81111;
         right: -10px;
         top: 10px; } }
   .main-navigation h4 {
@@ -153,12 +148,12 @@ nav {
     font-size: 14px; }
   .main-navigation::-webkit-scrollbar {
     width: 16px;
-    background-color: #e00000; }
+    background-color: #a10c0c; }
   .main-navigation::-webkit-scrollbar-thumb {
     width: 12px;
     background-image: -webkit-linear-gradient(#fff, #fff);
     border-radius: 16px;
-    border: 5px solid #e00000; }
+    border: 5px solid #a10c0c; }
 
 .main-navigation-wrap {
   background: linear-gradient(180deg, #ff6565, #e30e72) repeat scroll 0% 0%;
@@ -191,7 +186,7 @@ nav {
     padding-right: 20px;
     left: 20px;
     padding-bottom: 1em; }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 992px) {
       .main-navigation-wrap li:before {
         content: "";
         display: block;
@@ -203,7 +198,7 @@ nav {
         background: #d6d6d6;
         z-index: 2; } }
     .main-navigation-wrap li.active:after, .main-navigation-wrap li:hover:after {
-      background: #ff2d2d; }
+      background: #e81111; }
     .has-js .main-navigation-wrap li {
       max-height: 0;
       overflow: hidden;
@@ -221,7 +216,7 @@ nav {
       .has-js .main-navigation-wrap li.nav-show:first-child {
         border-top: none; }
   .main-navigation-wrap span {
-    color: #7a0000; }
+    color: #420505; }
     .main-navigation-wrap span em {
       opacity: .5; }
 
@@ -275,16 +270,24 @@ nav {
       .content-container.open {
         opacity: 1;
         transform: translateX(0); } }
-  @media screen and (min-width: 768px) {
-    .content-container {
-      margin-left: 33%; } }
+
+body {
+  display: grid; }
   @media screen and (min-width: 992px) {
-    .content-container {
-      margin-left: 23%; } }
+    body {
+      grid-template-columns: 360px 1fr; } }
+
+.logo-container,
+.content-container {
+  grid-column-start: 2;
+  margin-left: 0; }
 
 .logo-container {
   text-align: center;
   padding-bottom: 0; }
+
+.main-navigation {
+  width: 360px; }
 
 .logo {
   font-family: "FFMarkWebProHeavyItalic";
