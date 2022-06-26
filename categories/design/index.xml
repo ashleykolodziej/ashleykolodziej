@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>design on Ashley Kolodziej - Boston Freelance Web Designer</title><link>https://ashleykolodziej.com/categories/design/</link><description>Recent content in design on Ashley Kolodziej - Boston Freelance Web Designer</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>ashley@lastletterdesign.com (Ashley Kolodziej)</managingEditor><webMaster>ashley@lastletterdesign.com (Ashley Kolodziej)</webMaster><copyright>© 2009-2022 Ashley Kolodziej. All rights reserved.</copyright><lastBuildDate>Tue, 21 Feb 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://ashleykolodziej.com/categories/design/index.xml" rel="self" type="application/rss+xml"/><item><title>Of Hoops &amp; Healing</title><link>https://ashleykolodziej.com/street-basketball/</link><pubDate>Tue, 21 Feb 2017 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/street-basketball/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>School of Education</title><link>https://ashleykolodziej.com/boston-university-school-of-education/</link><pubDate>Tue, 23 Aug 2016 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/boston-university-school-of-education/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>College of Communication</title><link>https://ashleykolodziej.com/college-of-communication/</link><pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/college-of-communication/</guid><description>&lt;!-- raw HTML omitted -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>design on Ashley Kolodziej - Boston Freelance Web Designer</title><link>https://ashleykolodziej.com/categories/design/</link><description>Recent content in design on Ashley Kolodziej - Boston Freelance Web Designer</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>ashley@lastletterdesign.com (Ashley Kolodziej)</managingEditor><webMaster>ashley@lastletterdesign.com (Ashley Kolodziej)</webMaster><copyright>© 2009-2022 Ashley Kolodziej. All rights reserved.</copyright><lastBuildDate>Sun, 26 Jun 2022 00:53:51 +0000</lastBuildDate><atom:link href="https://ashleykolodziej.com/categories/design/index.xml" rel="self" type="application/rss+xml"/><item><title>Exploring circular text in CSS and SVG</title><link>https://ashleykolodziej.com/exploring-circular-text-in-css-and-svg/</link><pubDate>Sun, 26 Jun 2022 00:53:51 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/exploring-circular-text-in-css-and-svg/</guid><description>&lt;p>I decided I&amp;rsquo;m sick of the grid. I want to align some text to a circle.&lt;/p>
+&lt;p>As it turns out, it&amp;rsquo;s not so hard to do this with SVG. You don&amp;rsquo;t even need a complicated path element. Just grab yourself a &lt;code>&amp;lt;circle&amp;gt;&lt;/code>, like so:&lt;/p>
+&lt;script
+data-slug-hash="XWpEdaJ"
+data-user="ashleykolodziej"
+data-height="650"
+data-default-tab="result"
+data-theme-id="8862"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>
+&lt;p>With this pen, I wanted to explore depth, so I adjusted the placement, opacity, and size of the text in each circle.&lt;/p>
+&lt;script
+data-slug-hash="poRLbeg"
+data-user="ashleykolodziej"
+data-height="650"
+data-default-tab="result"
+data-theme-id="8862"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>
+&lt;p>And of course, if you know me, you know I&amp;rsquo;m into my colors. So I thought, well, rainbows are sort of a circle too.&lt;/p>
+&lt;script
+data-slug-hash="gOgeMvJ"
+data-user="ashleykolodziej"
+data-height="650"
+data-default-tab="result"
+data-theme-id="8862"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>
+&lt;h2 id="writing-creative-css">Writing creative CSS&lt;/h2>
+&lt;p>My best moments in CSS are when I find out something new, and just keep riffing on it endlessly. I&amp;rsquo;ve got a &lt;a href="https://www.bu.edu/cds-faculty/">whole site&lt;/a> dedicated to this rainbow situation here:&lt;/p>
+&lt;script
+data-slug-hash="VwYagVN"
+data-user="ashleykolodziej"
+data-height="650"
+data-default-tab="result"
+data-theme-id="8862"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>
+&lt;p>This is how you learn in design school. You take a piece of paper, and you cut it up and really focus on how the shapes or colors or just one piece of it is interacting with the rest. And then, you figure out the best bits.&lt;/p></description></item><item><title>Of Hoops &amp; Healing</title><link>https://ashleykolodziej.com/street-basketball/</link><pubDate>Tue, 21 Feb 2017 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/street-basketball/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>School of Education</title><link>https://ashleykolodziej.com/boston-university-school-of-education/</link><pubDate>Tue, 23 Aug 2016 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/boston-university-school-of-education/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>College of Communication</title><link>https://ashleykolodziej.com/college-of-communication/</link><pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/college-of-communication/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;p>The College of Communication (COM) told us two things: that they tell stories, and that they wanted a pathfinder tool to help incoming freshmen explore various programs.&lt;/p>
 &lt;p>Communication is a major that&amp;rsquo;s close to home for me—not because it&amp;rsquo;s my major, but because I worked at a newspaper in college, and I knew so many people in journalism. There&amp;rsquo;s a lot of stigma these days around both communications and art majors. How will you get a job? Are you putting yourself in debt for nothing? Is there even a career out there for you? It wasn&amp;rsquo;t that long since I was out of school. Even if it was, you don&amp;rsquo;t have to go far to find examples lampooning communications and arts degrees online, especially when stacked against STEM degrees. It&amp;rsquo;s a (demonstrably) hard field to break into.&lt;/p>
 &lt;p>With these challenges fresh in my mind, I set to creating a site that would address these concerns for parents and students, without losing the vibrant storytelling presence the school is so good at.&lt;/p>

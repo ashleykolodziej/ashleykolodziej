@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ashley Kolodziej - Boston Freelance Web Designer</title><link>https://ashleykolodziej.com/</link><description>Recent content on Ashley Kolodziej - Boston Freelance Web Designer</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>ashley@lastletterdesign.com (Ashley Kolodziej)</managingEditor><webMaster>ashley@lastletterdesign.com (Ashley Kolodziej)</webMaster><copyright>© 2009-2022 Ashley Kolodziej. All rights reserved.</copyright><lastBuildDate>Sun, 19 Jun 2022 22:00:00 +0000</lastBuildDate><atom:link href="https://ashleykolodziej.com/index.xml" rel="self" type="application/rss+xml"/><item><title>How I added Webmentions support to my static website</title><link>https://ashleykolodziej.com/add-webmentions-to-static-site/</link><pubDate>Sun, 19 Jun 2022 22:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/add-webmentions-to-static-site/</guid><description>&lt;p>Reading Miriam Suzanne&amp;rsquo;s &lt;a href="https://www.miriamsuzanne.com/2022/06/04/indiweb/">excellent article&lt;/a> on the complexity of implementing Webmentions got me thinking about the IndieWeb again. I stepped away from social media a while back, but the one thing I&amp;rsquo;ve consistently missed is having a way to record all the little moments that make up who I am. Since I&amp;rsquo;m on break from classes and teaching, I decided to challenge myself by adding Webmentions to my own site and documenting the process. Hopefully it&amp;rsquo;ll help someone else out!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ashley Kolodziej - Boston Freelance Web Designer</title><link>https://ashleykolodziej.com/</link><description>Recent content on Ashley Kolodziej - Boston Freelance Web Designer</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>ashley@lastletterdesign.com (Ashley Kolodziej)</managingEditor><webMaster>ashley@lastletterdesign.com (Ashley Kolodziej)</webMaster><copyright>© 2009-2022 Ashley Kolodziej. All rights reserved.</copyright><lastBuildDate>Sun, 26 Jun 2022 00:53:51 +0000</lastBuildDate><atom:link href="https://ashleykolodziej.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Exploring circular text in CSS and SVG</title><link>https://ashleykolodziej.com/exploring-circular-text-in-css-and-svg/</link><pubDate>Sun, 26 Jun 2022 00:53:51 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/exploring-circular-text-in-css-and-svg/</guid><description>&lt;p>I decided I&amp;rsquo;m sick of the grid. I want to align some text to a circle.&lt;/p>
+&lt;p>As it turns out, it&amp;rsquo;s not so hard to do this with SVG. You don&amp;rsquo;t even need a complicated path element. Just grab yourself a &lt;code>&amp;lt;circle&amp;gt;&lt;/code>, like so:&lt;/p>
+&lt;script
+data-slug-hash="XWpEdaJ"
+data-user="ashleykolodziej"
+data-height="650"
+data-default-tab="result"
+data-theme-id="8862"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>
+&lt;p>With this pen, I wanted to explore depth, so I adjusted the placement, opacity, and size of the text in each circle.&lt;/p>
+&lt;script
+data-slug-hash="poRLbeg"
+data-user="ashleykolodziej"
+data-height="650"
+data-default-tab="result"
+data-theme-id="8862"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>
+&lt;p>And of course, if you know me, you know I&amp;rsquo;m into my colors. So I thought, well, rainbows are sort of a circle too.&lt;/p>
+&lt;script
+data-slug-hash="gOgeMvJ"
+data-user="ashleykolodziej"
+data-height="650"
+data-default-tab="result"
+data-theme-id="8862"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>
+&lt;h2 id="writing-creative-css">Writing creative CSS&lt;/h2>
+&lt;p>My best moments in CSS are when I find out something new, and just keep riffing on it endlessly. I&amp;rsquo;ve got a &lt;a href="https://www.bu.edu/cds-faculty/">whole site&lt;/a> dedicated to this rainbow situation here:&lt;/p>
+&lt;script
+data-slug-hash="VwYagVN"
+data-user="ashleykolodziej"
+data-height="650"
+data-default-tab="result"
+data-theme-id="8862"
+class='codepen'
+async
+src="//codepen.io/assets/embed/ei.js"
+>&lt;/script>
+&lt;p>This is how you learn in design school. You take a piece of paper, and you cut it up and really focus on how the shapes or colors or just one piece of it is interacting with the rest. And then, you figure out the best bits.&lt;/p></description></item><item><title>How I added Webmentions support to my static website</title><link>https://ashleykolodziej.com/add-webmentions-to-static-site/</link><pubDate>Sun, 19 Jun 2022 22:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/add-webmentions-to-static-site/</guid><description>&lt;p>Reading Miriam Suzanne&amp;rsquo;s &lt;a href="https://www.miriamsuzanne.com/2022/06/04/indiweb/">excellent article&lt;/a> on the complexity of implementing Webmentions got me thinking about the IndieWeb again. I stepped away from social media a while back, but the one thing I&amp;rsquo;ve consistently missed is having a way to record all the little moments that make up who I am. Since I&amp;rsquo;m on break from classes and teaching, I decided to challenge myself by adding Webmentions to my own site and documenting the process. Hopefully it&amp;rsquo;ll help someone else out!&lt;/p>
 &lt;hr>
 &lt;h2 id="step-one-choose-a-tech-stack">Step one: Choose a tech stack&lt;/h2>
 &lt;p>&lt;a href="https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/">I&amp;rsquo;m told this is a lot easier if you use WordPress or a CMS&lt;/a>. That said, despite WordPress being my day-job-specialty, the last evidence of WordPress on my personal site is &lt;a href="https://web.archive.org/web/20161010003336/http://lastletterdesign.com/">over here on archive.org&lt;/a>. So here we are: the tough road. I promise it&amp;rsquo;s not as tough as it looks.&lt;/p>
