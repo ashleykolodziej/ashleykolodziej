@@ -617,6 +617,9 @@ div.calendar {
     font-family: 'entypo', sans-serif;
     margin-right: .5em; }
 
+.cp_embed_wrapper {
+  margin: 3em auto; }
+
 /* From github-calendar - https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css */
 .calendar {
   width: 750px;
