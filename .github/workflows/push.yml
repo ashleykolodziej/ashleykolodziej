@@ -36,5 +36,5 @@ jobs:
       - name: Install Dependencies
         run: npm install
         
-      - name: Test Webmentions
+      # - name: Test Webmentions
         # run: npx webmention https://ashleykolodziej.com/index.xml --limit 1 --send
