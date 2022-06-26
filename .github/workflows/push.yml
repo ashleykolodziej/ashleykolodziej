@@ -37,4 +37,4 @@ jobs:
         run: npm install
         
       - name: Test Webmentions
-        run: npx webmention https://ashleykolodziej.com/index.xml --limit 1 --debug
+        run: npx webmention https://ashleykolodziej.com/index.xml --limit 1 --send
