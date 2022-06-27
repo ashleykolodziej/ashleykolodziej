@@ -349,7 +349,7 @@ nav {
 			opacity 250ms ease-in-out,
 			transform 250ms ease-in-out;
 
-		@include breakpoint(sm) {
+		@include breakpoint(md) {
 			opacity: 1;
 			transform: translateX(0);
 		}

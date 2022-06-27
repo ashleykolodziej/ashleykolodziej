@@ -10,7 +10,9 @@ $document.ready(function () {
 
 	var $navlinks = Array.from(document.querySelectorAll('.main-navigation-wrap li')),
 		$filterlinks = Array.from(document.querySelectorAll('#all-tags a')),
-		$mainNavWrap = document.querySelector('.main-navigation-wrap');
+		$mainNav = document.querySelector('.main-navigation'),
+		$mainNavWrap = document.querySelector('.main-navigation-wrap'),
+		$contentContainer = Array.from(document.querySelectorAll('.content-container'));
 
 	for ( link of $navlinks ) {
 		link.classList.add('nav-show');
@@ -35,17 +37,18 @@ $document.ready(function () {
 		}
 		$(window).scrollTop(0);
 	  	elements.children().addClass("loadin");
-	  	$footer.addClass("loadin");
-	  	runPackery();
+	  	$footer.classList.add("loadin");
 	}
 
 	$body.addEventListener("click", function (e) {
-		if (e.target.classList.contains('.load-link')) {
-			$footer.removeClass('loadin');
-			$('.active').removeClass("active");
-			$(this).parent().addClass("active");
+		var parent = event.target.closest('.load-link');
+		if (parent) {
+			e.preventDefault();
+			$footer.classList.remove('loadin');
+			document.querySelector('.active').classList.remove("active");
+			parent.classList.add("active");
 
-			load_content( this.href );
+			load_content( parent.href );
 
 			return false;
 		}
@@ -96,8 +99,6 @@ $document.ready(function () {
 				}
 
 				for ( link of $navlinks ) {
-					console.log(thisCat)
-					console.log(link.dataset.category.includes(thisCat))
 					if (link.dataset.category.includes(thisCat)) {
 						link.classList.add('nav-show');
 						link.parentElement.classList.add('has-filtered');
@@ -109,25 +110,35 @@ $document.ready(function () {
 			}
 		}
 	});
-	$('#filter').click( function (e) {
+
+	var $filter = document.querySelector('#filter');
+
+	$filter.addEventListener( 'click', function (e) {
 		e.preventDefault();
 
-		var $this = $(this);
-		var $icon = $this.children('.material-icons');
-		$this.toggleClass('open');
-		$this.next('ul').toggleClass('open');
-		$icon.html() == "clear" ? $icon.html('sort') : $icon.html('clear');
+		var $this = e.target;
+		var $icon = $this.querySelector('.material-icons');
+		$this.classList.toggle('open');
+		$this.nextElementSibling.classList.toggle('open');
+		$icon.innerHTML === "clear" ? $icon.innerHTML = 'sort' : $icon.innerHTML = 'clear';
 	});
 
-	$('#menu').click( function() {
-		var $this = $(this);
-		$this.html() == "close" ? $this.html('menu') : $this.html('close');
-		$this.toggleClass('open');
+	var $menuToggle = document.querySelector('#menu');
 
-		$('.main-navigation, .content-container, body').toggleClass('open');
+	$menuToggle.addEventListener( 'click', function(e) {
+		var $this = e.target;
+		$this.innerHTML === "close" ? $this.innerHTML = 'menu' : $this.innerHTML = 'close';
+		$this.classList.toggle('open');
+		$body.classList.toggle('open');
+		$mainNav.classList.toggle('open');
+
+		for ( container of $contentContainer ) {
+			container.classList.toggle('open');
+		}
 	});
 
 	$( '#content' ).children().addClass( "loadin" );
+
 	$footer.classList.add("loadin");
 
 	if (location.pathname !== '/') {

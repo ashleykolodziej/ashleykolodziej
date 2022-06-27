@@ -266,7 +266,7 @@ nav {
     transform: translateX(400px);
     opacity: .1;
     transition: opacity 250ms ease-in-out, transform 250ms ease-in-out; }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 992px) {
       .content-container.open {
         opacity: 1;
         transform: translateX(0); } }
