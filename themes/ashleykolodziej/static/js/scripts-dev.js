@@ -13,6 +13,26 @@ for ( link of $navlinks ) {
 	link.classList.add('nav-show');
 }
 
+function loadContentScript(url, callback) {
+	// adding the script element to the head as suggested before
+	var content = document.querySelector('#content');
+	var script = document.createElement('script');
+	script.type = 'text/javascript';
+	script.src = url;
+
+	// then bind the event to the callback function 
+	// there are several events for cross browser compatibility
+	script.onreadystatechange = callback;
+	script.onload = callback;
+
+	// fire the loading
+	content.appendChild(script);
+}
+
+var contentScriptCallback = function() {
+    runContentScripts();
+};
+
 function load_content(loadurl) {
 	fetch(loadurl)
 		.then(response => response.text())
@@ -27,6 +47,12 @@ function load_content(loadurl) {
 			history.pushState(newHTML, null, loadurl);
 			document.querySelector('#content').innerHTML = history.state;
 			animate_in(document.querySelector('#content').children);
+
+			var contentScript = document.querySelector('#content-script');
+
+			if ( contentScript ) {
+				loadContentScript(contentScript.src, contentScriptCallback);
+			}
 		}).catch(function (err) {
 			// There was an error
 			console.warn('Something went wrong.', err);

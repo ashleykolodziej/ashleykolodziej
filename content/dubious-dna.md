@@ -4,6 +4,7 @@ date: 2015-07-22
 shortdesc: What does lingering doubt look like?
 categories:
   - editorial
+  - art direction
 ---
 
 The heart of [this piece I designed on DNA profiling](https://www.bu.edu/articles/2015/dna-profiling/) focuses on a researcher who is working to improve the reliability of DNA profiling for crime scenes. Throughout the article, she calls into question the many factors that may cause incorrect profiling - leading to the grim possibility an innocent person could be convicted. 
@@ -525,7 +526,10 @@ Some of the animation relies on JavaScript, but in the pullquote above, I used a
 <span class="dna z-9 p-9 dna-js" style="transform: translate3d(9.645px, -15.2306px, 0px) scale(1, 1.15);">Testable DNA tricky to get from hairs on floor</span><br>
 <span class="dna z-8 p-10 dna-js" style="transform: translate3d(11.6824px, 27.3955px, 0px) scale(1, 1.15);">How many people have been through here?</span></p>
 </div>
-<script src="/dubious-dna/script.js"></script>
+<script id="content-script" src="/dubious-dna/script.js"></script>
+<script>
+  runContentScripts();
+</script>
 {{< /rawhtml >}}
 
 Even minor movements by the user (either phone tilts or mouse movements) disturb the scene; it is deliberately delicate.
