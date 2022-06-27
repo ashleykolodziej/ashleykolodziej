@@ -30,7 +30,13 @@ function loadContentScript(url, callback) {
 }
 
 var contentScriptCallback = function() {
-    runContentScripts();
+	if (typeof window.__CPEmbed === "function") {
+		window.__CPEmbed();
+	}
+	
+	if (typeof runContentScripts === "function") {
+		runContentScripts();
+	}
 };
 
 function load_content(loadurl) {
@@ -48,7 +54,7 @@ function load_content(loadurl) {
 			document.querySelector('#content').innerHTML = history.state;
 			animate_in(document.querySelector('#content').children);
 
-			var contentScript = document.querySelector('#content-script');
+			var contentScript = document.querySelector('#content script');
 
 			if ( contentScript ) {
 				loadContentScript(contentScript.src, contentScriptCallback);
