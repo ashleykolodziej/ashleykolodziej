@@ -2,10 +2,11 @@
 title: "#OneBU"
 date: 2014-11-20
 draft: false
-shortdesc: Tumblr is not exactly my favorite CMS to skin.
+shortdesc: Using IFTTT to connect multiple social platforms in one photo contest.
 categories:
   - development
   - automation
+budget: small
 ---
 A tumblr theme for a photo contest held by Boston University Public Relations. I relied heavily on [IFTTT](https://ifttt.com/) to grab photos from a variety of sources, including Facebook, Twitter, Weibo, RenRen, Google Plus, and Instagram. 
 

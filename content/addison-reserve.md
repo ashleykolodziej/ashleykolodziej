@@ -3,9 +3,9 @@ title: Addison Reserve Country Club
 date: 2012-06-01
 categories:
   - design
-hasPath: "true"
 draft: false
 shortdesc: Telling a new chapter in an old club's story.
+budget: large
 ---
 [Addison Reserve](https://web.archive.org/web/20131112131722/http://www.addisonreserve.cc/Club/Scripts/Home/home.asp) is a country club in Delray Beach, Florida, that wanted to show off major renovations and tell a new chapter in the club’s story. 
 
