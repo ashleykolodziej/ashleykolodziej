@@ -9,6 +9,7 @@ public_folder: /img
 collections:
   - name: 'posts'
     label: 'Posts'
+    label_singular: 'Post'
     folder: 'content'
     create: true
     slug: '{{slug}}'
@@ -18,6 +19,13 @@ collections:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: "Draft", name: "draft", widget: "boolean", required: false, default: true }
-      - { label: 'Short Description', name: 'shortdesc', widget: 'string' }
-      - { label: 'Category', name: 'categories', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Short Description', name: 'shortdesc', widget: 'string', required: false, allow_add: true }
+      - { label: 'Category', name: 'categories', widget: 'list', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
+    view_groups:
+      - label: Year
+        field: date
+        # groups items based on the value matched by the pattern
+        pattern: \d{4}
+      - label: Drafts
+        field: draft

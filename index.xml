@@ -395,24 +395,514 @@ style="position:absolute; top:0; left: 0">&lt;/iframe>
 &lt;p>What&amp;rsquo;s the difference between a name and a scribble to my code? The speed at which you animate each stroke. It was pretty easy to turn this approach from my header into a small function. Loop through the SVG, find all the lines, animate them using the timing I like for that particular item. This made it very easy to create all the animations that followed. Everything from the scribbles, to the margin writing, to the diary after was as simple as quickly masking the letters in Illustrator and giving them a class of &amp;ldquo;animate&amp;rdquo;.&lt;/p>
 &lt;p>I used Waypoints to call that function once the item scrolls just into view. Since some of the animations take some time, it was better to start it earlier than later.&lt;/p></description></item><item><title>Every Cell Has a Story</title><link>https://ashleykolodziej.com/neil-ganem/</link><pubDate>Wed, 06 Jan 2016 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/neil-ganem/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;p>I was lucky enough to be able to work with the amazing Joe Chan on this one. After I read this article, one thing stuck out at me, and it stuck out hard: how much dedication do you have to have to look at cells dividing for days on end? I really wanted to capture that and make it the centerpiece of the article.&lt;/p>
-&lt;p>If you&amp;rsquo;ve ever sat down, and done something, and then looked up and it&amp;rsquo;s suddenly hours later, you know what I mean when I say you do something like this, and time is different for you. That&amp;rsquo;s what the design for this article is all about. I wanted everything to feel endless and repetitive, but captivating.&lt;/p></description></item><item><title>Africa Research Series</title><link>https://ashleykolodziej.com/africa-research-series/</link><pubDate>Thu, 03 Dec 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/africa-research-series/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>This three-part series gives an in-depth look at three Boston University researchers studying African culture. I used hand-drawn traditional patterns and colors to help capture the unique feel of each area while maintaining a unifying element across the series.&lt;/p>
-&lt;p>After the writer, Susan Seligson, described the stories to me and her own personal experiences while visiting Africa, the first thing I wanted to know was what the language sounded like. &lt;a href="http://www.bu.edu/research/articles/lesotho/">Lesotho: Life on the Edge&lt;/a> offered a perfect opportunity to bring that into the design. Suzie had the idea of incorporating traditional Basotho proverbs throughout the story, and I asked if they could be recorded. I took those recordings and designed and developed a minimal audio player for an experience that focuses on the language itself.&lt;/p></description></item><item><title>College of Communication</title><link>https://ashleykolodziej.com/college-of-communication/</link><pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/college-of-communication/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>If you&amp;rsquo;ve ever sat down, and done something, and then looked up and it&amp;rsquo;s suddenly hours later, you know what I mean when I say you do something like this, and time is different for you. That&amp;rsquo;s what the design for this article is all about. I wanted everything to feel endless and repetitive, but captivating.&lt;/p></description></item><item><title>College of Communication</title><link>https://ashleykolodziej.com/college-of-communication/</link><pubDate>Thu, 17 Sep 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/college-of-communication/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;p>The College of Communication (COM) told us two things: that they tell stories, and that they wanted a pathfinder tool to help incoming freshmen explore various programs.&lt;/p>
 &lt;p>Communication is a major that&amp;rsquo;s close to home for me—not because it&amp;rsquo;s my major, but because I worked at a newspaper in college, and I knew so many people in journalism. There&amp;rsquo;s a lot of stigma these days around both communications and art majors. How will you get a job? Are you putting yourself in debt for nothing? Is there even a career out there for you? It wasn&amp;rsquo;t that long since I was out of school. Even if it was, you don&amp;rsquo;t have to go far to find examples lampooning communications and arts degrees online, especially when stacked against STEM degrees. It&amp;rsquo;s a (demonstrably) hard field to break into.&lt;/p>
 &lt;p>With these challenges fresh in my mind, I set to creating a site that would address these concerns for parents and students, without losing the vibrant storytelling presence the school is so good at.&lt;/p>
 &lt;p>I used the storytelling metaphor extensively to tell the story of graduates&amp;rsquo; success in the real world. COM is unique in that it truly has the numbers and alumni to prove its programs are successful. I chose to showcase these on the &lt;a href="http://www.bu.edu/com/">homepage&lt;/a> and recommended pairing successful names and faces with programs to make those numbers more human. All of these drive to &lt;a href="http://www.bu.edu/com/academics/degree-programs/">explore programs&lt;/a>, where you can learn more about what the College of Communication is doing in each of its focus areas, or compare degrees within each focus area. The &lt;a href="http://www.bu.edu/com/academics/what-we-do/">What We Do&lt;/a> pages showcase COM&amp;rsquo;s continued growth and effort in each area, gathering news, events, media, and faculty research in one area for students and influencers to explore.&lt;/p>
 &lt;p>The &lt;a href="http://www.bu.edu/com/pathfinder/">pathfinder&lt;/a> shows students how to translate their passions into careers, and drives to the best program COM offers as a first step in each career. I explored a number of ideas in this tool - everything from an &lt;a href="../assets/alchemy-poc/">alchemy clone&lt;/a> where you would combine basic areas of interest to get more specific ones, and eventually build careers from each of the specific interests, to a quiz where &lt;a href="https://ashleykolodziej.com/assets/quiz-img/com-hp-4-path-3.jpg">illustrations change&lt;/a> depending on &lt;a href="../assets/quiz-img/com-hp-4-path-5.jpg">what you hover over&lt;/a>. At one time I was even exploring literal paint mixing as a metaphor, because&amp;hellip; why not? I came to the conclusion after building a quick proof of concept that the alchemy game was too finicky and fun for actual use, and the quiz ran a risk of becoming too focused on personality traits. We eventually settled on a fancy (but functional) filter based around interests. Choose what you love on one side, see what you can do as a career with that on the other. Hence: do what you love &amp;amp; love what you do.&lt;/p>
 &lt;p>On the data side of things, I was very interested in exploring ways to find out some additional information about students from the pathfinder. Wouldn&amp;rsquo;t it be interesting to see what &lt;em>other&lt;/em> interests a student might have that you wouldn&amp;rsquo;t expect who enrolls in your program? And which example careers were most alluring? This is trackable with Google Analytics, but it takes some serious thought and planning to structure the data in a meaningful way to content editors. I worked with one of our developers to find a way to send a list of the interests associated with a successful program click back to analytics on the way out as well the career it was associated with. You can also see what top interests are, so content editors can track popular interests over time and tweak filters and careers for the changing job market as necessary.&lt;/p>
-&lt;p>This website was recognized with a &lt;a href="http://www.case.org/Awards/Circle_of_Excellence/Previous_Winners/2016_Winners/Websites_2016.html#Sub">Silver 2016 CASE National Circle of Excellence Award&lt;/a>.&lt;/p></description></item><item><title>Dubious DNA</title><link>https://ashleykolodziej.com/dubious-dna/</link><pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/dubious-dna/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>The heart of this piece focuses on a researcher who is working to improve the reliability of DNA profiling for crime scenes, and throughout the article, she calls into question the many factors that may cause incorrect profiling - leading to the grim possibility an innocent person could be convicted. In my design, I let these questions hang in the air uncomfortably around the crime scenes they inhabit, like the dust, skin cells, and flecks they raise concerns about. Even minor movements by the user (either phone tilts or mouse movements) disturb the scene; it is deliberately delicate.&lt;/p></description></item><item><title>Archaeology Department</title><link>https://ashleykolodziej.com/archaeology-department/</link><pubDate>Mon, 13 Jul 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/archaeology-department/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>Highlights for this responsive site include an &lt;a href="http://www.bu.edu/archaeology/research-fieldwork/">interactive map&lt;/a>.&lt;/p></description></item><item><title>#OneBU</title><link>https://ashleykolodziej.com/onebu/</link><pubDate>Thu, 20 Nov 2014 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/onebu/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>A tumblr theme for a photo contest held by Boston University Public Relations. We relied heavily on IFTTT to grab photos from a variety of sources, including Facebook, Twitter, Weibo, RenRen, Google Plus, and Instagram.&lt;/p></description></item><item><title>The Club at Rolling Hills</title><link>https://ashleykolodziej.com/rolling-hills/</link><pubDate>Fri, 05 Sep 2014 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/rolling-hills/</guid><description>&lt;p>I&amp;rsquo;ve never actually been to this place, or to Colorado in general. But when these guys described the area to me and showed me pictures of some of the buildings, it reminded me of home.&lt;/p>
+&lt;p>This website was recognized with a &lt;a href="http://www.case.org/Awards/Circle_of_Excellence/Previous_Winners/2016_Winners/Websites_2016.html#Sub">Silver 2016 CASE National Circle of Excellence Award&lt;/a>.&lt;/p></description></item><item><title>Dubious DNA</title><link>https://ashleykolodziej.com/dubious-dna/</link><pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/dubious-dna/</guid><description>&lt;p>The heart of &lt;a href="https://www.bu.edu/articles/2015/dna-profiling/">this piece I designed on DNA profiling&lt;/a> focuses on a researcher who is working to improve the reliability of DNA profiling for crime scenes. Throughout the article, she calls into question the many factors that may cause incorrect profiling - leading to the grim possibility an innocent person could be convicted.&lt;/p>
+&lt;style>
+@font-face {
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 300;
+src: url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xMmDra0ONnO3FPH--kzkC5zr7w4p9aSvGirXi6XmeXNA.woff2) format("woff2"), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xGAzD5WKQVN4wSyA0MYYi4rr7w4p9aSvGirXi6XmeXNA.woff) format("woff");
+}
+@font-face {
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+src: url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xIgEy7irt_A5K-aDq9kG7DHr7w4p9aSvGirXi6XmeXNA.woff2) format("woff2"), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xM6Eyu0BCqAfob_z3hhzRFzr7w4p9aSvGirXi6XmeXNA.woff) format("woff");
+}
+.dna-animations span {
+max-width: 7em;
+}
+.dna-animations {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.dna, .dna-pullquote-quote {
+font-family: "Open Sans Condensed", "Oswald", "proxima-nova-extra-condensed", "BentonComp", sans-serif;
+color: #fff;
+letter-spacing: .06em;
+font-weight: 300;
+text-transform: uppercase;
+line-height: 1;
+transform: scale(1, 1.15);
+}
+.dna-pullquote-quote {
+color: #000;
+background-color: #f7ff77;
+box-shadow: 5px 0 0 #f7ff77, -5px 0 0 #f7ff77;
+-webkit-box-decoration-break: clone;
+-ms-box-decoration-break: clone;
+-o-box-decoration-break: clone;
+box-decoration-break: clone;
+line-height: 1.45;
+font-size: 18px;
+letter-spacing: .05em;
+text-align: center;
+}
+@media screen and (min-width: 768px) {
+.dna-pullquote-quote {
+font-size: 22px;
+}
+}
+.dna-pullquote {
+position: relative;
+z-index: 100;
+line-height: 1;
+}
+@media screen and (min-width: 1200px) {
+.dna-pullquote {
+width: 50%;
+}
+}
+.dust {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+width: 100%;
+height: 100%;
+-webkit-animation: tv-noise 0.4s steps(4) infinite;
+-moz-animation: tv-noise 0.4s steps(4) infinite;
+-ms-animation: tv-noise 0.4s steps(4) infinite;
+-o-animation: tv-noise 0.4s steps(4) infinite;
+animation: tv-noise 0.4s steps(4) infinite;
+}
+@-webkit-keyframes tv-noise {
+0% {
+background-image: url("/img/noise-1.png");
+}
+25% {
+background-image: url("/img/noise-2.png");
+}
+50% {
+background-image: url("/img/noise-3.png");
+}
+75% {
+background-image: url("/img/noise-4.png");
+}
+100% {
+background-image: url("/img/noise-5.png");
+}
+}
+@-moz-keyframes tv-noise {
+0% {
+background-image: url("/img/noise-1.png");
+}
+25% {
+background-image: url("/img/noise-2.png");
+}
+50% {
+background-image: url("/img/noise-3.png");
+}
+75% {
+background-image: url("/img/noise-4.png");
+}
+100% {
+background-image: url("/img/noise-5.png");
+}
+}
+@-ms-keyframes tv-noise {
+0% {
+background-image: url("/img/noise-1.png");
+}
+25% {
+background-image: url("/img/noise-2.png");
+}
+50% {
+background-image: url("/img/noise-3.png");
+}
+75% {
+background-image: url("/img/noise-4.png");
+}
+100% {
+background-image: url("/img/noise-5.png");
+}
+}
+@-o-keyframes tv-noise {
+0% {
+background-image: url("/img/noise-1.png");
+}
+25% {
+background-image: url("/img/noise-2.png");
+}
+50% {
+background-image: url("/img/noise-3.png");
+}
+75% {
+background-image: url("/img/noise-4.png");
+}
+100% {
+background-image: url("/img/noise-5.png");
+}
+}
+@keyframes tv-noise {
+0% {
+background-image: url("/img/noise-1.png");
+}
+25% {
+background-image: url("/img/noise-2.png");
+}
+50% {
+background-image: url("/img/noise-3.png");
+}
+75% {
+background-image: url("/img/noise-4.png");
+}
+100% {
+background-image: url("/img/noise-5.png");
+}
+}
+.z-1 {
+font-size: 43.85714px;
+color: #fff;
+text-shadow: 9999px 0 4.46429px currentColor;
+position: absolute;
+z-index: 1;
+opacity: 0.77143;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-1 {
+font-size: 6vw;
+text-shadow: 9999px 0 8.75px currentColor;
+}
+}
+.z-2 {
+font-size: 28.42857px;
+color: #fff;
+text-shadow: 9999px 0 2.85714px currentColor;
+position: absolute;
+z-index: 2;
+opacity: 0.78171;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-2 {
+font-size: 4.2vw;
+text-shadow: 9999px 0 5.6px currentColor;
+}
+}
+.z-3 {
+font-size: 16.42857px;
+color: #fff;
+text-shadow: 9999px 0 1.60714px currentColor;
+position: absolute;
+z-index: 3;
+opacity: 0.78971;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-3 {
+font-size: 2.8vw;
+text-shadow: 9999px 0 3.15px currentColor;
+}
+}
+.z-4 {
+font-size: 7.85714px;
+color: #fff;
+text-shadow: 9999px 0 0.71429px currentColor;
+position: absolute;
+z-index: 4;
+opacity: 0.79543;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-4 {
+font-size: 1.8vw;
+text-shadow: 9999px 0 1.4px currentColor;
+}
+}
+.z-5 {
+font-size: 2.71429px;
+color: #fff;
+text-shadow: 9999px 0 0.17857px currentColor;
+position: absolute;
+z-index: 5;
+opacity: 0.79886;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-5 {
+font-size: 1.2vw;
+text-shadow: 9999px 0 0.35px currentColor;
+}
+}
+.z-6 {
+font-size: 1px;
+color: #fff;
+text-shadow: 9999px 0 0px currentColor;
+position: absolute;
+z-index: 6;
+opacity: 0.8;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-6 {
+font-size: 1vw;
+text-shadow: 9999px 0 0px currentColor;
+}
+}
+.z-7 {
+font-size: 2.71429px;
+color: #fff;
+text-shadow: 9999px 0 0.17857px currentColor;
+position: absolute;
+z-index: 7;
+opacity: 0.79886;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-7 {
+font-size: 1.2vw;
+text-shadow: 9999px 0 0.35px currentColor;
+}
+}
+.z-8 {
+font-size: 7.85714px;
+color: #fff;
+text-shadow: 9999px 0 0.71429px currentColor;
+position: absolute;
+z-index: 8;
+opacity: 0.79543;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-8 {
+font-size: 1.8vw;
+text-shadow: 9999px 0 1.4px currentColor;
+}
+}
+.z-9 {
+font-size: 16.42857px;
+color: #fff;
+text-shadow: 9999px 0 1.60714px currentColor;
+position: absolute;
+z-index: 9;
+opacity: 0.78971;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-9 {
+font-size: 2.8vw;
+text-shadow: 9999px 0 3.15px currentColor;
+}
+}
+.z-10 {
+font-size: 28.42857px;
+color: #fff;
+text-shadow: 9999px 0 2.85714px currentColor;
+position: absolute;
+z-index: 10;
+opacity: 0.78171;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-10 {
+font-size: 4.2vw;
+text-shadow: 9999px 0 5.6px currentColor;
+}
+}
+.z-11 {
+font-size: 43.85714px;
+color: #fff;
+text-shadow: 9999px 0 4.46429px currentColor;
+position: absolute;
+z-index: 11;
+opacity: 0.77143;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-11 {
+font-size: 6vw;
+text-shadow: 9999px 0 8.75px currentColor;
+}
+}
+.dna-animations {
+height: 80vh;
+padding: 20px;
+box-sizing: border-box;
+background: url("/img/research-dna-2.jpg") no-repeat;
+background-position: center right;
+background-size: cover;
+position: relative;
+overflow: hidden;
+margin-bottom: 30px;
+}
+#dna-2 {
+background-image: url("/img/dna-2.jpg");
+}
+#dna-2 .p-5 {
+left: 9%;
+bottom: 37%;
+}
+#dna-2 .p-2 {
+left: -1%;
+bottom: -5%;
+}
+#dna-2 .p-3 {
+left: 83%;
+top: 20%;
+}
+#dna-2 .p-4 {
+left: 18%;
+bottom: 19%;
+}
+#dna-2 .p-1 {
+left: 36%;
+top: 3%;
+}
+#dna-2 .p-6 {
+left: 91%;
+bottom: 37%;
+}
+#dna-2 .p-7 {
+left: 80%;
+bottom: 10%;
+}
+#dna-2 .p-8 {
+left: 68%;
+bottom: 20%;
+}
+#dna-2 .p-9 {
+left: 42%;
+bottom: 8%;
+}
+#dna-2 .p-10 {
+left: 3%;
+top: 12%;
+}
+&lt;/style>
+&lt;div class="dna-animations portfolio-scroll" id="dna-2">
+&lt;aside class="dna dna-pullquote">&lt;span class="dna-pullquote-quote">&lt;strong>Often, labs aren’t even certain&lt;/strong> how many people contributed to the jumble of DNA detected on a weapon or the victim’s clothing.&amp;nbsp;&lt;/span>&lt;/aside>
+&lt;div class="dust">&lt;/div>
+&lt;p>&lt;span class="dna z-1 p-1 dna-js" style="transform: translate3d(-2.23846px, 0.886599px, 0px) scale(1, 1.15);">Extract genetic material from sweat on shirt collar&lt;/span>&lt;br>
+&lt;span class="dna z-1 p-2 dna-js" style="transform: translate3d(0.257668px, -1.82525px, 0px) scale(1, 1.15);">Was the shirt borrowed?&lt;/span>&lt;br>
+&lt;span class="dna z-3 p-3 dna-js" style="transform: translate3d(-5.09413px, 1.57986px, 0px) scale(1, 1.15);">DNA from at least three people&lt;/span>&lt;br>
+&lt;span class="dna z-4 p-4 dna-js" style="transform: translate3d(-0.781734px, -3.5026px, 0px) scale(1, 1.15);">Can we isolate this?&lt;/span>&lt;br>
+&lt;span class="dna z-5 p-5 dna-js" style="transform: translate3d(-0.101602px, 1.04677px, 0px) scale(1, 1.15);">Check for skin cells&lt;/span>&lt;br>
+&lt;span class="dna z-6 p-6 dna-js" style="transform: translate3d(-5.32367px, -6.34032px, 0px) scale(1, 1.15);">DNA degraded by heat?&lt;/span>&lt;br>
+&lt;span class="dna z-7 p-7 dna-js" style="transform: translate3d(-4.5138px, 6.55211px, 0px) scale(1, 1.15);">Testable DNA tricky to get from hairs on couch&lt;/span>&lt;br>
+&lt;span class="dna z-8 p-8 dna-js" style="transform: translate3d(-3.63907px, -5.12267px, 0px) scale(1, 1.15);">How many people picked up that magazine?&lt;/span>&lt;br>
+&lt;span class="dna z-9 p-9 dna-js" style="transform: translate3d(-1.8562px, 6.24873px, 0px) scale(1, 1.15);">Is this evidence related to the crime?&lt;/span>&lt;br>
+&lt;span class="dna z-10 p-10 dna-js" style="transform: translate3d(0.769801px, -11.2412px, 0px) scale(1, 1.15);">Who was in the apartment last week?&lt;/span>&lt;/p>
+&lt;/div>
+&lt;p>In my design, I let these questions hang in the air uncomfortably around the crime scenes they inhabit, much like the dust, skin cells, and flecks they raise concerns about. I&amp;rsquo;m using a subtle keyframe animation on top of each photo to create the slight animated noise effect.&lt;/p>
+&lt;p>To create the right look and feel, I worked with &lt;a href="https://janicechecchio.com/">Janice Checchio&lt;/a>, an amazing photographer and art director on the Boston University photography team, to get a gritty, noisy look to the images, and to take photos of everyday objects which both aligned with the story&amp;rsquo;s content and could conceivably be found at a crime scene.&lt;/p>
+&lt;style>
+#dna-3 {
+background-image: url("/img/dna-3.jpg");
+overflow: hidden;
+}
+#dna-3 span.dna {
+font-size: 16px;
+letter-spacing: .05em;
+display: block;
+float: left;
+min-width: 100px;
+opacity: .75;
+}
+.dna-names {
+position: absolute;
+width: 100%;
+height: 100%;
+background: url("/img/names.gif") 0 0 repeat transparent;
+top: 0;
+left: 0;
+opacity: .5;
+}
+&lt;/style>
+&lt;div class="dna-animations portfolio-scroll" id="dna-3">
+&lt;aside class="dna-pullquote">&lt;span class="dna-pullquote-quote">&lt;strong>With a DNA mixture, it’s entirely possible to create false links&lt;/strong> between crime scene evidence and an innocent person who was nowhere near the crime.&lt;strong> &lt;/strong>&lt;/span>&lt;/aside>
+&lt;div class="dna-names">&lt;/div>
+&lt;div class="dust">&lt;/div>
+&lt;/div>
+&lt;p>Some of the animation relies on JavaScript, but in the pullquote above, I used a gif that I created in Photoshop instead to improve performance.&lt;/p>
+&lt;style>
+#dna-4 {
+background-image: url("/img/dna-4.jpg");
+overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+#dna-4 aside {
+text-align: center;
+}
+}
+#dna-4 .p-5 {
+left: 9%;
+bottom: 37%;
+}
+#dna-4 .p-2 {
+left: -1%;
+top: 20%;
+}
+#dna-4 .p-3 {
+left: 80%;
+top: 20%;
+}
+#dna-4 .p-4 {
+left: 18%;
+bottom: 19%;
+}
+#dna-4 .p-1 {
+left: 36%;
+top: 3%;
+}
+#dna-4 .p-6 {
+left: 90%;
+bottom: 37%;
+}
+#dna-4 .p-7 {
+left: 86%;
+bottom: 10%;
+}
+#dna-4 .p-8 {
+left: 69%;
+bottom: 20%;
+}
+#dna-4 .p-9 {
+left: 35%;
+bottom: 8%;
+}
+#dna-4 .p-10 {
+left: 24%;
+top: 12%;
+}
+&lt;/style>
+&lt;div id="dna-4" class="dna-animations portfolio-scroll">
+&lt;aside class="dna dna-pullquote">&lt;span class="dna-pullquote-quote">How did the gold standard of forensic evidence &lt;strong>become so tarnished?&lt;/strong>&lt;/span>&lt;/aside>
+&lt;div class="dust">&lt;/div>
+&lt;p>&lt;span class="dna z-1 p-1 dna-js" style="transform: translate3d(-1.011px, -1.40104px, 0px) scale(1, 1.15);">Low copy DNA – weak genetic signal&lt;/span>&lt;br>
+&lt;span class="dna z-2 p-2 dna-js" style="transform: translate3d(2.7126px, 2.88437px, 0px) scale(1, 1.15);">DNA from at least three people&lt;/span>&lt;br>
+&lt;span class="dna z-3 p-3 dna-js" style="transform: translate3d(-1.21713px, -8.02941px, 0px) scale(1, 1.15);">Can we isolate the suspect’s DNA?&lt;/span>&lt;br>
+&lt;span class="dna z-4 p-4 dna-js" style="transform: translate3d(4.12813px, 5.65795px, 0px) scale(1, 1.15);">How do we make sense of all this?&lt;/span>&lt;br>
+&lt;span class="dna z-5 p-5 dna-js" style="transform: translate3d(6.0358px, -5.3148px, 0px) scale(1, 1.15);">Perfect DNA match to suspect unlikely&lt;/span>&lt;br>
+&lt;span class="dna z-6 p-6 dna-js" style="transform: translate3d(2.10593px, 12.3277px, 0px) scale(1, 1.15);">Will this be enough DNA to identify a suspect?&lt;/span>&lt;br>
+&lt;span class="dna z-7 p-7 dna-js" style="transform: translate3d(3.68933px, -8.09507px, 0px) scale(1, 1.15);">Is it possible to get a clean DNA signal?&lt;/span>&lt;br>
+&lt;span class="dna z-8 p-8 dna-js" style="transform: translate3d(6.11587px, 8.32556px, 0px) scale(1, 1.15);">Signal could be from someone else&lt;/span>&lt;br>
+&lt;span class="dna z-9 p-9 dna-js" style="transform: translate3d(9.645px, -15.2306px, 0px) scale(1, 1.15);">Testable DNA tricky to get from hairs on floor&lt;/span>&lt;br>
+&lt;span class="dna z-8 p-10 dna-js" style="transform: translate3d(11.6824px, 27.3955px, 0px) scale(1, 1.15);">How many people have been through here?&lt;/span>&lt;/p>
+&lt;/div>
+&lt;script src="https://ashleykolodziej.com/dubious-dna/script.js">&lt;/script>
+&lt;p>Even minor movements by the user (either phone tilts or mouse movements) disturb the scene; it is deliberately delicate.&lt;/p></description></item><item><title>Archaeology Department</title><link>https://ashleykolodziej.com/archaeology-department/</link><pubDate>Mon, 13 Jul 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/archaeology-department/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>Highlights for this responsive site include an &lt;a href="http://www.bu.edu/archaeology/research-fieldwork/">interactive map&lt;/a>.&lt;/p></description></item><item><title>#OneBU</title><link>https://ashleykolodziej.com/onebu/</link><pubDate>Thu, 20 Nov 2014 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/onebu/</guid><description>&lt;p>A tumblr theme for a photo contest held by Boston University Public Relations. I relied heavily on &lt;a href="https://ifttt.com/">IFTTT&lt;/a> to grab photos from a variety of sources, including Facebook, Twitter, Weibo, RenRen, Google Plus, and Instagram.&lt;/p>
+&lt;p>See more at: &lt;a href="http://onebuphoto.tumblr.com/">http://onebuphoto.tumblr.com/&lt;/a>&lt;/p>
+&lt;div class="portfolio-scroll">
+&lt;div class="portfolio-image" style="max-width: 1920px;">
+&lt;img src="https://ashleykolodziej.com/img/screenshot-2022-06-26-at-19-13-59-onebu.png" alt="A Tumblr theme for a photo contest for Boston University. Features a clean, minimal, Pinterest-like design where each photo is laid out to create the best use of space. The top has a slightly blurred image of Boston University in the fall, with the leaves on the trees turning yellow.">
+&lt;/div>
+&lt;/div></description></item><item><title>The Club at Rolling Hills</title><link>https://ashleykolodziej.com/rolling-hills/</link><pubDate>Fri, 05 Sep 2014 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/rolling-hills/</guid><description>&lt;p>I&amp;rsquo;ve never actually been to this place, or to Colorado in general. But when these guys described the area to me and showed me pictures of some of the buildings, it reminded me of home.&lt;/p>
 &lt;p>I grew up in Northern Michigan, which is where most people go to vacation and is widely regarded as one of the nicest places you can go in Michigan. We&amp;rsquo;ve got the nation&amp;rsquo;s most picturesque lakeshore and that small-town feel. And more than anything, we have natural wood and mounted antlers and log cabins.&lt;/p>
 &lt;p>So. Many. Log cabins.&lt;/p>
 &lt;p>So the look and feel on this wasn&amp;rsquo;t a stretch for me. It was everything I was raised in.&lt;/p>
 &lt;p>A side note: that mountain texture in the background? Ripped paper. If I remember correctly, I sat at my desk ripping paper like a crazy lady and snapped a photo with my phone. Gotta do what you gotta do though, right?&lt;/p>
-&lt;!-- raw HTML omitted --></description></item><item><title>Fitness and Recreation Center</title><link>https://ashleykolodziej.com/fitness-and-recreation-center/</link><pubDate>Wed, 04 Jun 2014 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/fitness-and-recreation-center/</guid><description>&lt;p>Who&amp;rsquo;s the main audience for Boston University&amp;rsquo;s Fitness &amp;amp; Recreation Center?&lt;/p>
+&lt;!-- raw HTML omitted --></description></item><item><title>Boston University Fitness and Recreation Center (2014)</title><link>https://ashleykolodziej.com/fitness-and-recreation-center/</link><pubDate>Wed, 04 Jun 2014 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/fitness-and-recreation-center/</guid><description>&lt;p>Who&amp;rsquo;s the main audience for Boston University&amp;rsquo;s Fitness &amp;amp; Recreation Center?&lt;/p>
 &lt;p>Well, yeah, it&amp;rsquo;s sort of the students. But &lt;em>really&lt;/em>, it&amp;rsquo;s faculty and staff, because we pay for memberships and students don&amp;rsquo;t.&lt;/p>
 &lt;p>Thus began the long and exhausting process of selling myself on excercising regularly.&lt;/p>
 &lt;p>This hadn&amp;rsquo;t gone well in the past for me. I have a famous time, &lt;em>The Time I Exercised&lt;/em>. Similar to &lt;em>The Time I Got Drunk&lt;/em> and &lt;em>The Time I Tried To Clean the Coffeepot Before Drinking the Coffee In It&lt;/em>, it only happened once and it ended disastrously. It began with a Jillian Michaels tape and ended with me hobbling up and down five flights of stairs at about the pace of a snail for a week straight. Why five flights of stairs? At the time, I lived in a fifth floor apartment where the elevator just so happened to break right after I destroyed every muscle in my body (even the unrelated ones!) doing squats.&lt;/p>
@@ -424,17 +914,52 @@ style="position:absolute; top:0; left: 0">&lt;/iframe>
 &lt;p>This website was recognized with Silver, Websites: Special Purpose | 2015 CASE District I Communication Awards and Bronze, Websites: Individual Sub-Website | 2015 CASE National Circle of Excellence Awards by the Council for Advancement and Support of Education.&lt;/p></description></item><item><title>Impactx2</title><link>https://ashleykolodziej.com/impactx2/</link><pubDate>Mon, 12 May 2014 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/impactx2/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;p>This website was recognized with a Gold, Websites: Fundraising (Annual, Special Campaign) | 2015 CASE District I Communication Awards by the Council for Advancement and Support of Education.&lt;/p></description></item><item><title>Golden Goose Jewelers</title><link>https://ashleykolodziej.com/golden-goose-jewelers/</link><pubDate>Sat, 03 May 2014 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/golden-goose-jewelers/</guid><description>&lt;p>A simple, single-page WordPress theme for a local jewelry store. &lt;a href="https://web.archive.org/web/20160304190835/http://www.goldengoosejewelers.com/">View an archived version of the website here&lt;/a>.&lt;/p>
 &lt;div class="portfolio-scroll">
+&lt;div class="portfolio-image" style="max-width: 1920px;">
 &lt;img src="https://ashleykolodziej.com/img/hp1.jpg" alt="Golden Goose Jewelers homepage, featuring a clean, sophisticated one-page design.">
+&lt;/div>
 &lt;/div></description></item><item><title>Cat Cay Yacht Club</title><link>https://ashleykolodziej.com/cat-cay/</link><pubDate>Sun, 01 Dec 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/cat-cay/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;p>This website was recognized with a Outstanding Achievement - Lifestyle | 2013 Interactive Media Awards by the Interactive Media Council.&lt;/p></description></item><item><title>High Notes</title><link>https://ashleykolodziej.com/high-notes/</link><pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/high-notes/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>The Citrus Club</title><link>https://ashleykolodziej.com/citrus-club/</link><pubDate>Tue, 13 Aug 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/citrus-club/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;p>I was part of a multi-person design team on this site.&lt;/p>
 &lt;p>This website was recognized with a Best in Class - Lifestyle award in the 2013 Interactive Media Awards by the Interactive Media Council.&lt;/p></description></item><item><title>Serenity Spa</title><link>https://ashleykolodziej.com/serenity-spa/</link><pubDate>Sun, 21 Jul 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/serenity-spa/</guid><description/></item><item><title>Kleen and Green</title><link>https://ashleykolodziej.com/kleen-and-green/</link><pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/kleen-and-green/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>It's a Date, I Think</title><link>https://ashleykolodziej.com/its-a-date/</link><pubDate>Wed, 03 Jul 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/its-a-date/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;p>Selected for inclusion in the &lt;a href="http://goo.gl/o7ZH4k">49&lt;!-- raw HTML omitted -->th&lt;!-- raw HTML omitted --> Publication Design Annual&lt;/a>, published by the Society of Publication Designers&lt;/p></description></item><item><title>Cedarland</title><link>https://ashleykolodziej.com/cedarland/</link><pubDate>Thu, 11 Apr 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/cedarland/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>Okay, I have to admit, animating the balloons and the clouds was pretty fun.&lt;/p></description></item><item><title>Bent Tree Country Club</title><link>https://ashleykolodziej.com/bent-tree/</link><pubDate>Sat, 09 Mar 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/bent-tree/</guid><description/></item><item><title>California Athletic Clubs</title><link>https://ashleykolodziej.com/california-athletic-clubs/</link><pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/california-athletic-clubs/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Ballantyne Country Club</title><link>https://ashleykolodziej.com/ballantyne/</link><pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/ballantyne/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Mira Vista Country Club</title><link>https://ashleykolodziej.com/mira-vista/</link><pubDate>Sat, 01 Dec 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/mira-vista/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Imperial Golf &amp; Country Club</title><link>https://ashleykolodziej.com/imperial/</link><pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/imperial/</guid><description/></item><item><title>Navesink Country Club</title><link>https://ashleykolodziej.com/navesink/</link><pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/navesink/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>PGA West</title><link>https://ashleykolodziej.com/pga-west/</link><pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/pga-west/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Fall River Country Club</title><link>https://ashleykolodziej.com/fall-river/</link><pubDate>Sat, 20 Oct 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/fall-river/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Turner Hill Country Club</title><link>https://ashleykolodziej.com/turner-hill/</link><pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/turner-hill/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Fisher Island Community Association</title><link>https://ashleykolodziej.com/fisher-island-community-association/</link><pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/fisher-island-community-association/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Los Altos Country Club</title><link>https://ashleykolodziej.com/los-altos/</link><pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/los-altos/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Manursing Country Club</title><link>https://ashleykolodziej.com/manursing/</link><pubDate>Sat, 16 Jun 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/manursing/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>The Commons Club</title><link>https://ashleykolodziej.com/commons-club/</link><pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/commons-club/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Glenmoor Country Club</title><link>https://ashleykolodziej.com/glenmoor/</link><pubDate>Sat, 09 Jun 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/glenmoor/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Addison Reserve Country Club</title><link>https://ashleykolodziej.com/addison-reserve/</link><pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/addison-reserve/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;p>&lt;a href="http://www.addisonreserve.cc/">Addison Reserve&lt;/a> is a country club in Delray Beach, Florida, that wanted to show off major renovations and tell a new chapter in the club’s story. To do this, my teammates and I came up with the concept of taking visitors to the site on a club tour through the homepage. I was tasked with creating wireframes, final mockups, copywriting, and coding of the final site.&lt;/p>
-&lt;p>The homepage opens with a rotating slideshow, giving a quick visual overview of the club’s offerings. From here, users are invited to “Discover Addison” or use the controls near the bottom of the page to switch slides. The hover state on the large button gives a preview of that tour’s layout and encourages clicking by changing to “Explore”. Panels then open, revealing highlights, video tours, galleries, and links further into the site. Users choose which areas interest them, leading them to relevant sections of the site and increasing the odds of generating leads. Multiple types of content, brief copy, and dynamic layouts between each slide keep the user engaged and informed.&lt;/p>
-&lt;p>On long pages like the History page, the site borrows elements from print design, such as introductory paragraphs and pull quotes. This breaks up the page into manageable chunks of information while showcasing the elegant feel of the facilities. Textures such as the gleaming marble, embossed leaves, and cherry wood in the navigation highlight the club’s architectural details. Finally, a constant opportunity to pursue membership lives in the banner image sitewide, ensuring users always have an easy avenue to the main goal of the site.&lt;/p>
-&lt;p>This website was recognized with a Best in Class - Lifestyle | 2012 Interactive Media Awards by the Interactive Media Council.&lt;/p></description></item><item><title>Weddings at Plantation</title><link>https://ashleykolodziej.com/plantation/</link><pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/plantation/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Ledgemont Country Club</title><link>https://ashleykolodziej.com/ledgemont/</link><pubDate>Thu, 10 May 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/ledgemont/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Ferncroft Country Club</title><link>https://ashleykolodziej.com/ferncroft/</link><pubDate>Sun, 06 May 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/ferncroft/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>The Challenge at Musket Ridge</title><link>https://ashleykolodziej.com/challenge-at-musket-ridge/</link><pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/challenge-at-musket-ridge/</guid><description/></item><item><title>Walpole Country Club</title><link>https://ashleykolodziej.com/walpole-country-club/</link><pubDate>Sun, 01 Apr 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/walpole-country-club/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Neptune Cove</title><link>https://ashleykolodziej.com/neptune-cove/</link><pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/neptune-cove/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>Okay, I have to admit, animating the balloons and the clouds was pretty fun.&lt;/p></description></item><item><title>Bent Tree Country Club</title><link>https://ashleykolodziej.com/bent-tree/</link><pubDate>Sat, 09 Mar 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/bent-tree/</guid><description/></item><item><title>California Athletic Clubs</title><link>https://ashleykolodziej.com/california-athletic-clubs/</link><pubDate>Fri, 01 Mar 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/california-athletic-clubs/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Ballantyne Country Club</title><link>https://ashleykolodziej.com/ballantyne/</link><pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/ballantyne/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Mira Vista Country Club</title><link>https://ashleykolodziej.com/mira-vista/</link><pubDate>Sat, 01 Dec 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/mira-vista/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Imperial Golf &amp; Country Club</title><link>https://ashleykolodziej.com/imperial/</link><pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/imperial/</guid><description/></item><item><title>Navesink Country Club</title><link>https://ashleykolodziej.com/navesink/</link><pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/navesink/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>PGA West</title><link>https://ashleykolodziej.com/pga-west/</link><pubDate>Thu, 01 Nov 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/pga-west/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Fall River Country Club</title><link>https://ashleykolodziej.com/fall-river/</link><pubDate>Sat, 20 Oct 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/fall-river/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Turner Hill Country Club</title><link>https://ashleykolodziej.com/turner-hill/</link><pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/turner-hill/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Fisher Island Community Association</title><link>https://ashleykolodziej.com/fisher-island-community-association/</link><pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/fisher-island-community-association/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Los Altos Country Club</title><link>https://ashleykolodziej.com/los-altos/</link><pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/los-altos/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Manursing Country Club</title><link>https://ashleykolodziej.com/manursing/</link><pubDate>Sat, 16 Jun 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/manursing/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>The Commons Club</title><link>https://ashleykolodziej.com/commons-club/</link><pubDate>Mon, 11 Jun 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/commons-club/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Glenmoor Country Club</title><link>https://ashleykolodziej.com/glenmoor/</link><pubDate>Sat, 09 Jun 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/glenmoor/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Addison Reserve Country Club</title><link>https://ashleykolodziej.com/addison-reserve/</link><pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/addison-reserve/</guid><description>&lt;p>&lt;a href="https://web.archive.org/web/20131112131722/http://www.addisonreserve.cc/Club/Scripts/Home/home.asp">Addison Reserve&lt;/a> is a country club in Delray Beach, Florida, that wanted to show off major renovations and tell a new chapter in the club’s story.&lt;/p>
+&lt;div class="portfolio-scroll">
+&lt;div class="portfolio-image" style="max-width: 1000px;">
+&lt;img src="https://ashleykolodziej.com/img/addison1.jpg" alt="A close up of the typography in the callouts on the Addison Reserve website homepage. The overall feel is traditional, but large type helps modernize it.">
+&lt;/div>
+&lt;/div>
+&lt;p>To do this, my teammates and I came up with the concept of taking visitors to the site on a club tour through the homepage. I was tasked with creating wireframes, final mockups, copywriting, and coding of the final site.&lt;/p>
+&lt;div class="portfolio-scroll">
+&lt;div class="portfolio-image" style="max-width: 1000px;">
+&lt;img src="https://ashleykolodziej.com/img/addison2.jpg" alt="A screenshot of the homepage tour. A large button in the middle invites the user to Discover Addison, and is overlaid on top of a picture of the golf course on a sunny day, focusing on a large fountain.">
+&lt;/div>
+&lt;/div>
+&lt;p>The homepage opens with a rotating slideshow, giving a quick visual overview of the club’s offerings. From here, users are invited to “Discover Addison” or use the controls near the bottom of the page to switch slides. The hover state on the large button gives a preview of that tour’s layout and encourages clicking by changing to “Explore”. Panels then open, revealing highlights, video tours, galleries, and links further into the site.&lt;/p>
+&lt;div class="portfolio-scroll">
+&lt;div class="portfolio-image" style="max-width: 1000px;">
+&lt;img src="https://ashleykolodziej.com/img/addison3.jpg" alt="A close up of the golf portion of the tour.">
+&lt;/div>
+&lt;/div>
+&lt;p>Users choose which areas interest them, leading them to relevant sections of the site and increasing the odds of generating leads. Multiple types of content, brief copy, and dynamic layouts between each slide keep the user engaged and informed.&lt;/p>
+&lt;div class="portfolio-scroll">
+&lt;div class="portfolio-image" style="max-width: 1000px;">
+&lt;img src="https://ashleykolodziej.com/img/addison9.jpg" alt="An image of a blockquote on the history page, showing the traditional feel of the typography.">
+&lt;/div>
+&lt;/div>
+&lt;p>On long pages like the History page, the site borrows elements from print design, such as introductory paragraphs and pull quotes. This breaks up the page into manageable chunks of information while showcasing the elegant feel of the facilities.&lt;/p>
+&lt;div class="portfolio-scroll">
+&lt;div class="portfolio-image" style="max-width: 1000px;">
+&lt;img src="https://ashleykolodziej.com/img/addison6.jpg" alt="A close up of marble texture detail in the top header area.">
+&lt;/div>
+&lt;/div>
+&lt;p>Textures such as the gleaming marble, embossed leaves, and cherry wood in the navigation highlight the club’s architectural details.&lt;/p>
+&lt;div class="portfolio-scroll">
+&lt;div class="portfolio-image" style="max-width: 1000px;">
+&lt;img src="https://ashleykolodziej.com/img/addison5.jpg" alt="A membership call to action in the top of the site, sitewide. Serif fonts and marble details are used to match the club&amp;amp;rsquo;s traditional decor.">
+&lt;/div>
+&lt;/div>
+&lt;p>Finally, a constant opportunity to pursue membership lives in the banner image sitewide, ensuring users always have an easy avenue to the main goal of the site.&lt;/p>
+&lt;p>This website was recognized with a &lt;a href="https://interactivemediaawards.com/winners/certificate.asp?param=268253&amp;amp;cat=1">Best in Class - Lifestyle | 2012 Interactive Media Awards&lt;/a> by the Interactive Media Council.&lt;/p></description></item><item><title>Weddings at Plantation</title><link>https://ashleykolodziej.com/plantation/</link><pubDate>Fri, 01 Jun 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/plantation/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Ledgemont Country Club</title><link>https://ashleykolodziej.com/ledgemont/</link><pubDate>Thu, 10 May 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/ledgemont/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Ferncroft Country Club</title><link>https://ashleykolodziej.com/ferncroft/</link><pubDate>Sun, 06 May 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/ferncroft/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>The Challenge at Musket Ridge</title><link>https://ashleykolodziej.com/challenge-at-musket-ridge/</link><pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/challenge-at-musket-ridge/</guid><description/></item><item><title>Walpole Country Club</title><link>https://ashleykolodziej.com/walpole-country-club/</link><pubDate>Sun, 01 Apr 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/walpole-country-club/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Neptune Cove</title><link>https://ashleykolodziej.com/neptune-cove/</link><pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/neptune-cove/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;p>The Club at Neptune Cove is a sales tool and demo site for MembersFirst. I was responsible for the design of this fictional club’s site, the selection and editing of photography, and for writing taglines to help create the site’s tone and concept.&lt;/p>
 &lt;p>Many clubs are looking to attract families without alienating older members. When choosing the direction of the site, I thought long and hard about how to do this and why someone joins a country club. While much of what country clubs offer can be found elsewhere, I realized that it was these experiences combined with a beautiful, high-class environment that make a country club special. “Live the extraordinary life” encompasses this. Each slide on the homepage represents a different type of member “living” the life, imagining themselves in extraordinary positions – a child at sailing lessons imagines himself as the captain of a ship in a great storm, while a golf enthusiast sees himself in the final moments of a championship game. This approach brings humor and accessibility to the site, creating an encouraging and friendly environment for visitors to learn more.&lt;/p>
 &lt;p>Photography was carefully selected and edited to emphasize the social and community aspects of the club. Seeing members in action brings a sense of vibrancy and livelihood to the site while emphasizing various club offerings. Warmth and calm is imbued with soft linen and corduroy textures, friendly sans-serif fonts, a subtle hint of the club’s mountainous landscape, and a color palette of cool blues and browns found in the club’s surroundings. Scrolling through the homepage, visitors are offered an overview of the club’s social offerings through a calendar as well as callouts to easily access weddings and events, real estate, or family activities. The footer offers practical information about becoming a member, including an overview of membership options, a reciprocal map, and a form for people to learn more or follow updates on Facebook or Twitter.&lt;/p></description></item><item><title>Yolo Fliers Club</title><link>https://ashleykolodziej.com/yolo-fliers/</link><pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/yolo-fliers/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Almaden Valley Athletic Club</title><link>https://ashleykolodziej.com/avac/</link><pubDate>Thu, 01 Dec 2011 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/avac/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>Fireside Follies</title><link>https://ashleykolodziej.com/fireside-follies/</link><pubDate>Wed, 01 Dec 2010 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/fireside-follies/</guid><description>&lt;p>Fireside Follies is a monthly reading series based out of Bushwick, New York, featuring the best up and coming literature to be found anywhere.&lt;/p>
