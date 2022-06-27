@@ -780,7 +780,8 @@ h2.f4.text-normal.mb-3 {
   @media screen and (min-width: 1750px) {
     .portfolio-scroll {
       margin: 3em -18vw; } }
-  .portfolio-scroll img {
+  .portfolio-scroll img,
+  .portfolio-scroll video {
     display: block;
     margin: 0 auto;
     position: relative;
