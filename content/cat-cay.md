@@ -1,9 +1,9 @@
-+++
-date = "2013-12-01"
-title = "Cat Cay Yacht Club"
-categories = "design"
-
-+++
+---
+title: Cat Cay Yacht Club
+date: 2013-12-01
+categories:
+  - design
+---
 
 <p class="center"><a href="http://www.catcayyachtclub.com/Club/Scripts/Home/home.asp" class="live-link">Live site</a></p>
 

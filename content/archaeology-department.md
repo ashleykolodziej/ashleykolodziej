@@ -1,10 +1,10 @@
-+++
-date = "2015-07-13"
-title = "Archaeology Department"
-categories = "design"
-shortdesc = "Highlighting projects across the globe."
-
-+++
+---
+title: Archaeology Department
+date: 2015-07-13
+shortdesc: Highlighting projects across the globe.
+categories:
+  - design
+---
 
 <p class="center"><a href="http://www.bu.edu/archaeology/" class="live-link">Live site</a></p>
 

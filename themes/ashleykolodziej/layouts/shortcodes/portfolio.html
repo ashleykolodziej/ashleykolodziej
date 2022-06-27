@@ -1,3 +1,9 @@
+{{/* DEFAULTS */}}
+
+{{ $maxwidth   := 1920 }}
+
 <div class="portfolio-scroll">
-	{{.Inner | markdownify}}
+	<div class="portfolio-image" style="max-width: {{ or (.Get "maxwidth") $maxwidth }}px;">
+		{{.Inner | markdownify}}
+	</div>
 </div>

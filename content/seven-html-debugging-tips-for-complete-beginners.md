@@ -3,7 +3,8 @@ title: Seven HTML debugging tips for complete beginners
 date: 2021-05-15T17:15:01.827Z
 draft: false
 shortdesc: Everyone starts somewhere.
-categories: development
+categories:
+  - development
 ---
 I teach introductory web development classes to students who don't have any programming experience whatsoever, and one of the questions I always get is - how do I debug my code when I don't even really know how to write it just yet? 
 

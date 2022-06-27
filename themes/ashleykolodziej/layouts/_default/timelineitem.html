@@ -1,7 +1,7 @@
-<li data-category="{{ .Params.categories }}">
+<li data-category="{{ delimit .Params.categories ", " }}">
 	<a href="{{ .RelPermalink }}" class="load-link">
 		<h4>{{ .Title }}</h4>
 		<p class="shortdesc">{{ .Params.shortdesc }}</p>
-		<span><em>in</em> {{ .Params.categories }}</span>
+		<span><em>in</em> {{ delimit .Params.categories ", " }}</span>
 	</a>
 </li>

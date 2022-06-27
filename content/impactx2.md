@@ -1,9 +1,9 @@
-+++
-date = "2014-05-12"
-title = "Impactx2"
-categories = "design"
-
-+++
+---
+title: Impactx2
+date: 2014-05-12
+categories:
+  - design
+---
 
 <p class="center"><a href="http://www.bu.edu/cas/impactx2/" class="live-link">Live site</a></p>
 

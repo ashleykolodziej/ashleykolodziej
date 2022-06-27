@@ -1,9 +1,9 @@
-+++
-date = "2013-07-03"
-title = "It's a Date, I Think"
-categories = "editorial"
-
-+++
+---
+title: It's a Date, I Think
+date: 2013-07-03
+categories:
+  - editorial
+---
 
 <p class="center"><a href="http://www.bu.edu/bostonia/summer13/dating/" class="live-link">View article</a></p>
 

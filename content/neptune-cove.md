@@ -1,10 +1,10 @@
-+++
-date = "2012-02-01"
-image = ""
-title = "Neptune Cove"
-categories = "design"
-
-+++
+---
+date: 2012-02-01
+image: ""
+title: Neptune Cove
+categories:
+  - design
+---
 
 <p class="center"><a href="https://web.archive.org/web/20140207211845/http://www.neptunecove.com/" class="live-link">View on archive.org</a></p>
 

@@ -772,6 +772,8 @@ h2.f4.text-normal.mb-3 {
 .portfolio-scroll {
   position: relative;
   margin: 3em -3vw; }
+  .portfolio-scroll:first-child {
+    margin-top: 0; }
   @media screen and (min-width: 1200px) {
     .portfolio-scroll {
       margin: 3em -10vw; } }
@@ -779,9 +781,15 @@ h2.f4.text-normal.mb-3 {
     .portfolio-scroll {
       margin: 3em -18vw; } }
   .portfolio-scroll img {
+    display: block;
+    margin: 0 auto;
     position: relative;
     z-index: 2; }
-  .portfolio-scroll::after {
+
+.portfolio-image {
+  margin: 0 auto;
+  position: relative; }
+  .portfolio-image::after {
     position: absolute;
     content: "";
     left: 0;

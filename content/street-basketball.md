@@ -1,10 +1,10 @@
-+++
-date = "2017-02-21"
-title = "Of Hoops & Healing"
-categories = "design"
-shortdesc = "Using basketball as a vehicle for some of life's biggest questions."
-
-+++
+---
+title: Of Hoops & Healing
+date: 2017-02-21
+shortdesc: Using basketball as a vehicle for some of life's biggest questions.
+categories:
+  - design
+---
 
 
 

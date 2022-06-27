@@ -1,10 +1,10 @@
-+++
-date = "2016-01-06"
-title = "Every Cell Has a Story"
-categories = "editorial"
-shortdesc = "Over, and over, and over again."
-
-+++
+---
+title: Every Cell Has a Story
+date: 2016-01-06
+shortdesc: Over, and over, and over again.
+categories:
+  - editorial
+---
 
 <p class="center"><a class="live-link" href="http://www.bu.edu/research/articles/cancer-cell-division-neil-ganem/">View article</a></p>
 

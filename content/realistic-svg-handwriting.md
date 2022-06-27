@@ -1,10 +1,10 @@
-+++
-date = "2016-02-13T19:34:59-05:00"
-title = "Realistic SVG Handwriting"
-categories = "development"
-shortdesc = "That SVG stroke isn't fooling anyone."
-
-+++
+---
+title: Realistic SVG Handwriting
+date: 2016-02-13T19:34:59-05:00
+shortdesc: That SVG stroke isn't fooling anyone.
+categories:
+  - development
+---
 
 <p class="center"><a href="http://www.bu.edu/bostonia/winter-spring16/marcia-deihl-cambridge/" class="live-link">Live article</a></p>
 

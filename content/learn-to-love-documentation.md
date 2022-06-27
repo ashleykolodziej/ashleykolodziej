@@ -1,10 +1,10 @@
-+++
-date = "2016-07-16"
-title = "Learn to Love Documentation"
-categories = "professional speaking & writing"
-shortdesc = "Documentation is your playground—to try new things, to teach, and to learn."
-
-+++
+---
+title: Learn to Love Documentation
+date: 2016-07-16
+shortdesc: Documentation is your playground—to try new things, to teach, and to learn.
+categories:
+  - speaking
+---
 
 From the teaser:
 

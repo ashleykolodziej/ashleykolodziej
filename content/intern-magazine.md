@@ -1,9 +1,9 @@
-+++
-date = "2010-08-01"
-title = "in: The Conde Nast Intern Magazine"
-categories = "print"
-
-+++
+---
+title: "in: The Conde Nast Intern Magazine"
+date: 2010-08-01
+categories:
+  - print
+---
 
 <p class="center"><a href="https://issuu.com/internmagazine/docs/thegenerationissue" class="live-link">Full issue</a></p>
 

@@ -1,10 +1,11 @@
-+++
-date = "2015-12-03"
-title = "Africa Research Series"
-categories = "editorial"
-shortdesc = "Sometimes you just need to draw."
-
-+++
+---
+title: Africa Research Series
+date: 2015-12-03
+shortdesc: Sometimes you just need to draw.
+draft: true
+categories:
+  - editorial
+---
 
 <p class="center"><a href="http://www.bu.edu/research/articles/africa/" class="live-link">View series</a></p>
 

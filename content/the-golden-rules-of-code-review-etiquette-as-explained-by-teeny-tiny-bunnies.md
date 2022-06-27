@@ -3,7 +3,8 @@ title: The Golden Rules of Code Review Etiquette, as explained by teeny tiny bun
 date: 2021-05-18T17:21:25.524Z
 draft: false
 shortdesc: Because bunnies make everything better.
-categories: development
+categories:
+  - development
 ---
 Inspired by this [\#DevDiscuss](https://twitter.com/hashtag/DevDiscuss?src=hashtag_click) on Twitter:
 

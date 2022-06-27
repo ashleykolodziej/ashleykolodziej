@@ -1,10 +1,10 @@
-+++
-date = "2016-02-13T20:11:28-05:00"
-title = "Faking Watercolor Bleed Using a Simple PNG"
-categories = "development"
-shortdesc = "Canvas? Who has time for that?"
-
-+++
+---
+title: Faking Watercolor Bleed Using a Simple PNG
+date: 2016-02-13T20:11:28-05:00
+shortdesc: Canvas? Who has time for that?
+categories:
+  - development
+---
 
 <p class="center"><a href="http://www.bu.edu/bostonia/winter-spring16/marcia-deihl-cambridge/" class="live-link">Live article</a></p>
 

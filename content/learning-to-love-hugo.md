@@ -1,10 +1,10 @@
-+++
-date = "2016-02-15T11:21:48-05:00"
-title = "First Impressions: Hugo"
-categories = "development"
-shortdesc = "Jumping on that static CMS train like CHOO CHOO"
-
-+++
+---
+title: "First Impressions: Hugo"
+date: 2016-02-15T11:21:48-05:00
+shortdesc: Jumping on that static CMS train like CHOO CHOO
+categories:
+  - development
+---
 
 I've been writing in Markdown for a few months now, and it's been amazing. I mean, anything that enables my Sublime Text habit is going to make me pretty happy, but I know me, and at heart I'm a designer. If you give me the ability to design, I will design. Markdown prevents me from doing that so I actually write.
 

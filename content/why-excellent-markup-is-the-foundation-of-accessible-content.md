@@ -3,7 +3,8 @@ title: Why excellent markup is the foundation of accessible content
 date: 2021-05-21T17:18:10.277Z
 draft: false
 shortdesc: Let's get back to basics for a minute here.
-categories: development
+categories:
+  - development
 ---
 Happy Global Accessibility Awareness day, my friends!
 

@@ -1,10 +1,10 @@
-+++
-date = "2014-06-04"
-title = "Fitness and Recreation Center"
-categories = "design"
-shortdesc = "The site where I tried to sell excercising to myself and it sort of worked."
-
-+++
+---
+title: Boston University Fitness and Recreation Center (2014)
+date: 2014-06-04
+shortdesc: The site where I tried to sell excercising to myself and it sort of worked.
+categories:
+  - design
+---
 
 Who's the main audience for Boston University's Fitness &amp; Recreation Center?
 

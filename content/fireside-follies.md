@@ -1,9 +1,9 @@
-+++
-date = "2010-12-01"
-title = "Fireside Follies"
-categories = "print"
-
-+++
+---
+title: Fireside Follies
+date: 2010-12-01
+categories:
+  - print
+---
 
 Fireside Follies is a monthly reading series based out of Bushwick, New York, featuring the best up and coming literature to be found anywhere.
 

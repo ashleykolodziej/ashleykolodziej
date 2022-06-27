@@ -2,7 +2,8 @@
 title: How I added Webmentions support to my static website
 date: 2022-06-19T22:00:00.000Z
 shortdesc: "And a related question: how do you even test this if no one knows you exist?"
-categories: development
+categories: 
+    - development
 ---
 
 Reading Miriam Suzanne's [excellent article](https://www.miriamsuzanne.com/2022/06/04/indiweb/) on the complexity of implementing Webmentions got me thinking about the IndieWeb again. I stepped away from social media a while back, but the one thing I've consistently missed is having a way to record all the little moments that make up who I am. Since I'm on break from classes and teaching, I decided to challenge myself by adding Webmentions to my own site and documenting the process. Hopefully it'll help someone else out!

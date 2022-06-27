@@ -1,9 +1,9 @@
-+++
-date = "2013-04-11"
-title = "Cedarland"
-categories = "design"
-
-+++
+---
+title: Cedarland
+date: 2013-04-11
+categories:
+  - design
+---
 
 <p class="center"><a href="http://www.cedarland.net/Club/Scripts/Home/home.asp" class="live-link">Live site</a></p>
 

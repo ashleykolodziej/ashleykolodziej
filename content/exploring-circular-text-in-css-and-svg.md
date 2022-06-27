@@ -2,7 +2,8 @@
 title: Exploring circular text in CSS and SVG
 date: 2022-06-26T00:53:51.985Z
 shortdesc: This is how you learn in design school.
-categories: design
+categories:
+  - design
 ---
 I decided I'm sick of the grid. I want to align some text to a circle.
 

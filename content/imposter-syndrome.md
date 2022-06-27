@@ -1,10 +1,10 @@
-+++
-date = "2017-07-14"
-title = "I do(n't) belong here"
-categories = "professional speaking & writing"
-shortdesc = "A heart to heart about imposter syndrome"
-
-+++
+---
+title: I do(n't) belong here
+date: 2017-07-14
+shortdesc: A heart to heart about imposter syndrome
+categories:
+  - speaking
+---
 
 From the teaser:
 

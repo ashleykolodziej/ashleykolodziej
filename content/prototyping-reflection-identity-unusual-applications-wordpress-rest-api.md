@@ -1,10 +1,12 @@
-+++
-date = "2018-02-23"
-title = "Prototyping, reflection, and identity: Unusual applications of the WordPress REST API"
-categories = "professional speaking & writing"
-shortdesc = "The WordPress REST API opened up a world of possibilities for me as a designer and developer."
-
-+++
+---
+title: "Prototyping, reflection, and identity: Unusual applications of the
+  WordPress REST API"
+date: 2018-02-23
+shortdesc: The WordPress REST API opened up a world of possibilities for me as a
+  designer and developer.
+categories:
+  - speaking
+---
 
 Speaking at LoopConf was an incredible (and terrifying) opportunity. Going up to that podium as someone who knows just enough PHP to get by - and speaking about my experiences to a room full of the smartest WordPress developers out there - is something I'll always be grateful for. But I'll never forget the feeling of having K. Adam White introduce himself to me and say how much my talk meant to him. It didn't fully hit me until later that he *wrote* the REST API.
 

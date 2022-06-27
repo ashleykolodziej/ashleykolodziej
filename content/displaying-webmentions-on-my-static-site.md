@@ -1,9 +1,10 @@
 ---
 title: Displaying webmentions on my static site
 date: 2022-06-25T23:35:23.408Z
-shortdesc: This is a draft!
-categories: development
 draft: true
+shortdesc: This is a draft!
+categories:
+  - development
 ---
 
 - Log into https://webmention.io/

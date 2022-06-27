@@ -8,10 +8,6 @@
 			{{ .Content }}
 		</div>
 
-		{{ if  .Params.hasPath }}
-		{{ partial "projectfiles.html" . }}
-		{{ end }}
-
 		{{ if .Next }}
 			<div class="next-nav">
 				<a class="load-link next-link" href="{{.Next.RelPermalink}}">Next: {{ .Next.Title }}</a>

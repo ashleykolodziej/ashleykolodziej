@@ -1,10 +1,10 @@
-+++
-date = "2014-09-05"
-title = "The Club at Rolling Hills"
-categories = "design"
-shortdesc = "I've never been here, but it reminds me of home."
-
-+++
+---
+title: The Club at Rolling Hills
+date: 2014-09-05
+shortdesc: I've never been here, but it reminds me of home.
+categories:
+  - design
+---
 
 I've never actually been to this place, or to Colorado in general. But when these guys described the area to me and showed me pictures of some of the buildings, it reminded me of home.
 

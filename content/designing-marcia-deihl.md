@@ -1,10 +1,10 @@
-+++
-date = "2016-03-13T20:11:28-05:00"
-title = "The Good Life of Marcia Deihl"
-categories = "editorial"
-shortdesc = "Or: finding out what's really important in life."
-
-+++
+---
+title: The Good Life of Marcia Deihl
+date: 2016-03-13T20:11:28-05:00
+shortdesc: "Or: finding out what's really important in life."
+categories:
+  - editorial
+---
 
 <p class="center"><a href="http://www.bu.edu/bostonia/winter-spring16/marcia-deihl-cambridge/" class="live-link">Live article</a></p>
 

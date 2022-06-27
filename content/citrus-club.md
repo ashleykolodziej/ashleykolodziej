@@ -1,9 +1,9 @@
-+++
-date = "2013-08-13"
-title = "The Citrus Club"
-categories = "design"
-
-+++
+---
+title: The Citrus Club
+date: 2013-08-13
+categories:
+  - design
+---
 
 <p class="center"><a href="http://www.thecitrusclub.com" class="live-link">Live site</a></p>
 

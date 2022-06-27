@@ -1,10 +1,10 @@
-+++
-date = "2015-09-17"
-title = "College of Communication"
-categories = "design"
-shortdesc = "'Not a reliable career path'? I don't think so."
-
-+++
+---
+title: College of Communication
+date: 2015-09-17
+shortdesc: "'Not a reliable career path'? I don't think so."
+categories:
+  - design
+---
 
 <p class="center"><a href="http://www.bu.edu/com/" class="live-link">Live site</a></p>
 

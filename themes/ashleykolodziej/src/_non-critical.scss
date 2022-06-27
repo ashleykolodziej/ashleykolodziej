@@ -853,6 +853,10 @@ h2.f4.text-normal.mb-3 {
 	position: relative;
 	margin: 3em -3vw;
 
+	&:first-child {
+		margin-top: 0;
+	}
+
 	@media screen and (min-width: 1200px) {
 		margin: 3em -10vw;
 	}
@@ -862,9 +866,16 @@ h2.f4.text-normal.mb-3 {
 	}
 	
 	img {
+		display: block;
+		margin: 0 auto;
 		position: relative;
 		z-index: 2;
 	}
+}
+
+.portfolio-image {
+	margin: 0 auto;
+	position: relative;
 
 	&::after {
 		position: absolute;
