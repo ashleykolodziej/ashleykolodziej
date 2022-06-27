@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>art direction on Ashley Kolodziej - Boston Freelance Web Designer</title><link>https://ashleykolodziej.com/categories/art-direction/</link><description>Recent content in art direction on Ashley Kolodziej - Boston Freelance Web Designer</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>ashley@lastletterdesign.com (Ashley Kolodziej)</managingEditor><webMaster>ashley@lastletterdesign.com (Ashley Kolodziej)</webMaster><copyright>© 2009-2022 Ashley Kolodziej. All rights reserved.</copyright><lastBuildDate>Wed, 22 Jul 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://ashleykolodziej.com/categories/art-direction/index.xml" rel="self" type="application/rss+xml"/><item><title>Dubious DNA</title><link>https://ashleykolodziej.com/dubious-dna/</link><pubDate>Wed, 22 Jul 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/dubious-dna/</guid><description>&lt;p>The heart of &lt;a href="https://www.bu.edu/articles/2015/dna-profiling/">this piece I designed on DNA profiling&lt;/a> focuses on a researcher who is working to improve the reliability of DNA profiling for crime scenes. Throughout the article, she calls into question the many factors that may cause incorrect profiling - leading to the grim possibility an innocent person could be convicted.&lt;/p>
+&lt;style>
+@font-face {
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 300;
+src: url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xMmDra0ONnO3FPH--kzkC5zr7w4p9aSvGirXi6XmeXNA.woff2) format("woff2"), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xGAzD5WKQVN4wSyA0MYYi4rr7w4p9aSvGirXi6XmeXNA.woff) format("woff");
+}
+@font-face {
+font-family: 'Open Sans Condensed';
+font-style: normal;
+font-weight: 700;
+src: url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xIgEy7irt_A5K-aDq9kG7DHr7w4p9aSvGirXi6XmeXNA.woff2) format("woff2"), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xM6Eyu0BCqAfob_z3hhzRFzr7w4p9aSvGirXi6XmeXNA.woff) format("woff");
+}
+.dna-animations span {
+max-width: 7em;
+}
+.dna-animations {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.dna, .dna-pullquote-quote {
+font-family: "Open Sans Condensed", "Oswald", "proxima-nova-extra-condensed", "BentonComp", sans-serif;
+color: #fff;
+letter-spacing: .06em;
+font-weight: 300;
+text-transform: uppercase;
+line-height: 1;
+transform: scale(1, 1.15);
+}
+.dna-pullquote-quote {
+color: #000;
+background-color: #f7ff77;
+box-shadow: 5px 0 0 #f7ff77, -5px 0 0 #f7ff77;
+-webkit-box-decoration-break: clone;
+-ms-box-decoration-break: clone;
+-o-box-decoration-break: clone;
+box-decoration-break: clone;
+line-height: 1.45;
+font-size: 18px;
+letter-spacing: .05em;
+text-align: center;
+}
+@media screen and (min-width: 768px) {
+.dna-pullquote-quote {
+font-size: 22px;
+}
+}
+.dna-pullquote {
+position: relative;
+z-index: 100;
+line-height: 1;
+}
+@media screen and (min-width: 1200px) {
+.dna-pullquote {
+width: 50%;
+}
+}
+.dust {
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+width: 100%;
+height: 100%;
+-webkit-animation: tv-noise 0.4s steps(4) infinite;
+-moz-animation: tv-noise 0.4s steps(4) infinite;
+-ms-animation: tv-noise 0.4s steps(4) infinite;
+-o-animation: tv-noise 0.4s steps(4) infinite;
+animation: tv-noise 0.4s steps(4) infinite;
+}
+@-webkit-keyframes tv-noise {
+0% {
+background-image: url("/img/noise-1.png");
+}
+25% {
+background-image: url("/img/noise-2.png");
+}
+50% {
+background-image: url("/img/noise-3.png");
+}
+75% {
+background-image: url("/img/noise-4.png");
+}
+100% {
+background-image: url("/img/noise-5.png");
+}
+}
+@-moz-keyframes tv-noise {
+0% {
+background-image: url("/img/noise-1.png");
+}
+25% {
+background-image: url("/img/noise-2.png");
+}
+50% {
+background-image: url("/img/noise-3.png");
+}
+75% {
+background-image: url("/img/noise-4.png");
+}
+100% {
+background-image: url("/img/noise-5.png");
+}
+}
+@-ms-keyframes tv-noise {
+0% {
+background-image: url("/img/noise-1.png");
+}
+25% {
+background-image: url("/img/noise-2.png");
+}
+50% {
+background-image: url("/img/noise-3.png");
+}
+75% {
+background-image: url("/img/noise-4.png");
+}
+100% {
+background-image: url("/img/noise-5.png");
+}
+}
+@-o-keyframes tv-noise {
+0% {
+background-image: url("/img/noise-1.png");
+}
+25% {
+background-image: url("/img/noise-2.png");
+}
+50% {
+background-image: url("/img/noise-3.png");
+}
+75% {
+background-image: url("/img/noise-4.png");
+}
+100% {
+background-image: url("/img/noise-5.png");
+}
+}
+@keyframes tv-noise {
+0% {
+background-image: url("/img/noise-1.png");
+}
+25% {
+background-image: url("/img/noise-2.png");
+}
+50% {
+background-image: url("/img/noise-3.png");
+}
+75% {
+background-image: url("/img/noise-4.png");
+}
+100% {
+background-image: url("/img/noise-5.png");
+}
+}
+.z-1 {
+font-size: 43.85714px;
+color: #fff;
+text-shadow: 9999px 0 4.46429px currentColor;
+position: absolute;
+z-index: 1;
+opacity: 0.77143;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-1 {
+font-size: 6vw;
+text-shadow: 9999px 0 8.75px currentColor;
+}
+}
+.z-2 {
+font-size: 28.42857px;
+color: #fff;
+text-shadow: 9999px 0 2.85714px currentColor;
+position: absolute;
+z-index: 2;
+opacity: 0.78171;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-2 {
+font-size: 4.2vw;
+text-shadow: 9999px 0 5.6px currentColor;
+}
+}
+.z-3 {
+font-size: 16.42857px;
+color: #fff;
+text-shadow: 9999px 0 1.60714px currentColor;
+position: absolute;
+z-index: 3;
+opacity: 0.78971;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-3 {
+font-size: 2.8vw;
+text-shadow: 9999px 0 3.15px currentColor;
+}
+}
+.z-4 {
+font-size: 7.85714px;
+color: #fff;
+text-shadow: 9999px 0 0.71429px currentColor;
+position: absolute;
+z-index: 4;
+opacity: 0.79543;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-4 {
+font-size: 1.8vw;
+text-shadow: 9999px 0 1.4px currentColor;
+}
+}
+.z-5 {
+font-size: 2.71429px;
+color: #fff;
+text-shadow: 9999px 0 0.17857px currentColor;
+position: absolute;
+z-index: 5;
+opacity: 0.79886;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-5 {
+font-size: 1.2vw;
+text-shadow: 9999px 0 0.35px currentColor;
+}
+}
+.z-6 {
+font-size: 1px;
+color: #fff;
+text-shadow: 9999px 0 0px currentColor;
+position: absolute;
+z-index: 6;
+opacity: 0.8;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-6 {
+font-size: 1vw;
+text-shadow: 9999px 0 0px currentColor;
+}
+}
+.z-7 {
+font-size: 2.71429px;
+color: #fff;
+text-shadow: 9999px 0 0.17857px currentColor;
+position: absolute;
+z-index: 7;
+opacity: 0.79886;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-7 {
+font-size: 1.2vw;
+text-shadow: 9999px 0 0.35px currentColor;
+}
+}
+.z-8 {
+font-size: 7.85714px;
+color: #fff;
+text-shadow: 9999px 0 0.71429px currentColor;
+position: absolute;
+z-index: 8;
+opacity: 0.79543;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-8 {
+font-size: 1.8vw;
+text-shadow: 9999px 0 1.4px currentColor;
+}
+}
+.z-9 {
+font-size: 16.42857px;
+color: #fff;
+text-shadow: 9999px 0 1.60714px currentColor;
+position: absolute;
+z-index: 9;
+opacity: 0.78971;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-9 {
+font-size: 2.8vw;
+text-shadow: 9999px 0 3.15px currentColor;
+}
+}
+.z-10 {
+font-size: 28.42857px;
+color: #fff;
+text-shadow: 9999px 0 2.85714px currentColor;
+position: absolute;
+z-index: 10;
+opacity: 0.78171;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-10 {
+font-size: 4.2vw;
+text-shadow: 9999px 0 5.6px currentColor;
+}
+}
+.z-11 {
+font-size: 43.85714px;
+color: #fff;
+text-shadow: 9999px 0 4.46429px currentColor;
+position: absolute;
+z-index: 11;
+opacity: 0.77143;
+margin-left: -9999px;
+}
+@media screen and (min-width: 992px) {
+.z-11 {
+font-size: 6vw;
+text-shadow: 9999px 0 8.75px currentColor;
+}
+}
+.dna-animations {
+height: 80vh;
+padding: 20px;
+box-sizing: border-box;
+background: url("/img/research-dna-2.jpg") no-repeat;
+background-position: center right;
+background-size: cover;
+position: relative;
+overflow: hidden;
+margin-bottom: 30px;
+}
+#dna-2 {
+background-image: url("/img/dna-2.jpg");
+}
+#dna-2 .p-5 {
+left: 9%;
+bottom: 37%;
+}
+#dna-2 .p-2 {
+left: -1%;
+bottom: -5%;
+}
+#dna-2 .p-3 {
+left: 83%;
+top: 20%;
+}
+#dna-2 .p-4 {
+left: 18%;
+bottom: 19%;
+}
+#dna-2 .p-1 {
+left: 36%;
+top: 3%;
+}
+#dna-2 .p-6 {
+left: 91%;
+bottom: 37%;
+}
+#dna-2 .p-7 {
+left: 80%;
+bottom: 10%;
+}
+#dna-2 .p-8 {
+left: 68%;
+bottom: 20%;
+}
+#dna-2 .p-9 {
+left: 42%;
+bottom: 8%;
+}
+#dna-2 .p-10 {
+left: 3%;
+top: 12%;
+}
+&lt;/style>
+&lt;div class="dna-animations portfolio-scroll" id="dna-2">
+&lt;aside class="dna dna-pullquote">&lt;span class="dna-pullquote-quote">&lt;strong>Often, labs aren’t even certain&lt;/strong> how many people contributed to the jumble of DNA detected on a weapon or the victim’s clothing.&amp;nbsp;&lt;/span>&lt;/aside>
+&lt;div class="dust">&lt;/div>
+&lt;p>&lt;span class="dna z-1 p-1 dna-js" style="transform: translate3d(-2.23846px, 0.886599px, 0px) scale(1, 1.15);">Extract genetic material from sweat on shirt collar&lt;/span>&lt;br>
+&lt;span class="dna z-1 p-2 dna-js" style="transform: translate3d(0.257668px, -1.82525px, 0px) scale(1, 1.15);">Was the shirt borrowed?&lt;/span>&lt;br>
+&lt;span class="dna z-3 p-3 dna-js" style="transform: translate3d(-5.09413px, 1.57986px, 0px) scale(1, 1.15);">DNA from at least three people&lt;/span>&lt;br>
+&lt;span class="dna z-4 p-4 dna-js" style="transform: translate3d(-0.781734px, -3.5026px, 0px) scale(1, 1.15);">Can we isolate this?&lt;/span>&lt;br>
+&lt;span class="dna z-5 p-5 dna-js" style="transform: translate3d(-0.101602px, 1.04677px, 0px) scale(1, 1.15);">Check for skin cells&lt;/span>&lt;br>
+&lt;span class="dna z-6 p-6 dna-js" style="transform: translate3d(-5.32367px, -6.34032px, 0px) scale(1, 1.15);">DNA degraded by heat?&lt;/span>&lt;br>
+&lt;span class="dna z-7 p-7 dna-js" style="transform: translate3d(-4.5138px, 6.55211px, 0px) scale(1, 1.15);">Testable DNA tricky to get from hairs on couch&lt;/span>&lt;br>
+&lt;span class="dna z-8 p-8 dna-js" style="transform: translate3d(-3.63907px, -5.12267px, 0px) scale(1, 1.15);">How many people picked up that magazine?&lt;/span>&lt;br>
+&lt;span class="dna z-9 p-9 dna-js" style="transform: translate3d(-1.8562px, 6.24873px, 0px) scale(1, 1.15);">Is this evidence related to the crime?&lt;/span>&lt;br>
+&lt;span class="dna z-10 p-10 dna-js" style="transform: translate3d(0.769801px, -11.2412px, 0px) scale(1, 1.15);">Who was in the apartment last week?&lt;/span>&lt;/p>
+&lt;/div>
+&lt;p>In my design, I let these questions hang in the air uncomfortably around the crime scenes they inhabit, much like the dust, skin cells, and flecks they raise concerns about. I&amp;rsquo;m using a subtle keyframe animation on top of each photo to create the slight animated noise effect.&lt;/p>
+&lt;p>To create the right look and feel, I worked with &lt;a href="https://janicechecchio.com/">Janice Checchio&lt;/a>, an amazing photographer and art director on the Boston University photography team, to get a gritty, noisy look to the images, and to take photos of everyday objects which both aligned with the story&amp;rsquo;s content and could conceivably be found at a crime scene.&lt;/p>
+&lt;style>
+#dna-3 {
+background-image: url("/img/dna-3.jpg");
+overflow: hidden;
+}
+#dna-3 span.dna {
+font-size: 16px;
+letter-spacing: .05em;
+display: block;
+float: left;
+min-width: 100px;
+opacity: .75;
+}
+.dna-names {
+position: absolute;
+width: 100%;
+height: 100%;
+background: url("/img/names.gif") 0 0 repeat transparent;
+top: 0;
+left: 0;
+opacity: .5;
+}
+&lt;/style>
+&lt;div class="dna-animations portfolio-scroll" id="dna-3">
+&lt;aside class="dna-pullquote">&lt;span class="dna-pullquote-quote">&lt;strong>With a DNA mixture, it’s entirely possible to create false links&lt;/strong> between crime scene evidence and an innocent person who was nowhere near the crime.&lt;strong> &lt;/strong>&lt;/span>&lt;/aside>
+&lt;div class="dna-names">&lt;/div>
+&lt;div class="dust">&lt;/div>
+&lt;/div>
+&lt;p>Some of the animation relies on JavaScript, but in the pullquote above, I used a gif that I created in Photoshop instead to improve performance.&lt;/p>
+&lt;style>
+#dna-4 {
+background-image: url("/img/dna-4.jpg");
+overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+#dna-4 aside {
+text-align: center;
+}
+}
+#dna-4 .p-5 {
+left: 9%;
+bottom: 37%;
+}
+#dna-4 .p-2 {
+left: -1%;
+top: 20%;
+}
+#dna-4 .p-3 {
+left: 80%;
+top: 20%;
+}
+#dna-4 .p-4 {
+left: 18%;
+bottom: 19%;
+}
+#dna-4 .p-1 {
+left: 36%;
+top: 3%;
+}
+#dna-4 .p-6 {
+left: 90%;
+bottom: 37%;
+}
+#dna-4 .p-7 {
+left: 86%;
+bottom: 10%;
+}
+#dna-4 .p-8 {
+left: 69%;
+bottom: 20%;
+}
+#dna-4 .p-9 {
+left: 35%;
+bottom: 8%;
+}
+#dna-4 .p-10 {
+left: 24%;
+top: 12%;
+}
+&lt;/style>
+&lt;div id="dna-4" class="dna-animations portfolio-scroll">
+&lt;aside class="dna dna-pullquote">&lt;span class="dna-pullquote-quote">How did the gold standard of forensic evidence &lt;strong>become so tarnished?&lt;/strong>&lt;/span>&lt;/aside>
+&lt;div class="dust">&lt;/div>
+&lt;p>&lt;span class="dna z-1 p-1 dna-js" style="transform: translate3d(-1.011px, -1.40104px, 0px) scale(1, 1.15);">Low copy DNA – weak genetic signal&lt;/span>&lt;br>
+&lt;span class="dna z-2 p-2 dna-js" style="transform: translate3d(2.7126px, 2.88437px, 0px) scale(1, 1.15);">DNA from at least three people&lt;/span>&lt;br>
+&lt;span class="dna z-3 p-3 dna-js" style="transform: translate3d(-1.21713px, -8.02941px, 0px) scale(1, 1.15);">Can we isolate the suspect’s DNA?&lt;/span>&lt;br>
+&lt;span class="dna z-4 p-4 dna-js" style="transform: translate3d(4.12813px, 5.65795px, 0px) scale(1, 1.15);">How do we make sense of all this?&lt;/span>&lt;br>
+&lt;span class="dna z-5 p-5 dna-js" style="transform: translate3d(6.0358px, -5.3148px, 0px) scale(1, 1.15);">Perfect DNA match to suspect unlikely&lt;/span>&lt;br>
+&lt;span class="dna z-6 p-6 dna-js" style="transform: translate3d(2.10593px, 12.3277px, 0px) scale(1, 1.15);">Will this be enough DNA to identify a suspect?&lt;/span>&lt;br>
+&lt;span class="dna z-7 p-7 dna-js" style="transform: translate3d(3.68933px, -8.09507px, 0px) scale(1, 1.15);">Is it possible to get a clean DNA signal?&lt;/span>&lt;br>
+&lt;span class="dna z-8 p-8 dna-js" style="transform: translate3d(6.11587px, 8.32556px, 0px) scale(1, 1.15);">Signal could be from someone else&lt;/span>&lt;br>
+&lt;span class="dna z-9 p-9 dna-js" style="transform: translate3d(9.645px, -15.2306px, 0px) scale(1, 1.15);">Testable DNA tricky to get from hairs on floor&lt;/span>&lt;br>
+&lt;span class="dna z-8 p-10 dna-js" style="transform: translate3d(11.6824px, 27.3955px, 0px) scale(1, 1.15);">How many people have been through here?&lt;/span>&lt;/p>
+&lt;/div>
+&lt;script id="content-script" src="https://ashleykolodziej.com/dubious-dna/script.js">&lt;/script>
+&lt;script>
+runContentScripts();
+&lt;/script>
+&lt;p>Even minor movements by the user (either phone tilts or mouse movements) disturb the scene; it is deliberately delicate.&lt;/p></description></item></channel></rss>

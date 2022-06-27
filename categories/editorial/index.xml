@@ -503,6 +503,9 @@ top: 12%;
 &lt;span class="dna z-9 p-9 dna-js" style="transform: translate3d(9.645px, -15.2306px, 0px) scale(1, 1.15);">Testable DNA tricky to get from hairs on floor&lt;/span>&lt;br>
 &lt;span class="dna z-8 p-10 dna-js" style="transform: translate3d(11.6824px, 27.3955px, 0px) scale(1, 1.15);">How many people have been through here?&lt;/span>&lt;/p>
 &lt;/div>
-&lt;script src="https://ashleykolodziej.com/dubious-dna/script.js">&lt;/script>
+&lt;script id="content-script" src="https://ashleykolodziej.com/dubious-dna/script.js">&lt;/script>
+&lt;script>
+runContentScripts();
+&lt;/script>
 &lt;p>Even minor movements by the user (either phone tilts or mouse movements) disturb the scene; it is deliberately delicate.&lt;/p></description></item><item><title>High Notes</title><link>https://ashleykolodziej.com/high-notes/</link><pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/high-notes/</guid><description>&lt;!-- raw HTML omitted --></description></item><item><title>It's a Date, I Think</title><link>https://ashleykolodziej.com/its-a-date/</link><pubDate>Wed, 03 Jul 2013 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/its-a-date/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;p>Selected for inclusion in the &lt;a href="http://goo.gl/o7ZH4k">49&lt;!-- raw HTML omitted -->th&lt;!-- raw HTML omitted --> Publication Design Annual&lt;/a>, published by the Society of Publication Designers&lt;/p></description></item></channel></rss>

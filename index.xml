@@ -889,7 +889,10 @@ top: 12%;
 &lt;span class="dna z-9 p-9 dna-js" style="transform: translate3d(9.645px, -15.2306px, 0px) scale(1, 1.15);">Testable DNA tricky to get from hairs on floor&lt;/span>&lt;br>
 &lt;span class="dna z-8 p-10 dna-js" style="transform: translate3d(11.6824px, 27.3955px, 0px) scale(1, 1.15);">How many people have been through here?&lt;/span>&lt;/p>
 &lt;/div>
-&lt;script src="https://ashleykolodziej.com/dubious-dna/script.js">&lt;/script>
+&lt;script id="content-script" src="https://ashleykolodziej.com/dubious-dna/script.js">&lt;/script>
+&lt;script>
+runContentScripts();
+&lt;/script>
 &lt;p>Even minor movements by the user (either phone tilts or mouse movements) disturb the scene; it is deliberately delicate.&lt;/p></description></item><item><title>Archaeology Department</title><link>https://ashleykolodziej.com/archaeology-department/</link><pubDate>Mon, 13 Jul 2015 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/archaeology-department/</guid><description>&lt;!-- raw HTML omitted -->
 &lt;p>Highlights for this responsive site include an &lt;a href="http://www.bu.edu/archaeology/research-fieldwork/">interactive map&lt;/a>.&lt;/p></description></item><item><title>#OneBU</title><link>https://ashleykolodziej.com/onebu/</link><pubDate>Thu, 20 Nov 2014 00:00:00 +0000</pubDate><author>ashley@lastletterdesign.com (Ashley Kolodziej)</author><guid>https://ashleykolodziej.com/onebu/</guid><description>&lt;p>A tumblr theme for a photo contest held by Boston University Public Relations. I relied heavily on &lt;a href="https://ifttt.com/">IFTTT&lt;/a> to grab photos from a variety of sources, including Facebook, Twitter, Weibo, RenRen, Google Plus, and Instagram.&lt;/p>
 &lt;p>See more at: &lt;a href="http://onebuphoto.tumblr.com/">http://onebuphoto.tumblr.com/&lt;/a>&lt;/p>
