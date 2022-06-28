@@ -39,3 +39,9 @@ Throughout the homepage, I strove to create a sense of wonder and exploration re
 {{< /portfolio >}}
 
 This website used a custom content management system by [MembersFirst, Inc](https://www.membersfirst.com/). Layouts and content like this were fairly standard at the time, and a big step forward in engaging members in current events, as well as showcasing the wide variety of activities available to prospective members. Some of the technical challenges included slicing HTML into individual chunks which would work in the custom system's templates, and identifying repeatable components.
+
+{{< portfolio maxwidth="1287" >}}
+![Landing pages for AVAC](/img/avac-lps.jpg)
+{{< /portfolio >}}
+
+Later, when the club wanted to create targeted marketing for specific programs, including their tennis program, swim school, and membership, I was able to extend the new design to bright and airy landing pages which highlighted key benefits and drove increased signups using a top of the page form.
