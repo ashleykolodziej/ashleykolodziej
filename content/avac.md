@@ -2,6 +2,7 @@
 title: Almaden Valley Athletic Club
 date: 2011-12-01
 shortdesc: An atheltic club with movement.
+draft: false
 categories:
   - design
 budget: medium
