@@ -5,6 +5,7 @@ draft: false
 shortdesc: Animated balloons and clouds, ahoy!
 categories:
   - design
+budget: small
 ---
 [Cedarland Family Fun Center](https://web.archive.org/web/20130411044720/http://www.cedarland.net/Club/Scripts/Home/home.asp) is a family-friendly entertainment center in Haverhill, Massachusetts. They offer a wide variety of activities including mini golf, go-karts, bumper boats, batting cages, and more. 
 
