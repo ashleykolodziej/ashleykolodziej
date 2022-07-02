@@ -30,9 +30,9 @@ I started by creating a consistent design system which would work both for the C
 
 {{< /portfolio >}}
 
-{{< portfolio maxwidth="1000" >}}
-
 To meet the technical and timing challenge of launching seven websites in tandem, I chose to apply this design system, content strategy, and information architecture to a consistent template which all clubs used as a starting point. I chose a simple, friendly sans-serif for the body copy and headlines, which both reinforced the parent brand's goals and was unobtrusive enough to work cohesively with the varied sub-brands. 
+
+{{< portfolio maxwidth="1000" >}}
 
 ![The Hills Athletic Club homepage](/img/cac3.jpg)
 
