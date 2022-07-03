@@ -2,6 +2,7 @@
 title: Use the WordPress code editor to pass attributes to your Gutenberg block
   variations
 date: 2021-04-10T22:15:00.000Z
+draft: false
 shortdesc: Sometimes my favorite documentation is the code itself.
 categories:
   - development
