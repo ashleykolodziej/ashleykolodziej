@@ -23,29 +23,33 @@
 	</aside>
 	<aside id="conversation" class="content"></aside>
 	<script type="text/javascript">
-		fetch("https://webmention.io/api/mentions.jf2?target={{ .Permalink }}")
-		.then(response => response.json())
-		.then(responseJson => {
-			const mentions = responseJson.children;
-			const numberMentions = responseJson.children.length;
-			const mentionText = "<h2>" + numberMentions + " mention" + ( numberMentions > 1 ? "s" : "") + "</h2>";
+		function webmentionScript() {
+			fetch("https://webmention.io/api/mentions.jf2?target={{ .Permalink }}")
+			.then(response => response.json())
+			.then(responseJson => {
+				const mentions = responseJson.children;
+				const numberMentions = responseJson.children.length;
+				const mentionText = "<h2>" + numberMentions + " mention" + ( numberMentions > 1 ? "s" : "") + "</h2>";
 
-			if (numberMentions > 0) {
-				const mentionMarkup = document.querySelector('#conversation');
-				mentionMarkup.insertAdjacentHTML("beforeend", mentionText);
-				const mentionInfo = document.createElement('ul');
-				console.log(mentions);
+				if (numberMentions > 0) {
+					const mentionMarkup = document.querySelector('#conversation');
+					mentionMarkup.insertAdjacentHTML("beforeend", mentionText);
+					const mentionInfo = document.createElement('ul');
+					console.log(mentions);
 
-				for (mention of mentions) {
-					console.log(mention);
-					let mentionItem = document.createElement('li');
-					mentionItem.insertAdjacentHTML("beforeend", 'From ' + '<a href=' + mention.author.url + '>' + mention.author.name + '</a>');
-					mentionItem.insertAdjacentHTML("beforeend", ' in ' + '<a href=' + mention.url + '>' + mention.name + '</a>');
-					mentionInfo.appendChild(mentionItem);
+					for (mention of mentions) {
+						console.log(mention);
+						let mentionItem = document.createElement('li');
+						mentionItem.insertAdjacentHTML("beforeend", 'From ' + '<a href=' + mention.author.url + '>' + mention.author.name + '</a>');
+						mentionItem.insertAdjacentHTML("beforeend", ' in ' + '<a href=' + mention.url + '>' + mention.name + '</a>');
+						mentionInfo.appendChild(mentionItem);
+					}
+
+					mentionMarkup.appendChild(mentionInfo);
 				}
+			});
+		}
 
-				mentionMarkup.appendChild(mentionInfo);
-			}
-		});
+		webmentionScript();
 	</script>
 </article>

@@ -30,6 +30,10 @@ function loadContentScript(url, callback) {
 }
 
 var contentScriptCallback = function() {
+	if (typeof webmentionScript === "function") {
+		webmentionScript();
+	}
+
 	if (typeof window.__CPEmbed === "function") {
 		window.__CPEmbed();
 	}
