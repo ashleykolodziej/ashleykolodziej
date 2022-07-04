@@ -30,10 +30,6 @@ function loadContentScript(url, callback) {
 }
 
 var contentScriptCallback = function() {
-	if (typeof webmentionScript === "function") {
-		webmentionScript();
-	}
-
 	if (typeof window.__CPEmbed === "function") {
 		window.__CPEmbed();
 	}
@@ -58,6 +54,12 @@ function load_content(loadurl) {
 			document.querySelector('#content').innerHTML = history.state;
 			animate_in(document.querySelector('#content').children);
 
+			// Run webmentions, if it exists
+			if (typeof webmentionScript === "function") {
+				webmentionScript();
+			}
+
+			// Run any other scripts
 			var contentScript = document.querySelector('#content script');
 
 			if ( contentScript ) {
