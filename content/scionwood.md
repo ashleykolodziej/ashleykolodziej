@@ -6,4 +6,4 @@ shortdesc: A complete information architecture for a game about gardening and co
 categories:
   - ux
 ---
-{{< slides src="https://docs.google.com/presentation/d/e/2PACX-1vSHbP59eEWguwfJXCMQpbBc8dLGUxb3_hwzzJdkeCmv3dx9jlU4wsFAoyIJmuZLRDh9LxMpUDh0I2oz/embed?start=false&loop=false&delayms=3000" >}}
+{{< slides src="https://docs.google.com/presentation/d/e/2PACX-1vRaRymZBC6KFwIFSoId7cVw_hJF5TVOGwT3ih9snWlmz6cNn9Vho2cXJuXz51QBsk9H6h7KkPPKVt4_/embed?start=false&loop=false&delayms=3000" >}}
