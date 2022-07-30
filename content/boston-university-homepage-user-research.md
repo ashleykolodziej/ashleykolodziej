@@ -6,4 +6,4 @@ shortdesc: Measuring and quantifying the impact of excellent design.
 categories:
   - ux
 ---
-[See presentation here.](https://docs.google.com/presentation/d/1IFhGz6FHO2zXNTeorZ5HCiV06OpJNUkkiBm4hy73Gn4/edit)
+{{< slides src=“https://docs.google.com/presentation/d/e/2PACX-1vSO3nic1fB8_bEmjsUrS4nVCGHkNRNtXCyYieHkj84lOVfaJXXNDFEPM52lnSQBWfydo9dp4eIB8J8h/pub?start=false&loop=false&delayms=3000” >}}
