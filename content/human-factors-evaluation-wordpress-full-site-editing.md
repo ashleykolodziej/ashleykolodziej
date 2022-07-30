@@ -7,4 +7,4 @@ shortdesc: Understanding successes and areas for improvement in the new Full
 categories:
   - ux
 ---
-[See presentation here.](https://docs.google.com/presentation/d/18CNkCoNzBK9dFYwYsC9e1zuLGAY9v04IXZLFFoUX-aQ/edit)
+{{< slides src="https://docs.google.com/presentation/d/e/2PACX-1vSl9JBBOzmRSdtqiqAiOR8o63HNOwehBLmcQ_-dOwuA3fBm9zG15ybc-3JpTFrMReqySAOLgzNygYee/embed?start=false&loop=false&delayms=3000" >}}
