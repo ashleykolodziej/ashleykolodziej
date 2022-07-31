@@ -1,9 +1,10 @@
 ---
-date: 2012-11-01
-image: ""
 title: Navesink Country Club
+date: 2012-11-01T21:00:00.000Z
+image: ""
 categories:
   - design
 ---
+I was responsible for the design and frontend development of this website.
 
-<p class="center"><a href="https://web.archive.org/web/20121215074942/http://www.navesinkcc.com/Club/Scripts/Home/home.asp" class="live-link">View on archive.org</a></p>
+[View website on archive.org](https://web.archive.org/web/20121215074942/http://www.navesinkcc.com/Club/Scripts/Home/home.asp)
