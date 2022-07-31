@@ -1,11 +1,10 @@
 ---
 title: "in: The Conde Nast Intern Magazine"
-date: 2010-08-01
+date: 2010-08-01T21:00:00.000Z
 categories:
   - print
 ---
-
-<p class="center"><a href="https://issuu.com/internmagazine/docs/thegenerationissue" class="live-link">Full issue</a></p>
+[View full magazine](https://issuu.com/internmagazine/docs/thegenerationissue)
 
 Participants in the Condé Nast Summer Internship Program have the opportunity of taking part in an intern-produced, created, and published magazine which is distributed internally at the end of the summer. Put together entirely outside of our internships, this magazine required a great deal of teamwork and coordination to pull together in the short ten weeks we had, several of which were dedicated to planning.
 
