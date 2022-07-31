@@ -6,5 +6,6 @@ shortdesc: Understanding successes and areas for improvement in the new Full
   Site Editing experience.
 categories:
   - ux
+  - accessibility
 ---
 {{< slides src="https://docs.google.com/presentation/d/e/2PACX-1vSl9JBBOzmRSdtqiqAiOR8o63HNOwehBLmcQ_-dOwuA3fBm9zG15ybc-3JpTFrMReqySAOLgzNygYee/embed?start=false&loop=false&delayms=3000" >}}
