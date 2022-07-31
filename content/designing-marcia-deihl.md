@@ -5,8 +5,7 @@ shortdesc: "Or: finding out what's really important in life."
 categories:
   - editorial
 ---
-
-<p class="center"><a href="http://www.bu.edu/bostonia/winter-spring16/marcia-deihl-cambridge/" class="live-link">Live article</a></p>
+[View the story design on *Bostonia*](http://www.bu.edu/bostonia/winter-spring16/marcia-deihl-cambridge/)
 
 It's been a while since something I've done has gotten personal.
 
@@ -36,8 +35,10 @@ Without the article, I had a couple of people note the animated writing was cute
 
 I hope I did her story justice.
 
---
+\--
 
 This article ran in the winter-spring 2016 issue of *Bostonia*. I was responsible for design and development of the web version of the article, which uses SASS, Javascript, and GSAP to animate in Marcia's writing through SVG.
 
 This article was recognized with a [2016 Bronze Hatch Award in Websites: Editorial](http://hatch56.icebergapp.com/winners/view/2364).
+
+[View the story design on *Bostonia*](http://www.bu.edu/bostonia/winter-spring16/marcia-deihl-cambridge/)
