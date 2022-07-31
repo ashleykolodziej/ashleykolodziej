@@ -5,8 +5,7 @@ shortdesc: That SVG stroke isn't fooling anyone.
 categories:
   - development
 ---
-
-<p class="center"><a href="http://www.bu.edu/bostonia/winter-spring16/marcia-deihl-cambridge/" class="live-link">Live article</a></p>
+[*View the live article here.*](http://www.bu.edu/bostonia/winter-spring16/marcia-deihl-cambridge/)
 
 Fact: SVG letters will never look like real handwriting.
 
