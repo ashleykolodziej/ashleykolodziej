@@ -1,11 +1,10 @@
 ---
 title: The Citrus Club
-date: 2013-08-13
+date: 2013-08-13T21:00:00.000Z
 categories:
   - design
 ---
-
-<p class="center"><a href="http://www.thecitrusclub.com" class="live-link">Live site</a></p>
+[View the website on archive.org](https://web.archive.org/web/20140102102458/http://www.thecitrusclub.com/Club/Scripts/Home/home.asp)
 
 I was part of a multi-person design team on this site.
 
