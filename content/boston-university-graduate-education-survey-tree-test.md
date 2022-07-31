@@ -5,4 +5,4 @@ draft: true
 categories:
   - ux
 ---
-{{< slides src=“https://docs.google.com/presentation/d/e/2PACX-1vQCV1_KanoCChPehBJ4TmlmRJDhGZkFvEazUeANye_IFs7TdfNPSszNP_L41QyK7rG3iwSycMR9fzNZ/embed?start=false&loop=false&delayms=3000” >}}
+{{< slides src="https://docs.google.com/presentation/d/e/2PACX-1vQCV1_KanoCChPehBJ4TmlmRJDhGZkFvEazUeANye_IFs7TdfNPSszNP_L41QyK7rG3iwSycMR9fzNZ/embed?start=false&loop=false&delayms=3000" >}}
