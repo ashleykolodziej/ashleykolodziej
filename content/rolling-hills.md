@@ -1,10 +1,11 @@
 ---
 title: The Club at Rolling Hills
-date: 2014-09-05
+date: 2014-09-05T21:00:00.000Z
 shortdesc: I've never been here, but it reminds me of home.
 categories:
   - design
 ---
+[View website on archive.org](https://web.archive.org/web/20140925121741/http://www.rhillscc.org/Club/Scripts/Home/home.asp)
 
 I've never actually been to this place, or to Colorado in general. But when these guys described the area to me and showed me pictures of some of the buildings, it reminded me of home.
 
@@ -15,5 +16,3 @@ So. Many. Log cabins.
 So the look and feel on this wasn't a stretch for me. It was everything I was raised in.
 
 A side note: that mountain texture in the background? Ripped paper. If I remember correctly, I sat at my desk ripping paper like a crazy lady and snapped a photo with my phone. Gotta do what you gotta do though, right?
-
-<p class="center"><a href="https://web.archive.org/web/20140925121741/http://www.rhillscc.org/Club/Scripts/Home/home.asp" class="live-link">View on archive.org</a></p>
