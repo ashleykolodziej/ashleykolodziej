@@ -5,6 +5,7 @@ draft: false
 shortdesc: Helping clients understand the benefits and possibilities of user research.
 categories:
   - ux
+  - leadership
 ---
 I created this proposal deck to help educate clients on the benefits of user research, and how it could apply to their projects, as part of an effort to build a more robust business in this area and grow a user research team.
 
