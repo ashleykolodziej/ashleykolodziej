@@ -1,6 +1,7 @@
 ---
 title: Roberto Cavalli Milestone Promotion
 date: 2010-06-01
+draft: true
 categories:
   - print
 ---
