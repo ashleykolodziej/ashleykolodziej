@@ -246,7 +246,7 @@ nav {
     overflow: hidden;
     transition: max-height 500ms ease-in-out; }
     .filter ul.open {
-      max-height: 50vh;
+      max-height: 100vh;
       transition: max-height 500ms ease-in-out; }
   .filter li {
     list-style-type: none; }
