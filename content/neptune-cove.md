@@ -1,12 +1,12 @@
 ---
-date: 2012-02-01
-image: ""
 title: Neptune Cove
+date: 2012-02-01T22:00:00.000Z
+image: ""
+shortdesc: Helping the sales team highlight the benefits of excellent web design.
 categories:
   - design
 ---
-
-<p class="center"><a href="https://web.archive.org/web/20140207211845/http://www.neptunecove.com/" class="live-link">View on archive.org</a></p>
+[View website on archive.org](https://web.archive.org/web/20140207211845/http://www.neptunecove.com/)
 
 The Club at Neptune Cove is a sales tool and demo site for MembersFirst. I was responsible for the design of this fictional club’s site, the selection and editing of photography, and for writing taglines to help create the site’s tone and concept.
 
