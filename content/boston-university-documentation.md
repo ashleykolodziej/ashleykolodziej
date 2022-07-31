@@ -1,6 +1,6 @@
 ---
 title: Boston University School of Education
-date: 2016-08-23
+date: 2016-08-23T21:00:00.000Z
 draft: false
 shortdesc: Boston University's School of Education gets a new focus on research
   and community involvement.
