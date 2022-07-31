@@ -1,6 +1,7 @@
 ---
 title: Depression Motion Graphic
 date: 2010-04-01
+draft: true
 categories:
   - motion
 ---
