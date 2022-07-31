@@ -1,8 +1,9 @@
 ---
 title: Turner Hill Country Club
-date: 2012-09-01
+date: 2012-09-01T21:00:00.000Z
 categories:
   - design
 ---
+I was responsible for the design and frontend development of this website.
 
-<p class="center"><a href="http://www.turnerhill.com/" class="live-link">Live site</a></p>
+[View this website on archive.org](https://web.archive.org/web/20130504053110/http://www.turnerhill.com/Club/Scripts/Home/home.asp)
