@@ -1,9 +1,11 @@
 ---
+title: Kleen and Green
 date: 2013-07-10
 image: ""
-title: Kleen and Green
 categories:
   - branding
+  - design
 ---
+I was responsible for creating the logo, brand design, information architecture, content strategy, and final design and development of this website.
 
-<p class="center"><a href="https://web.archive.org/web/20130710085327/http://kleenandgreen.com/" class="live-link">View on archive.org</a></p>
+[View website on archive.org](https://web.archive.org/web/20130710085327/http://kleenandgreen.com/)
