@@ -14,5 +14,5 @@ categories:
 
 [Medium-fidelity prototype in Axure](https://a7xm42.axshare.com/#p=prototype)
 
-{{< slides src=“https://docs.google.com/presentation/d/e/2PACX-1vSDubFiU7Jook0O5IRqGtL-NXwpVp3hc_jYUA5O3J7b4Qmd77S37B-48U9e7HmKV0Xr4Dl4KdNbGbH0/embed?start=false&loop=false&delayms=3000” >}}
+{{< slides src="https://docs.google.com/presentation/d/e/2PACX-1vSDubFiU7Jook0O5IRqGtL-NXwpVp3hc_jYUA5O3J7b4Qmd77S37B-48U9e7HmKV0Xr4Dl4KdNbGbH0/embed?start=false&loop=false&delayms=3000" >}}
 
